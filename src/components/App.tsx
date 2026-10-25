@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { ChallengeScreen } from './ChallengeScreen.tsx';
+import Footer from './Footer.tsx';
 import { loadProgress } from '../engine/progress.ts';
 
 function App() {
@@ -9,7 +10,12 @@ function App() {
     document.documentElement.setAttribute('data-theme', prog.theme);
   }, []);
 
-  return <ChallengeScreen />;
+  return (
+    <>
+      <ChallengeScreen />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

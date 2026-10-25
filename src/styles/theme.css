@@ -72,21 +72,23 @@ html[data-theme='system'] {
 
 /* ===== Reset ===== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:16px;-webkit-font-smoothing:antialiased}
+html{font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body{
   font-family:var(--font);
   background:var(--bg);
   color:var(--text);
   min-height:100dvh;
   transition:background .3s,color .3s;
+  overflow-x:hidden;
 }
 
 /* ===== App Shell ===== */
-#root{min-height:100dvh;display:flex;flex-direction:column}
+#root{min-height:100dvh;display:flex;flex-direction:column;overflow-x:hidden}
+#root > *{min-width:0}
 .app-shell{
   max-width:720px;margin:0 auto;padding:2rem 1.5rem;
   width:100%;display:flex;flex-direction:column;gap:2rem;
-  min-height:100dvh;
+  flex:1;
 }
 
 /* ===== Header ===== */
@@ -390,3 +392,16 @@ body{
 .flex-center{display:flex;justify-content:center;align-items:center}
 .gap-sm{gap:.5rem}
 .gap-md{gap:1rem}
+
+/* ===== Footer ===== */
+.app-footer{
+  text-align:center;padding:1.5rem 0;
+  font-size:.85rem;color:var(--text-muted);
+  display:flex;justify-content:center;align-items:center;gap:.5rem;
+}
+.app-footer a{
+  color:var(--text-muted);text-decoration:none;
+  transition:color .15s;
+}
+.app-footer a:hover{color:var(--accent)}
+.footer-sep{opacity:.4}
