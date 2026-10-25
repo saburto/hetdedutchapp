@@ -1,0 +1,306 @@
+/* ===== CSS Custom Properties ===== */
+:root,
+html[data-theme='light'] {
+  --bg: #fefefe;
+  --bg-card: #ffffff;
+  --bg-slot: #f3f4f6;
+  --bg-option: #f9fafb;
+  --bg-option-hover: #eef2ff;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-inverse: #ffffff;
+  --border: #e5e7eb;
+  --accent: #6366f1;
+  --accent-soft: #eef2ff;
+  --correct: #16a34a;
+  --correct-bg: #dcfce7;
+  --incorrect: #dc2626;
+  --incorrect-bg: #fef2f2;
+  --shadow: 0 1px 3px rgba(0,0,0,.08);
+  --shadow-lg: 0 4px 24px rgba(0,0,0,.10);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Cascadia Code', 'Fira Code', monospace;
+}
+
+html[data-theme='dark'] {
+  --bg: #0f172a;
+  --bg-card: #1e293b;
+  --bg-slot: #334155;
+  --bg-option: #1e293b;
+  --bg-option-hover: #312e81;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-inverse: #0f172a;
+  --border: #334155;
+  --accent: #818cf8;
+  --accent-soft: #1e1b4b;
+  --correct: #4ade80;
+  --correct-bg: #14532d;
+  --incorrect: #f87171;
+  --incorrect-bg: #450a0a;
+  --shadow: 0 1px 3px rgba(0,0,0,.4);
+  --shadow-lg: 0 4px 24px rgba(0,0,0,.5);
+}
+
+/* System theme: light by default, dark via media query */
+html[data-theme='system'] {
+  /* inherits :root (light) values above */
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme='system'] {
+    --bg: #0f172a;
+    --bg-card: #1e293b;
+    --bg-slot: #334155;
+    --bg-option: #1e293b;
+    --bg-option-hover: #312e81;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --text-inverse: #0f172a;
+    --border: #334155;
+    --accent: #818cf8;
+    --accent-soft: #1e1b4b;
+    --correct: #4ade80;
+    --correct-bg: #14532d;
+    --incorrect: #f87171;
+    --incorrect-bg: #450a0a;
+    --shadow: 0 1px 3px rgba(0,0,0,.4);
+    --shadow-lg: 0 4px 24px rgba(0,0,0,.5);
+  }
+}
+
+/* ===== Reset ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;-webkit-font-smoothing:antialiased}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  min-height:100dvh;
+  transition:background .3s,color .3s;
+}
+
+/* ===== App Shell ===== */
+#root{min-height:100dvh;display:flex;flex-direction:column}
+.app-shell{
+  max-width:720px;margin:0 auto;padding:2rem 1.5rem;
+  width:100%;display:flex;flex-direction:column;gap:2rem;
+  min-height:100dvh;
+}
+
+/* ===== Header ===== */
+.app-header{
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:.75rem;
+}
+.app-header h1{font-size:1.4rem;font-weight:700;letter-spacing:-.02em}
+.app-header .level-badge{
+  background:var(--accent-soft);color:var(--accent);
+  padding:.3rem .75rem;border-radius:99px;
+  font-size:.8rem;font-weight:600;
+}
+
+/* ===== Settings Button ===== */
+.settings-btn{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:.5rem .75rem;
+  cursor:pointer;font-size:1.1rem;color:var(--text-muted);
+  transition:background .15s;
+}
+.settings-btn:hover{background:var(--bg-slot)}
+
+/* ===== Settings Panel ===== */
+.settings-panel{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:1.5rem;
+  display:flex;flex-direction:column;gap:1rem;
+  box-shadow:var(--shadow-lg);
+}
+.settings-panel h3{font-size:1rem;font-weight:600}
+.settings-row{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.settings-row label{font-size:.9rem;color:var(--text-muted)}
+.settings-row select,
+.settings-row button{
+  padding:.4rem .75rem;border-radius:var(--radius-sm);
+  border:1px solid var(--border);background:var(--bg);
+  color:var(--text);font-size:.85rem;cursor:pointer;
+  font-family:var(--font);
+}
+.settings-row button.danger{color:var(--incorrect);border-color:var(--incorrect)}
+.settings-row button.danger:hover{background:var(--incorrect-bg)}
+
+/* ===== Score Bar ===== */
+.score-bar{
+  display:flex;gap:1.5rem;align-items:center;font-size:.85rem;
+  color:var(--text-muted);
+}
+.score-bar .correct{color:var(--correct);font-weight:600}
+.score-bar .wrong{color:var(--incorrect);font-weight:600}
+.score-bar .streak{color:var(--accent);font-weight:600}
+
+/* ===== Progress Dots ===== */
+.progress-dots{
+  display:flex;gap:.5rem;justify-content:center;
+}
+.progress-dot{
+  width:10px;height:10px;border-radius:50%;
+  border:1px solid var(--border);
+  transition:background .3s;
+}
+.progress-dot.active{background:var(--accent);border-color:var(--accent)}
+.progress-dot.done{background:var(--correct);border-color:var(--correct)}
+.progress-dot.wrong{background:var(--incorrect);border-color:var(--incorrect)}
+
+/* ===== Challenge Card ===== */
+.challenge-card{
+  background:var(--bg-card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:2rem;
+  box-shadow:var(--shadow);display:flex;
+  flex-direction:column;gap:1.5rem;
+  transition:border-color .3s,box-shadow .3s;
+}
+.challenge-card.correct{border-color:var(--correct);box-shadow:0 0 0 3px var(--correct-bg)}
+.challenge-card.incorrect{border-color:var(--incorrect);box-shadow:0 0 0 3px var(--incorrect-bg)}
+
+/* ===== Sentence Canvas ===== */
+.sentence-canvas{
+  font-size:1.4rem;line-height:1.8;text-align:center;
+  padding:.5rem 0;
+}
+.sentence-word{
+  transition:all .3s ease;
+}
+.sentence-word.static{color:var(--text)}
+.sentence-word.modifier{
+  background:var(--bg-slot);border-radius:.35rem;
+  padding:0 .25rem;font-weight:700;
+}
+.sentence-word.pending{}
+.sentence-word.correct{
+  color:var(--correct);animation:popLock .4s ease;
+}
+.sentence-word.locked{
+  color:var(--correct);font-weight:700;
+}
+.sentence-word.incorrect{
+  color:var(--incorrect);
+  text-decoration:line-through;
+  text-decoration-thickness:2px;
+  animation:shakeX .4s ease;
+}
+.sentence-word.strikethrough{text-decoration:line-through;text-decoration-thickness:2px}
+
+@keyframes popLock{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.15)}
+  100%{transform:scale(1)}
+}
+@keyframes shakeX{
+  0%,100%{transform:translateX(0)}
+  20%{transform:translateX(-4px)}
+  40%{transform:translateX(4px)}
+  60%{transform:translateX(-4px)}
+  80%{transform:translateX(4px)}
+}
+@keyframes fadeInUp{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ===== Modifier Options ===== */
+.modifier-options{
+  display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
+}
+.option-btn{
+  padding:.75rem 2rem;font-size:1.15rem;font-weight:600;
+  border-radius:var(--radius);border:2px solid var(--border);
+  background:var(--bg-option);color:var(--text);
+  cursor:pointer;transition:all .15s;
+  font-family:var(--font);min-width:140px;
+}
+.option-btn:hover:not(:disabled){
+  background:var(--bg-option-hover);
+  border-color:var(--accent);
+  transform:translateY(-1px);
+}
+.option-btn:active:not(:disabled){transform:translateY(0)}
+.option-btn:disabled{cursor:default;opacity:.7}
+.option-btn.chosen-correct{
+  border-color:var(--correct);background:var(--correct-bg);
+  color:var(--correct);animation:popLock .4s ease;
+}
+.option-btn.chosen-incorrect{
+  border-color:var(--incorrect);background:var(--incorrect-bg);
+  color:var(--incorrect);animation:shakeX .4s ease;
+}
+.option-btn.reveal-correct{
+  border-color:var(--correct);background:var(--correct-bg);color:var(--correct);
+}
+
+/* ===== Explanation ===== */
+.explanation{
+  text-align:center;font-size:.9rem;color:var(--text-muted);
+  padding:.75rem 1rem;background:var(--bg-slot);
+  border-radius:var(--radius-sm);
+  animation:fadeInUp .35s ease;
+}
+.explanation strong{color:var(--text);font-weight:600}
+
+/* ===== Next Button ===== */
+.next-btn{
+  align-self:center;padding:.75rem 2.5rem;
+  font-size:1rem;font-weight:600;
+  border:none;border-radius:var(--radius);
+  background:var(--accent);color:var(--text-inverse);
+  cursor:pointer;transition:all .15s;
+  font-family:var(--font);
+  animation:fadeInUp .35s ease;
+}
+.next-btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.next-btn:active{transform:translateY(0)}
+
+/* ===== Repair Shop ===== */
+.repair-shop{
+  background:var(--incorrect-bg);border:1px solid var(--incorrect);
+  border-radius:var(--radius);padding:1.5rem;
+  text-align:center;animation:fadeInUp .4s ease;
+}
+.repair-shop h4{color:var(--incorrect);font-size:1rem;margin-bottom:.5rem}
+.repair-shop p{font-size:.85rem;color:var(--text-muted);margin-bottom:1rem}
+.repair-input-row{
+  display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;
+}
+.repair-input{
+  padding:.6rem 1rem;font-size:1.1rem;
+  border:2px solid var(--border);border-radius:var(--radius-sm);
+  background:var(--bg);color:var(--text);
+  font-family:var(--font);text-align:center;
+  transition:border-color .2s;
+}
+.repair-input:focus{outline:none;border-color:var(--accent)}
+.repair-input.correct{border-color:var(--correct)}
+.repair-input.incorrect{border-color:var(--incorrect)}
+
+/* ===== Level Complete ===== */
+.level-complete{
+  text-align:center;padding:2rem;
+}
+.level-complete h2{font-size:1.6rem;margin-bottom:.5rem}
+.level-complete p{color:var(--text-muted);margin-bottom:1.5rem}
+.level-complete .stats{
+  display:flex;gap:2rem;justify-content:center;
+  font-size:1.2rem;margin-bottom:1.5rem;
+}
+
+/* ===== Empty State ===== */
+.empty-state{
+  text-align:center;padding:3rem 1rem;
+}
+.empty-state h2{font-size:1.3rem;margin-bottom:.5rem}
+.empty-state p{color:var(--text-muted);margin-bottom:1rem}
+
+/* ===== Utility ===== */
+.flex-center{display:flex;justify-content:center;align-items:center}
+.gap-sm{gap:.5rem}
+.gap-md{gap:1rem}

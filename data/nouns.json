@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "nouns": [
+    { "id": "noun_0001", "noun": "auto", "article": "de", "translation": "car", "category": "transport", "diminutive": "autootje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0002", "noun": "boek", "article": "het", "translation": "book", "category": "household_objects", "diminutive": "boekje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0003", "noun": "tafel", "article": "de", "translation": "table", "category": "household_objects", "diminutive": "tafeltje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0004", "noun": "huis", "article": "het", "translation": "house", "category": "buildings", "diminutive": "huisje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0005", "noun": "stoel", "article": "de", "translation": "chair", "category": "household_objects", "diminutive": "stoeltje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0006", "noun": "kind", "article": "het", "translation": "child", "category": "people", "diminutive": "kindje", "grammaticalRules": ["monosyllabic_het", "person_exception"] },
+    { "id": "noun_0007", "noun": "hond", "article": "de", "translation": "dog", "category": "animals", "diminutive": "hondje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0008", "noun": "raam", "article": "het", "translation": "window", "category": "buildings", "diminutive": "raampje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0009", "noun": "fiets", "article": "de", "translation": "bicycle", "category": "transport", "diminutive": "fietsje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0010", "noun": "water", "article": "het", "translation": "water", "category": "food_drink", "diminutive": "watertje", "grammaticalRules": ["monosyllabic_het", "mass_noun"] },
+    { "id": "noun_0011", "noun": "koffie", "article": "de", "translation": "coffee", "category": "food_drink", "diminutive": "koffietje", "grammaticalRules": ["common_gender", "loanword"] },
+    { "id": "noun_0012", "noun": "paard", "article": "het", "translation": "horse", "category": "animals", "diminutive": "paardje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0013", "noun": "lamp", "article": "de", "translation": "lamp", "category": "household_objects", "diminutive": "lampje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0014", "noun": "brood", "article": "het", "translation": "bread", "category": "food_drink", "diminutive": "broodje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0015", "noun": "appel", "article": "de", "translation": "apple", "category": "food_drink", "diminutive": "appeltje", "grammaticalRules": ["common_gender"] }
+  ]
+}
