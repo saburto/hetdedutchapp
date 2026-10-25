@@ -9,6 +9,7 @@ const DEFAULT_PROGRESS: ProgressStore = {
   currentLevel: 1,
   theme: 'light',
   audioEnabled: true,
+  showTranslation: true,
 };
 
 export function loadProgress(): ProgressStore {
@@ -66,6 +67,12 @@ export function updateTheme(theme: ProgressStore['theme']): void {
 export function updateAudioEnabled(enabled: boolean): void {
   const progress = loadProgress();
   progress.audioEnabled = enabled;
+  saveProgress(progress);
+}
+
+export function updateShowTranslation(show: boolean): void {
+  const progress = loadProgress();
+  progress.showTranslation = show;
   saveProgress(progress);
 }
 

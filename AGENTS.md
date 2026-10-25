@@ -71,6 +71,16 @@ bun run validate     # Zod-check nouns.json + challenges.json
 bunx playwright test # 6 E2E tests (requires bun run dev running or uses webServer config)
 ```
 
+## Testing
+- **After every feature or code modification**, run the full Playwright suite:
+  ```bash
+  bunx playwright test > /tmp/test-output.txt 2>&1
+  ```
+  Then check `/tmp/test-output.txt` for results. All tests must pass.
+- When adding a new feature, **always add at least one new Playwright test** in `tests/` covering the new behaviour.
+- Tests use the Vite dev server (auto-started via `webServer` in playwright config — no need to run `bun run dev` separately).
+- Never run `bunx playwright test` twice in the same session without redirecting output to a temp file.
+
 ## Do NOT
 - Add English UI strings — everything user-facing is Dutch (except the tour in `Tour.tsx`, which is in English)
 - Nest `@media` inside CSS selector blocks

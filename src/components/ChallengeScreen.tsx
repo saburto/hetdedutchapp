@@ -197,7 +197,7 @@ export function ChallengeScreen() {
           <button
             className="settings-btn"
             onClick={() => setShowSettings((s) => !s)}
-            title="Instellingen"
+            title="Settings"
           >
             ⚙️
           </button>
@@ -285,6 +285,9 @@ export function ChallengeScreen() {
             challenge={ch}
             selectedAnswer={answer?.chosen ?? null}
             phase={phase}
+            sentenceTranslation={
+              loadProgress().showTranslation ? ch.sentenceTranslation : undefined
+            }
           />
 
           {/* Options */}

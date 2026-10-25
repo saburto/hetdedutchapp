@@ -11,7 +11,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Auto' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Auto' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our car is in front of the house."
     },
     {
       "challengeId": "ch_poss_02",
@@ -23,7 +24,8 @@
         "correct": "Ons",
         "distractor": "Onze"
       },
-      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
+      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our book is very interesting."
     },
     {
       "challengeId": "ch_poss_03",
@@ -35,7 +37,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our table is made of wood."
     },
     {
       "challengeId": "ch_poss_04",
@@ -47,7 +50,8 @@
         "correct": "Ons",
         "distractor": "Onze"
       },
-      "explanation": "'Huis' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
+      "explanation": "'Huis' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our house has a big garden."
     },
     {
       "challengeId": "ch_poss_05",
@@ -59,7 +63,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our chair is unfortunately broken."
     },
     {
       "challengeId": "ch_poss_06",
@@ -71,7 +76,8 @@
         "correct": "Ons",
         "distractor": "Onze"
       },
-      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
+      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our child likes to play outside."
     },
     {
       "challengeId": "ch_poss_07",
@@ -83,7 +89,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our dog barks at the mailman."
     },
     {
       "challengeId": "ch_poss_08",
@@ -95,7 +102,8 @@
         "correct": "Ons",
         "distractor": "Onze"
       },
-      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
+      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our window overlooks the canal."
     },
     {
       "challengeId": "ch_poss_09",
@@ -107,7 +115,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our bicycle is in the shed."
     },
     {
       "challengeId": "ch_poss_10",
@@ -119,7 +128,8 @@
         "correct": "Ons",
         "distractor": "Onze"
       },
-      "explanation": "'Water' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
+      "explanation": "'Water' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our water is nice and cold."
     },
     {
       "challengeId": "ch_poss_11",
@@ -131,7 +141,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our coffee is still on the stove."
     },
     {
       "challengeId": "ch_poss_12",
@@ -143,7 +154,8 @@
         "correct": "Ons",
         "distractor": "Onze"
       },
-      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
+      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our horse is in the meadow."
     },
     {
       "challengeId": "ch_poss_13",
@@ -155,7 +167,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our lamp gives a lot of light."
     },
     {
       "challengeId": "ch_poss_14",
@@ -167,7 +180,8 @@
         "correct": "Ons",
         "distractor": "Onze"
       },
-      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
+      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our bread is fresh from the baker."
     },
     {
       "challengeId": "ch_poss_15",
@@ -179,7 +193,8 @@
         "correct": "Onze",
         "distractor": "Ons"
       },
-      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
+      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our apple is red and green."
     },
     {
       "challengeId": "ch_adj_01",
@@ -191,7 +206,8 @@
         "correct": "mooie",
         "distractor": "mooi"
       },
-      "explanation": "'Auto' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een mooie auto'."
+      "explanation": "'Auto' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een mooie auto'.",
+      "sentenceTranslation": "I bought a beautiful car."
     },
     {
       "challengeId": "ch_adj_02",
@@ -203,7 +219,8 @@
         "correct": "goed",
         "distractor": "goede"
       },
-      "explanation": "'Boek' is een het-woord, dus na 'een' vervalt de -e: 'een goed boek'."
+      "explanation": "'Boek' is een het-woord, dus na 'een' vervalt de -e: 'een goed boek'.",
+      "sentenceTranslation": "This is a good book for beginners."
     },
     {
       "challengeId": "ch_adj_03",
@@ -215,7 +232,8 @@
         "correct": "grote",
         "distractor": "groot"
       },
-      "explanation": "'Tafel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een grote tafel'."
+      "explanation": "'Tafel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een grote tafel'.",
+      "sentenceTranslation": "She has a big table in the kitchen."
     },
     {
       "challengeId": "ch_adj_04",
@@ -227,7 +245,8 @@
         "correct": "mooi",
         "distractor": "mooie"
       },
-      "explanation": "'Huis' is een het-woord, dus na 'een' vervalt de -e: 'een mooi huis'."
+      "explanation": "'Huis' is een het-woord, dus na 'een' vervalt de -e: 'een mooi huis'.",
+      "sentenceTranslation": "We live in a beautiful house in Amsterdam."
     },
     {
       "challengeId": "ch_adj_05",
@@ -239,7 +258,8 @@
         "correct": "comfortabele",
         "distractor": "comfortabel"
       },
-      "explanation": "'Stoel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een comfortabele stoel'."
+      "explanation": "'Stoel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een comfortabele stoel'.",
+      "sentenceTranslation": "I am looking for a comfortable chair for the desk."
     },
     {
       "challengeId": "ch_adj_06",
@@ -251,7 +271,8 @@
         "correct": "lief",
         "distractor": "lieve"
       },
-      "explanation": "'Kind' is een het-woord, dus na 'een' vervalt de -e: 'een lief kind'."
+      "explanation": "'Kind' is een het-woord, dus na 'een' vervalt de -e: 'een lief kind'.",
+      "sentenceTranslation": "She has a sweet child in the class."
     },
     {
       "challengeId": "ch_adj_07",
@@ -263,7 +284,8 @@
         "correct": "grote",
         "distractor": "groot"
       },
-      "explanation": "'Hond' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een grote hond'."
+      "explanation": "'Hond' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een grote hond'.",
+      "sentenceTranslation": "He walks with a big dog through the park."
     },
     {
       "challengeId": "ch_adj_08",
@@ -275,7 +297,8 @@
         "correct": "mooi",
         "distractor": "mooie"
       },
-      "explanation": "'Raam' is een het-woord, dus na 'een' vervalt de -e: 'een mooi raam'."
+      "explanation": "'Raam' is een het-woord, dus na 'een' vervalt de -e: 'een mooi raam'.",
+      "sentenceTranslation": "The room has a beautiful window with a view."
     },
     {
       "challengeId": "ch_adj_09",
@@ -287,7 +310,8 @@
         "correct": "nieuwe",
         "distractor": "nieuw"
       },
-      "explanation": "'Fiets' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een nieuwe fiets'."
+      "explanation": "'Fiets' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een nieuwe fiets'.",
+      "sentenceTranslation": "My brother wants a new bicycle for his birthday."
     },
     {
       "challengeId": "ch_adj_10",
@@ -299,7 +323,8 @@
         "correct": "koud",
         "distractor": "koude"
       },
-      "explanation": "'Water' is een het-woord, dus na 'een' vervalt de -e: 'een koud water'."
+      "explanation": "'Water' is een het-woord, dus na 'een' vervalt de -e: 'een koud water'.",
+      "sentenceTranslation": "May I have a cold water please?"
     },
     {
       "challengeId": "ch_adj_11",
@@ -311,7 +336,8 @@
         "correct": "sterke",
         "distractor": "sterk"
       },
-      "explanation": "'Koffie' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een sterke koffie'."
+      "explanation": "'Koffie' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een sterke koffie'.",
+      "sentenceTranslation": "I am ordering a strong coffee at the café."
     },
     {
       "challengeId": "ch_adj_12",
@@ -323,7 +349,8 @@
         "correct": "vers",
         "distractor": "verse"
       },
-      "explanation": "'Brood' is een het-woord, dus na 'een' vervalt de -e: 'een vers brood'."
+      "explanation": "'Brood' is een het-woord, dus na 'een' vervalt de -e: 'een vers brood'.",
+      "sentenceTranslation": "She eats a fresh bread with cheese."
     },
     {
       "challengeId": "ch_dem_01",
@@ -335,7 +362,8 @@
         "correct": "deze",
         "distractor": "dit"
       },
-      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "Is this chair still free?"
     },
     {
       "challengeId": "ch_dem_02",
@@ -347,7 +375,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
+      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This book must go back to the library."
     },
     {
       "challengeId": "ch_dem_03",
@@ -359,7 +388,8 @@
         "correct": "die",
         "distractor": "dat"
       },
-      "explanation": "'Auto' is een de-woord, dus het ver-weg aanwijzend voornaamwoord is 'Die' in plaats van 'Dat'."
+      "explanation": "'Auto' is een de-woord, dus het ver-weg aanwijzend voornaamwoord is 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "Whose car is that over there?"
     },
     {
       "challengeId": "ch_dem_04",
@@ -371,7 +401,8 @@
         "correct": "Dat",
         "distractor": "Die"
       },
-      "explanation": "'Huis' is een het-woord, dus het ver-weg aanwijzend voornaamwoord is 'Dat' in plaats van 'Die'."
+      "explanation": "'Huis' is een het-woord, dus het ver-weg aanwijzend voornaamwoord is 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That house on the corner is the prettiest."
     },
     {
       "challengeId": "ch_dem_05",
@@ -383,7 +414,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This dog is very friendly."
     },
     {
       "challengeId": "ch_dem_06",
@@ -395,7 +427,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
+      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This window cannot open."
     },
     {
       "challengeId": "ch_dem_07",
@@ -407,7 +440,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This bicycle is not mine."
     },
     {
       "challengeId": "ch_dem_08",
@@ -419,7 +453,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
+      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This horse can run very fast."
     },
     {
       "challengeId": "ch_dem_09",
@@ -431,7 +466,8 @@
         "correct": "deze",
         "distractor": "dit"
       },
-      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "Does this lamp still work?"
     },
     {
       "challengeId": "ch_dem_10",
@@ -443,7 +479,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
+      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This bread tastes really delicious."
     },
     {
       "challengeId": "ch_dem_11",
@@ -455,7 +492,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This apple comes from my own garden."
     },
     {
       "challengeId": "ch_dem_12",
@@ -467,7 +505,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "'Water' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
+      "explanation": "'Water' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This water is not drinkable."
     },
     {
       "challengeId": "ch_dim_01",
@@ -479,7 +518,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Hoewel 'auto' een de-woord is, is de verkleinvorm 'autootje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'auto' een de-woord is, is de verkleinvorm 'autootje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "Look, a little car! This little car belongs to my son."
     },
     {
       "challengeId": "ch_dim_02",
@@ -491,7 +531,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Hoewel 'stoel' een de-woord is, is de verkleinvorm 'stoeltje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'stoel' een de-woord is, is de verkleinvorm 'stoeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "There is a little chair in the corner. This little chair is red."
     },
     {
       "challengeId": "ch_dim_03",
@@ -503,7 +544,8 @@
         "correct": "dit",
         "distractor": "deze"
       },
-      "explanation": "Hoewel 'hond' een de-woord is, is de verkleinvorm 'hondje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'hond' een de-woord is, is de verkleinvorm 'hondje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "What a cute little dog! Whose little dog is this?"
     },
     {
       "challengeId": "ch_dim_04",
@@ -515,7 +557,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Hoewel 'fiets' een de-woord is, is de verkleinvorm 'fietsje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'fiets' een de-woord is, is de verkleinvorm 'fietsje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "My daughter rides a little bicycle. This little bicycle is pink."
     },
     {
       "challengeId": "ch_dim_05",
@@ -527,7 +570,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Hoewel 'lamp' een de-woord is, is de verkleinvorm 'lampje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'lamp' een de-woord is, is de verkleinvorm 'lampje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "A little lamp hangs above the bed. This little lamp is very soft."
     },
     {
       "challengeId": "ch_dim_06",
@@ -539,7 +583,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Hoewel 'appel' een de-woord is, is de verkleinvorm 'appeltje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'appel' een de-woord is, is de verkleinvorm 'appeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "The child eats a little apple. This little apple is very sweet."
     },
     {
       "challengeId": "ch_dim_07",
@@ -551,7 +596,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Hoewel 'tafel' een de-woord is, is de verkleinvorm 'tafeltje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'tafel' een de-woord is, is de verkleinvorm 'tafeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "A little table is on the balcony. This little table is made of wood."
     },
     {
       "challengeId": "ch_dim_08",
@@ -563,7 +609,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "'Huis' is al een het-woord, en 'huisje' blijft het — maar cursisten twijfelen vaak bij verkleinwoorden van het-woorden."
+      "explanation": "'Huis' is al een het-woord, en 'huisje' blijft het — maar cursisten twijfelen vaak bij verkleinwoorden van het-woorden.",
+      "sentenceTranslation": "There is a little house in the garden. This little house is for the birds."
     },
     {
       "challengeId": "ch_cmpd_01",
@@ -575,7 +622,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Laken' is het, dus 'tafellaken' is het — gebruik 'Dit'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Laken' is het, dus 'tafellaken' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The table + The cloth = The tablecloth. This tablecloth is white."
     },
     {
       "challengeId": "ch_cmpd_02",
@@ -587,7 +635,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Raam' is het, dus 'autoraam' is het — gebruik 'Dit'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Raam' is het, dus 'autoraam' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The car + The window = The car window. This car window is dirty."
     },
     {
       "challengeId": "ch_cmpd_03",
@@ -599,7 +648,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Mand' is de, dus 'hondenmand' is de — gebruik 'Deze'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Mand' is de, dus 'hondenmand' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The dog + The basket = The dog basket. This dog basket is in the corner."
     },
     {
       "challengeId": "ch_cmpd_04",
@@ -611,7 +661,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Licht' is het, dus 'fietslicht' is het — gebruik 'Dit'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Licht' is het, dus 'fietslicht' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The bicycle + The light = The bicycle light. This bicycle light does not work."
     },
     {
       "challengeId": "ch_cmpd_05",
@@ -623,7 +674,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Fles' is de, dus 'waterfles' is de — gebruik 'Deze'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Fles' is de, dus 'waterfles' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The water + The bottle = The water bottle. This water bottle is mine."
     },
     {
       "challengeId": "ch_cmpd_06",
@@ -635,7 +687,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boek' is het, dus 'kinderboek' is het — gebruik 'Dit'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boek' is het, dus 'kinderboek' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The child + The book = The children's book. This children's book is very popular."
     },
     {
       "challengeId": "ch_adj_13",
@@ -647,7 +700,8 @@
         "correct": "mooi",
         "distractor": "mooie"
       },
-      "explanation": "'Paard' is een het-woord, dus na 'een' vervalt de -e: 'een mooi paard'."
+      "explanation": "'Paard' is een het-woord, dus na 'een' vervalt de -e: 'een mooi paard'.",
+      "sentenceTranslation": "She takes care of a beautiful horse in the stable."
     },
     {
       "challengeId": "ch_adj_14",
@@ -659,7 +713,8 @@
         "correct": "mooie",
         "distractor": "mooi"
       },
-      "explanation": "'Lamp' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een mooie lamp'."
+      "explanation": "'Lamp' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een mooie lamp'.",
+      "sentenceTranslation": "A beautiful lamp hangs above the table."
     },
     {
       "challengeId": "ch_adj_15",
@@ -671,7 +726,8 @@
         "correct": "rode",
         "distractor": "rood"
       },
-      "explanation": "'Appel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een rode appel'."
+      "explanation": "'Appel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een rode appel'.",
+      "sentenceTranslation": "He picks a red apple from the tree."
     },
     {
       "challengeId": "ch_dem_13",
@@ -683,7 +739,8 @@
         "correct": "deze",
         "distractor": "dit"
       },
-      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "Look, this table is completely crooked!"
     },
     {
       "challengeId": "ch_dem_14",
@@ -695,7 +752,8 @@
         "correct": "dit",
         "distractor": "deze"
       },
-      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
+      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "Does this child already speak Dutch?"
     },
     {
       "challengeId": "ch_dem_15",
@@ -707,7 +765,8 @@
         "correct": "deze",
         "distractor": "dit"
       },
-      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "Does this coffee still need sugar?"
     },
     {
       "challengeId": "ch_dim_09",
@@ -719,7 +778,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'boek' was al het, dus 'boekje' blijft het — gebruik 'Dit'."
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'boek' was al het, dus 'boekje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "Every evening I read a little book aloud. This little book is about animals."
     },
     {
       "challengeId": "ch_dim_10",
@@ -731,7 +791,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Kind' is al het, dus 'kindje' blijft het — gebruik 'Dit'."
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Kind' is al het, dus 'kindje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "The little child smiles at me. This little child is so sweet!"
     },
     {
       "challengeId": "ch_dim_11",
@@ -743,7 +804,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Raam' is al het, dus 'raampje' blijft het — gebruik 'Dit'."
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Raam' is al het, dus 'raampje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "A lot of light comes through the little window. This little window is high in the wall."
     },
     {
       "challengeId": "ch_dim_12",
@@ -755,7 +817,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'water' is al het, dus 'watertje' blijft het — gebruik 'Dit'."
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'water' is al het, dus 'watertje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "On the terrace I order a little water. This little water is with ice."
     },
     {
       "challengeId": "ch_dim_13",
@@ -767,7 +830,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Hoewel 'koffie' een de-woord is, is de verkleinvorm 'koffietje' altijd een het-woord, dus gebruiken we 'Dit'."
+      "explanation": "Hoewel 'koffie' een de-woord is, is de verkleinvorm 'koffietje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "She likes to drink a little coffee after dinner. This little coffee is strong."
     },
     {
       "challengeId": "ch_dim_14",
@@ -779,7 +843,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Paard' is al het, dus 'paardje' blijft het — gebruik 'Dit'."
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Paard' is al het, dus 'paardje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "The children pet a little horse. This little horse is called Binky."
     },
     {
       "challengeId": "ch_dim_15",
@@ -791,7 +856,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Brood' is al het, dus 'broodje' blijft het — gebruik 'Dit'."
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Brood' is al het, dus 'broodje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "At lunch I eat a little bread with cheese. This little bread is delicious."
     },
     {
       "challengeId": "ch_cmpd_07",
@@ -803,7 +869,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boom' is de, dus 'appelboom' is de — gebruik 'Deze'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boom' is de, dus 'appelboom' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The apple + The tree = The apple tree. This apple tree is in the garden."
     },
     {
       "challengeId": "ch_cmpd_08",
@@ -815,7 +882,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Sleutel' is de, dus 'huissleutel' is de — gebruik 'Deze'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Sleutel' is de, dus 'huissleutel' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The house + The key = The house key. This house key does not fit in the lock."
     },
     {
       "challengeId": "ch_cmpd_09",
@@ -827,7 +895,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Plank' is de, dus 'boekenplank' is de — gebruik 'Deze'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Plank' is de, dus 'boekenplank' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The book + The shelf = The bookshelf. This bookshelf hangs on the wall."
     },
     {
       "challengeId": "ch_cmpd_10",
@@ -839,7 +908,8 @@
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kap' is de, dus 'lampenkap' is de — gebruik 'Deze'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kap' is de, dus 'lampenkap' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The lamp + The shade = The lampshade. This lampshade is made of fabric."
     },
     {
       "challengeId": "ch_cmpd_11",
@@ -851,7 +921,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kopje' is een verkleinwoord (het), dus 'koffiekopje' is het — gebruik 'Dit'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kopje' is een verkleinwoord (het), dus 'koffiekopje' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The coffee + The cup = The coffee cup. This coffee cup is cracked."
     },
     {
       "challengeId": "ch_cmpd_12",
@@ -863,7 +934,8 @@
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kozijn' is het, dus 'raamkozijn' is het — gebruik 'Dit'."
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kozijn' is het, dus 'raamkozijn' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The window + The frame = The window frame. This window frame needs to be painted."
     }
   ]
 }

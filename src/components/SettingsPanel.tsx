@@ -3,6 +3,7 @@ import {
   loadProgress,
   updateTheme,
   updateAudioEnabled,
+  updateShowTranslation,
   exportProgress,
   importProgress,
   resetProgress,
@@ -17,6 +18,7 @@ export function SettingsPanel({ onClose }: Props) {
   const prog = loadProgress();
   const [theme, setTheme] = useState(prog.theme);
   const [audio, setAudio] = useState(prog.audioEnabled);
+  const [showTranslation, setShowTranslation] = useState(prog.showTranslation);
   const [importMsg, setImportMsg] = useState('');
   const hasVoice = hasDutchVoice();
 
@@ -31,13 +33,18 @@ export function SettingsPanel({ onClose }: Props) {
     updateAudioEnabled(enabled);
   }
 
+  function handleTranslationToggle(show: boolean) {
+    setShowTranslation(show);
+    updateShowTranslation(show);
+  }
+
   function handleExport() {
     const json = exportProgress();
     const blob = new Blob([json], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `dehet-voortgang-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `dehet-progress-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -52,11 +59,12 @@ export function SettingsPanel({ onClose }: Props) {
       const reader = new FileReader();
       reader.onload = () => {
         const success = importProgress(reader.result as string);
-        setImportMsg(success ? '✅ Geïmporteerd!' : '❌ Ongeldig bestand');
+        setImportMsg(success ? '✅ Imported!' : '❌ Invalid file');
         if (success) {
           const newProg = loadProgress();
           setTheme(newProg.theme);
           setAudio(newProg.audioEnabled);
+          setShowTranslation(newProg.showTranslation);
           document.documentElement.setAttribute('data-theme', newProg.theme);
         }
         setTimeout(() => setImportMsg(''), 2000);
@@ -67,7 +75,7 @@ export function SettingsPanel({ onClose }: Props) {
   }
 
   function handleReset() {
-    if (confirm('Alle voortgang verwijderen? Dit kan niet ongedaan worden gemaakt.')) {
+    if (confirm('Delete all progress? This cannot be undone.')) {
       resetProgress();
       window.location.reload();
     }
@@ -76,41 +84,48 @@ export function SettingsPanel({ onClose }: Props) {
   return (
     <div className="settings-panel">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3>Instellingen</h3>
+        <h3>Settings</h3>
         <button className="settings-btn" onClick={onClose}>✕</button>
       </div>
 
       <div className="settings-row">
-        <label>Thema</label>
+        <label>Theme</label>
         <select
           value={theme}
           onChange={(e) => handleThemeChange(e.target.value as typeof theme)}
         >
-          <option value="light">☀️ Licht</option>
-          <option value="dark">🌙 Donker</option>
-          <option value="system">💻 Systeem</option>
+          <option value="light">☀️ Light</option>
+          <option value="dark">🌙 Dark</option>
+          <option value="system">💻 System</option>
         </select>
       </div>
 
       <div className="settings-row">
         <label>
-          Audio (Nederlandse spraak)
-          {!hasVoice && ' — niet beschikbaar'}
+          Audio (Dutch speech)
+          {!hasVoice && ' — not available'}
         </label>
         <button
           onClick={() => handleAudioToggle(!audio)}
           disabled={!hasVoice}
           style={{ opacity: hasVoice ? 1 : 0.4 }}
         >
-          {audio ? '🔊 Aan' : '🔇 Uit'}
+          {audio ? '🔊 On' : '🔇 Off'}
         </button>
       </div>
 
       <div className="settings-row">
-        <label>Voortgang</label>
+        <label>English translation</label>
+        <button onClick={() => handleTranslationToggle(!showTranslation)}>
+          {showTranslation ? '👁️ On' : '🚫 Off'}
+        </button>
+      </div>
+
+      <div className="settings-row">
+        <label>Progress</label>
         <div style={{ display: 'flex', gap: '.5rem' }}>
-          <button onClick={handleExport}>📤 Exporteer</button>
-          <button onClick={handleImport}>📥 Importeer</button>
+          <button onClick={handleExport}>📤 Export</button>
+          <button onClick={handleImport}>📥 Import</button>
         </div>
       </div>
       {importMsg && (
@@ -118,9 +133,9 @@ export function SettingsPanel({ onClose }: Props) {
       )}
 
       <div className="settings-row">
-        <label>Opgepast</label>
+        <label>Warning</label>
         <button className="danger" onClick={handleReset}>
-          Alle voortgang wissen
+          Clear all progress
         </button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { useMemo, type ReactNode } from 'react';
+import { useMemo, useState, useCallback, type ReactNode } from 'react';
 import type { Challenge } from '../../data/schema.ts';
 import nounsRaw from '../../data/nouns.json' with { type: 'json' };
 
@@ -8,6 +8,7 @@ interface Props {
   challenge: Challenge;
   selectedAnswer: string | null;
   phase: 'selecting' | 'answered' | 'repairing';
+  sentenceTranslation?: string;
 }
 
 /**
@@ -15,7 +16,7 @@ interface Props {
  * On wrong answers, the noun gets a large animated article badge
  * and a colored background glow to burn in the correct gender.
  */
-export function SentenceCanvas({ challenge, selectedAnswer, phase }: Props) {
+export function SentenceCanvas({ challenge, selectedAnswer, phase, sentenceTranslation }: Props) {
   const nodes: ReactNode[] = useMemo(() => {
     const { sentenceTemplate, options } = challenge;
 
@@ -112,5 +113,30 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase }: Props) {
     return result;
   }, [challenge, selectedAnswer, phase]);
 
-  return <div className="sentence-canvas">{nodes}</div>;
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
+  const togglePopover = useCallback(() => {
+    setPopoverOpen((prev) => !prev);
+  }, []);
+
+  return (
+    <div className="sentence-canvas-wrapper">
+      <div className="sentence-canvas">{nodes}</div>
+      {sentenceTranslation && (
+        <div className="translation-trigger">
+          <button
+            className="translation-badge"
+            onClick={togglePopover}
+            aria-label="Toon Engelse vertaling"
+            aria-expanded={popoverOpen}
+          >
+            EN
+          </button>
+          <span className={`translation-popover${popoverOpen ? ' visible' : ''}`}>
+            {sentenceTranslation}
+          </span>
+        </div>
+      )}
+    </div>
+  );
 }

@@ -40,6 +40,7 @@ export const ChallengeSchema = z.object({
     (s) => s.includes("'") || s.includes("\u2018") || s.includes("\u2019") || s.includes('"') || true,
     "explanation should quote the noun"
   ),
+  sentenceTranslation: z.string().optional(),
 });
 export type Challenge = z.infer<typeof ChallengeSchema>;
 
@@ -69,5 +70,6 @@ export const ProgressStoreSchema = z.object({
   currentLevel: z.number().int().min(1).max(5),
   theme: z.enum(['light', 'dark', 'system']),
   audioEnabled: z.boolean(),
+  showTranslation: z.boolean(),
 });
 export type ProgressStore = z.infer<typeof ProgressStoreSchema>;

@@ -166,6 +166,81 @@ body{
 .challenge-card.incorrect{border-color:var(--incorrect);box-shadow:0 0 0 3px var(--incorrect-bg)}
 
 /* ===== Sentence Canvas ===== */
+.sentence-canvas-wrapper{
+  display:flex;
+  flex-direction:row;
+  align-items:baseline;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:.35rem;
+}
+
+/* EN badge trigger */
+.translation-trigger{
+  position:relative;
+  display:inline-flex;
+}
+.translation-badge{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--bg-slot);
+  color:var(--text-muted);
+  border:1px solid var(--border);
+  border-radius:4px;
+  font-size:.65rem;
+  font-weight:700;
+  letter-spacing:.03em;
+  padding:.15em .5em;
+  cursor:pointer;
+  user-select:none;
+  line-height:1.4;
+  transition:background .15s,color .15s,border-color .15s;
+}
+.translation-badge:hover,
+.translation-badge:focus-visible{
+  background:var(--accent);
+  color:var(--text-inverse);
+  border-color:var(--accent);
+  outline:none;
+}
+.translation-badge:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+/* Popover */
+.translation-popover{
+  visibility:hidden;
+  opacity:0;
+  position:absolute;
+  bottom:calc(100% + 8px);
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--text);
+  color:var(--text-inverse);
+  padding:.4rem .75rem;
+  border-radius:var(--radius-sm);
+  font-size:.85rem;
+  white-space:nowrap;
+  pointer-events:none;
+  transition:opacity .2s,visibility .2s;
+  z-index:100;
+  box-shadow:var(--shadow-lg);
+}
+.translation-popover::after{
+  content:'';
+  position:absolute;
+  top:100%;
+  left:50%;
+  transform:translateX(-50%);
+  border:6px solid transparent;
+  border-top-color:var(--text);
+}
+.translation-popover.visible{
+  visibility:visible;
+  opacity:1;
+}
 .sentence-canvas{
   font-size:1.4rem;line-height:1.8;text-align:center;
   padding:.5rem 0;
