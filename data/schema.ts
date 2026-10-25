@@ -12,13 +12,14 @@ export const NounSchema = z.object({
 });
 export type Noun = z.infer<typeof NounSchema>;
 
-/** The five level types */
+/** The six level types */
 export const LevelType = z.enum([
-  'possessive_pivot',      // Level 01: ons/onze
-  'adjective_snag',        // Level 02: een groot/grote
-  'demonstrative_shift',   // Level 03: dit/deze, dat/die
-  'diminutive_trap',       // Level 04: de→het via -je
-  'compound_clash',        // Level 05: end-word gender
+  'article_basic',         // Level 01: de/het
+  'possessive_pivot',      // Level 02: ons/onze
+  'adjective_snag',        // Level 03: een groot/grote
+  'demonstrative_shift',   // Level 04: dit/deze, dat/die
+  'diminutive_trap',       // Level 05: de→het via -je
+  'compound_clash',        // Level 06: end-word gender
 ]);
 export type LevelType = z.infer<typeof LevelType>;
 
@@ -27,7 +28,7 @@ export const ChallengeSchema = z.object({
   challengeId: z.string().regex(/^ch_[a-z]+_\d{2}$/, "challengeId must match ch_X_NN"),
   nounId: z.string(),
   levelType: LevelType,
-  levelNumber: z.number().int().min(1).max(5),
+  levelNumber: z.number().int().min(1).max(6),
   sentenceTemplate: z.string().min(1).refine(
     (s) => s.includes('[modifier]'),
     "sentenceTemplate must contain [modifier]"
@@ -67,7 +68,7 @@ export const ProgressStoreSchema = z.object({
     mistakeType: LevelType.optional(), // which level type they failed on
   })),
   sessionQueue: z.array(z.string()), // challengeIds
-  currentLevel: z.number().int().min(1).max(5),
+  currentLevel: z.number().int().min(1).max(6),
   theme: z.enum(['light', 'dark', 'system']),
   audioEnabled: z.boolean(),
   showTranslation: z.boolean(),

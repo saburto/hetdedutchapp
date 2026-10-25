@@ -23,7 +23,7 @@ const DEFAULT_STEPS: TourStep[] = [
   {
     target: '.level-badge',
     title: 'Your Level',
-    body: 'There are 5 levels, each focusing on a different Dutch grammatical rule. Start at level 1 and work your way up.',
+    body: 'There are 6 levels, each focusing on a different Dutch grammatical rule. Start at level 1 and work your way up.',
     placement: 'bottom',
   },
   {

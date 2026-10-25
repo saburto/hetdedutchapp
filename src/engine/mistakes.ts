@@ -17,6 +17,7 @@ const ALL_NOUNS = (nounsRaw as { version: number; nouns: Noun[] }).nouns;
  */
 
 const REPAIR_LEVELS: LevelType[] = [
+  'article_basic',
   'possessive_pivot',
   'adjective_snag',
   'demonstrative_shift',

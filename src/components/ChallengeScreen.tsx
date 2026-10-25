@@ -95,11 +95,11 @@ export function ChallengeScreen() {
         // Queue exhausted — check level up first
         if (shouldLevelUp(ns.score)) {
           const prog = loadProgress();
-          const nextLvl = Math.min(5, ns.level + 1);
+          const nextLvl = Math.min(6, ns.level + 1);
           prog.currentLevel = nextLvl;
           prog.sessionQueue = [];
           saveProgress(prog);
-          if (nextLvl > 5) {
+          if (nextLvl > 6) {
             return { session: { ...ns, level: nextLvl }, newPhase: 'done' };
           }
           return { session: { ...ns, level: nextLvl }, newPhase: 'levelup' };
@@ -248,7 +248,7 @@ export function ChallengeScreen() {
         <div className="level-complete">
           <h2>🏆 Alle niveaus voltooid!</h2>
           <p>
-            Je beheerst alle vijf geslachtsregels. Begin opnieuw of exporteer
+            Je beheerst alle zes geslachtsregels. Begin opnieuw of exporteer
             je voortgang.
           </p>
           <button

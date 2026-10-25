@@ -61,11 +61,12 @@ function main() {
 
       // Check levelType matches levelNumber
       const typeMap: Record<number, string> = {
-        1: 'possessive_pivot',
-        2: 'adjective_snag',
-        3: 'demonstrative_shift',
-        4: 'diminutive_trap',
-        5: 'compound_clash',
+        1: 'article_basic',
+        2: 'possessive_pivot',
+        3: 'adjective_snag',
+        4: 'demonstrative_shift',
+        5: 'diminutive_trap',
+        6: 'compound_clash',
       };
       for (const c of challenges) {
         if (c.levelType !== typeMap[c.levelNumber]) {
