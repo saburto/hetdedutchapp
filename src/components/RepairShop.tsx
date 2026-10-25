@@ -68,14 +68,14 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
   }
 
   const stageLabels: Record<number, string> = {
-    1: 'Explicit Correction',
-    2: 'Structural Shift',
-    3: 'Contrast Duel',
+    1: 'Directe correctie',
+    2: 'Andere structuur',
+    3: 'Contrast duel',
   };
 
   return (
     <div className="repair-shop">
-      <h4>🔧 Sentence Repair Shop — Stage {repairStage}</h4>
+      <h4>🔧 Zinsherstel — Fase {repairStage}</h4>
       <p style={{ fontSize: '.8rem', color: 'var(--text-muted)', marginBottom: '.75rem' }}>
         {stageLabels[repairStage]}
       </p>
@@ -83,7 +83,7 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
       {repairStage === 1 ? (
         <>
           <p style={{ fontSize: '.95rem', marginBottom: '1rem' }}>
-            Type the correct phrase:{' '}
+            Typ de juiste zin:{' '}
             <strong style={{ color: 'var(--correct)' }}>
               "{correctPhrase}"
             </strong>
@@ -101,7 +101,7 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
               spellCheck={false}
             />
             <button className="next-btn" onClick={handleSubmit}>
-              Check
+              Kijk na
             </button>
           </div>
         </>
@@ -109,11 +109,11 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
         <>
           <p style={{ fontSize: '.95rem', marginBottom: '1rem' }}>
             {repairStage === 2
-              ? `Same noun, different structure. Think about what you learned and try again.`
-              : `Compare this noun with an opposite-gender word to feel the contrast.`}
+              ? `Zelfde woord, andere structuur. Denk aan wat je hebt geleerd en probeer opnieuw.`
+              : `Vergelijk dit woord met een woord van het andere geslacht om het contrast te voelen.`}
           </p>
           <button className="next-btn" onClick={() => onComplete(true)}>
-            I Understand → 
+            Ik snap het → 
           </button>
         </>
       )}

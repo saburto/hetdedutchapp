@@ -120,34 +120,40 @@ test.describe('Dutch Context Builder', () => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
 
-    // Keep trying until we get a wrong answer that triggers repair
     let repairSeen = false;
-    for (let i = 0; i < 5 && !repairSeen; i++) {
+    for (let i = 0; i < 8 && !repairSeen; i++) {
       await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 3000 });
       await page.locator('.option-btn').first().click();
-      await page.waitForTimeout(300);
+      await page.waitForTimeout(400);
 
+      const isCorrect = await page.locator('.challenge-card.correct').isVisible().catch(() => false);
       const isIncorrect = await page.locator('.challenge-card.incorrect').isVisible().catch(() => false);
+
+      if (isCorrect) {
+        // Advance to next challenge and try again
+        await page.locator('.next-btn').click();
+        await page.waitForTimeout(500);
+        continue;
+      }
+
       if (isIncorrect) {
+        // Click the repair button
         await page.locator('.next-btn').click();
         await page.waitForTimeout(500);
 
         const repairShop = page.locator('.repair-shop');
         await expect(repairShop).toBeVisible({ timeout: 2000 });
 
-        // Stage 1 has a text input
         const input = repairShop.locator('.repair-input');
         if (await input.isVisible().catch(() => false)) {
           const ph = await input.getAttribute('placeholder');
           expect(ph).toBeTruthy();
           console.log('Repair phrase:', ph);
 
-          // Type the correct phrase
           await input.fill(ph!);
           await repairShop.locator('button.next-btn').click();
           await page.waitForTimeout(1000);
 
-          // Should have advanced (either back to challenge or to stage 2)
           const backToNormal = page.locator('.option-btn, .challenge-card');
           await expect(backToNormal.first()).toBeVisible({ timeout: 3000 });
           repairSeen = true;

@@ -180,13 +180,13 @@ export function ChallengeScreen() {
       {/* Header */}
       <header className="app-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '.75rem' }}>
-          <h1>De/Het Builder</h1>
-          <span className="level-badge">Level {session.level}</span>
+          <h1>De/Het Trainer</h1>
+          <span className="level-badge">Niveau {session.level}</span>
         </div>
         <button
           className="settings-btn"
           onClick={() => setShowSettings((s) => !s)}
-          title="Settings"
+          title="Instellingen"
         >
           ⚙️
         </button>
@@ -199,9 +199,9 @@ export function ChallengeScreen() {
         <span className="correct">✓ {session.score.correct}</span>
         <span className="wrong">✗ {session.score.wrong}</span>
         <span>
-          Streak: <span className="streak">{session.streak}</span>
+          Reeks: <span className="streak">{session.streak}</span>
         </span>
-        <span style={{ marginLeft: 'auto' }}>Queue: {session.queue.length}</span>
+        <span style={{ marginLeft: 'auto' }}>Nog: {session.queue.length}</span>
       </div>
 
       {/* Progress dots */}
@@ -218,8 +218,8 @@ export function ChallengeScreen() {
       {/* Main content */}
       {phase === 'levelup' ? (
         <div className="level-complete">
-          <h2>🎉 Level {session.level - 1} Complete!</h2>
-          <p>You&apos;ve mastered this level&apos;s patterns.</p>
+          <h2>🎉 Niveau {session.level - 1} voltooid!</h2>
+          <p>Je kent de regels van dit niveau.</p>
           <div className="stats">
             <span style={{ color: 'var(--correct)' }}>
               ✓ {session.score.correct}
@@ -229,15 +229,15 @@ export function ChallengeScreen() {
             </span>
           </div>
           <button className="next-btn" onClick={onNextLevel}>
-            Start Level {session.level} →
+            Begin niveau {session.level} →
           </button>
         </div>
       ) : phase === 'done' ? (
         <div className="level-complete">
-          <h2>🏆 All Levels Complete!</h2>
+          <h2>🏆 Alle niveaus voltooid!</h2>
           <p>
-            You&apos;ve mastered all five gender rules. Reset to replay or export
-            your progress.
+            Je beheerst alle vijf geslachtsregels. Begin opnieuw of exporteer
+            je voortgang.
           </p>
           <button
             className="next-btn"
@@ -250,13 +250,13 @@ export function ChallengeScreen() {
               setPhase('selecting');
             }}
           >
-            Start Over
+            Opnieuw beginnen
           </button>
         </div>
       ) : !ch ? (
         <div className="empty-state">
-          <h2>Loading challenges...</h2>
-          <p>Building your session queue.</p>
+          <h2>Oefeningen laden...</h2>
+          <p>Je oefensessie wordt klaargezet.</p>
         </div>
       ) : phase === 'repairing' ? (
         <RepairShop
@@ -288,12 +288,12 @@ export function ChallengeScreen() {
             <div className="explanation">
               {answer.correct ? (
                 <>
-                  ✅ <strong>{ch.options.correct}</strong> is correct!{' '}
+                  ✅ <strong>{ch.options.correct}</strong> is juist!{' '}
                   {ch.explanation}
                 </>
               ) : (
                 <>
-                  ❌ You picked <strong>{answer.chosen}</strong>.{' '}
+                  ❌ Je koos <strong>{answer.chosen}</strong>.{' '}
                   {ch.explanation}
                 </>
               )}
@@ -303,7 +303,7 @@ export function ChallengeScreen() {
           {/* Next / Continue button */}
           {phase === 'answered' && (
             <button className="next-btn" onClick={onNext}>
-              {answer?.correct ? 'Verder →' : 'Bekijk herstel →'}
+              {answer?.correct ? 'Volgende →' : 'Herstel →'}
             </button>
           )}
         </div>

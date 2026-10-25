@@ -7,8 +7,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] auto staat voor het huis.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Auto' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Auto' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_poss_02",
@@ -16,8 +19,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] boek is heel interessant.",
-      "options": { "correct": "Ons", "distractor": "Onze" },
-      "explanation": "'Boek' is a het-word, so the possessive is 'Ons' instead of 'Onze'."
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
     },
     {
       "challengeId": "ch_poss_03",
@@ -25,8 +31,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] tafel is gemaakt van hout.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Tafel' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_poss_04",
@@ -34,8 +43,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] huis heeft een grote tuin.",
-      "options": { "correct": "Ons", "distractor": "Onze" },
-      "explanation": "'Huis' is a het-word, so the possessive is 'Ons' instead of 'Onze'."
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Huis' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
     },
     {
       "challengeId": "ch_poss_05",
@@ -43,8 +55,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] stoel is helaas kapot.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Stoel' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_poss_06",
@@ -52,8 +67,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] kind speelt graag buiten.",
-      "options": { "correct": "Ons", "distractor": "Onze" },
-      "explanation": "'Kind' is a het-word, so the possessive is 'Ons' instead of 'Onze'."
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
     },
     {
       "challengeId": "ch_poss_07",
@@ -61,8 +79,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] hond blaft naar de postbode.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Hond' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_poss_08",
@@ -70,8 +91,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] raam kijkt uit op de gracht.",
-      "options": { "correct": "Ons", "distractor": "Onze" },
-      "explanation": "'Raam' is a het-word, so the possessive is 'Ons' instead of 'Onze'."
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
     },
     {
       "challengeId": "ch_poss_09",
@@ -79,8 +103,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] fiets staat in de schuur.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Fiets' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_poss_10",
@@ -88,8 +115,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] water is lekker koud.",
-      "options": { "correct": "Ons", "distractor": "Onze" },
-      "explanation": "'Water' is a het-word, so the possessive is 'Ons' instead of 'Onze'."
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Water' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
     },
     {
       "challengeId": "ch_poss_11",
@@ -97,8 +127,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] koffie staat nog op het fornuis.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Koffie' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_poss_12",
@@ -106,8 +139,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] paard staat in de wei.",
-      "options": { "correct": "Ons", "distractor": "Onze" },
-      "explanation": "'Paard' is a het-word, so the possessive is 'Ons' instead of 'Onze'."
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
     },
     {
       "challengeId": "ch_poss_13",
@@ -115,8 +151,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] lamp geeft heel veel licht.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Lamp' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_poss_14",
@@ -124,8 +163,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] brood is vers van de bakker.",
-      "options": { "correct": "Ons", "distractor": "Onze" },
-      "explanation": "'Brood' is a het-word, so the possessive is 'Ons' instead of 'Onze'."
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'."
     },
     {
       "challengeId": "ch_poss_15",
@@ -133,8 +175,11 @@
       "levelType": "possessive_pivot",
       "levelNumber": 1,
       "sentenceTemplate": "[modifier] appel is rood en groen.",
-      "options": { "correct": "Onze", "distractor": "Ons" },
-      "explanation": "'Appel' is a de-word, so the possessive is 'Onze' instead of 'Ons'."
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'."
     },
     {
       "challengeId": "ch_adj_01",
@@ -142,8 +187,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Ik heb een [modifier] auto gekocht.",
-      "options": { "correct": "mooie", "distractor": "mooi" },
-      "explanation": "'Auto' is a de-word, so the adjective after 'een' keeps its -e: 'een mooie auto'."
+      "options": {
+        "correct": "mooie",
+        "distractor": "mooi"
+      },
+      "explanation": "'Auto' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een mooie auto'."
     },
     {
       "challengeId": "ch_adj_02",
@@ -151,8 +199,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Dit is een [modifier] boek voor beginners.",
-      "options": { "correct": "goed", "distractor": "goede" },
-      "explanation": "'Boek' is a het-word, so after 'een' the adjective drops its -e: 'een goed boek'."
+      "options": {
+        "correct": "goed",
+        "distractor": "goede"
+      },
+      "explanation": "'Boek' is een het-woord, dus na 'een' vervalt de -e: 'een goed boek'."
     },
     {
       "challengeId": "ch_adj_03",
@@ -160,8 +211,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Zij heeft een [modifier] tafel in de keuken.",
-      "options": { "correct": "grote", "distractor": "groot" },
-      "explanation": "'Tafel' is a de-word, so the adjective after 'een' keeps its -e: 'een grote tafel'."
+      "options": {
+        "correct": "grote",
+        "distractor": "groot"
+      },
+      "explanation": "'Tafel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een grote tafel'."
     },
     {
       "challengeId": "ch_adj_04",
@@ -169,8 +223,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Wij wonen in een [modifier] huis in Amsterdam.",
-      "options": { "correct": "mooi", "distractor": "mooie" },
-      "explanation": "'Huis' is a het-word, so after 'een' the adjective drops its -e: 'een mooi huis'."
+      "options": {
+        "correct": "mooi",
+        "distractor": "mooie"
+      },
+      "explanation": "'Huis' is een het-woord, dus na 'een' vervalt de -e: 'een mooi huis'."
     },
     {
       "challengeId": "ch_adj_05",
@@ -178,8 +235,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Ik zoek een [modifier] stoel voor het bureau.",
-      "options": { "correct": "comfortabele", "distractor": "comfortabel" },
-      "explanation": "'Stoel' is a de-word, so the adjective after 'een' keeps its -e: 'een comfortabele stoel'."
+      "options": {
+        "correct": "comfortabele",
+        "distractor": "comfortabel"
+      },
+      "explanation": "'Stoel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een comfortabele stoel'."
     },
     {
       "challengeId": "ch_adj_06",
@@ -187,8 +247,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Zij heeft een [modifier] kind in de klas.",
-      "options": { "correct": "lief", "distractor": "lieve" },
-      "explanation": "'Kind' is a het-word, so after 'een' the adjective drops its -e: 'een lief kind'."
+      "options": {
+        "correct": "lief",
+        "distractor": "lieve"
+      },
+      "explanation": "'Kind' is een het-woord, dus na 'een' vervalt de -e: 'een lief kind'."
     },
     {
       "challengeId": "ch_adj_07",
@@ -196,8 +259,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Hij loopt met een [modifier] hond door het park.",
-      "options": { "correct": "grote", "distractor": "groot" },
-      "explanation": "'Hond' is a de-word, so the adjective after 'een' keeps its -e: 'een grote hond'."
+      "options": {
+        "correct": "grote",
+        "distractor": "groot"
+      },
+      "explanation": "'Hond' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een grote hond'."
     },
     {
       "challengeId": "ch_adj_08",
@@ -205,8 +271,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "De kamer heeft een [modifier] raam met uitzicht.",
-      "options": { "correct": "mooi", "distractor": "mooie" },
-      "explanation": "'Raam' is a het-word, so after 'een' the adjective drops its -e: 'een mooi raam'."
+      "options": {
+        "correct": "mooi",
+        "distractor": "mooie"
+      },
+      "explanation": "'Raam' is een het-woord, dus na 'een' vervalt de -e: 'een mooi raam'."
     },
     {
       "challengeId": "ch_adj_09",
@@ -214,8 +283,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Mijn broer wil een [modifier] fiets voor zijn verjaardag.",
-      "options": { "correct": "nieuwe", "distractor": "nieuw" },
-      "explanation": "'Fiets' is a de-word, so the adjective after 'een' keeps its -e: 'een nieuwe fiets'."
+      "options": {
+        "correct": "nieuwe",
+        "distractor": "nieuw"
+      },
+      "explanation": "'Fiets' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een nieuwe fiets'."
     },
     {
       "challengeId": "ch_adj_10",
@@ -223,8 +295,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Mag ik een [modifier] water alsjeblieft?",
-      "options": { "correct": "koud", "distractor": "koude" },
-      "explanation": "'Water' is a het-word, so after 'een' the adjective drops its -e: 'een koud water'."
+      "options": {
+        "correct": "koud",
+        "distractor": "koude"
+      },
+      "explanation": "'Water' is een het-woord, dus na 'een' vervalt de -e: 'een koud water'."
     },
     {
       "challengeId": "ch_adj_11",
@@ -232,8 +307,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Ik bestel een [modifier] koffie bij het café.",
-      "options": { "correct": "sterke", "distractor": "sterk" },
-      "explanation": "'Koffie' is a de-word, so the adjective after 'een' keeps its -e: 'een sterke koffie'."
+      "options": {
+        "correct": "sterke",
+        "distractor": "sterk"
+      },
+      "explanation": "'Koffie' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een sterke koffie'."
     },
     {
       "challengeId": "ch_adj_12",
@@ -241,8 +319,11 @@
       "levelType": "adjective_snag",
       "levelNumber": 2,
       "sentenceTemplate": "Zij eet een [modifier] brood met kaas.",
-      "options": { "correct": "vers", "distractor": "verse" },
-      "explanation": "'Brood' is a het-word, so after 'een' the adjective drops its -e: 'een vers brood'."
+      "options": {
+        "correct": "vers",
+        "distractor": "verse"
+      },
+      "explanation": "'Brood' is een het-woord, dus na 'een' vervalt de -e: 'een vers brood'."
     },
     {
       "challengeId": "ch_dem_01",
@@ -250,8 +331,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "Is [modifier] stoel nog vrij?",
-      "options": { "correct": "deze", "distractor": "dit" },
-      "explanation": "'Stoel' is a de-word, so the demonstrative is 'Deze' instead of 'Dit'."
+      "options": {
+        "correct": "deze",
+        "distractor": "dit"
+      },
+      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
     },
     {
       "challengeId": "ch_dem_02",
@@ -259,8 +343,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] boek moet terug naar de bibliotheek.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "'Boek' is a het-word, so the demonstrative is 'Dit' instead of 'Deze'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
     },
     {
       "challengeId": "ch_dem_03",
@@ -268,8 +355,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "Van wie is [modifier] auto daar?",
-      "options": { "correct": "die", "distractor": "dat" },
-      "explanation": "'Auto' is a de-word, so the distal demonstrative is 'Die' instead of 'Dat'."
+      "options": {
+        "correct": "die",
+        "distractor": "dat"
+      },
+      "explanation": "'Auto' is een de-woord, dus het ver-weg aanwijzend voornaamwoord is 'Die' in plaats van 'Dat'."
     },
     {
       "challengeId": "ch_dem_04",
@@ -277,8 +367,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] huis op de hoek is het mooiste.",
-      "options": { "correct": "Dat", "distractor": "Die" },
-      "explanation": "'Huis' is a het-word, so the distal demonstrative is 'Dat' instead of 'Die'."
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "'Huis' is een het-woord, dus het ver-weg aanwijzend voornaamwoord is 'Dat' in plaats van 'Die'."
     },
     {
       "challengeId": "ch_dem_05",
@@ -286,8 +379,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] hond is heel vriendelijk.",
-      "options": { "correct": "Deze", "distractor": "Dit" },
-      "explanation": "'Hond' is a de-word, so the demonstrative is 'Deze' instead of 'Dit'."
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
     },
     {
       "challengeId": "ch_dem_06",
@@ -295,8 +391,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] raam kan niet open.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "'Raam' is a het-word, so the demonstrative is 'Dit' instead of 'Deze'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
     },
     {
       "challengeId": "ch_dem_07",
@@ -304,8 +403,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] fiets is niet van mij.",
-      "options": { "correct": "Deze", "distractor": "Dit" },
-      "explanation": "'Fiets' is a de-word, so the demonstrative is 'Deze' instead of 'Dit'."
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
     },
     {
       "challengeId": "ch_dem_08",
@@ -313,8 +415,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] paard kan heel hard rennen.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "'Paard' is a het-word, so the demonstrative is 'Dit' instead of 'Deze'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
     },
     {
       "challengeId": "ch_dem_09",
@@ -322,8 +427,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "Doet [modifier] lamp het nog?",
-      "options": { "correct": "deze", "distractor": "dit" },
-      "explanation": "'Lamp' is a de-word, so the demonstrative is 'Deze' instead of 'Dit'."
+      "options": {
+        "correct": "deze",
+        "distractor": "dit"
+      },
+      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
     },
     {
       "challengeId": "ch_dem_10",
@@ -331,8 +439,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] brood smaakt echt heerlijk.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "'Brood' is a het-word, so the demonstrative is 'Dit' instead of 'Deze'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
     },
     {
       "challengeId": "ch_dem_11",
@@ -340,8 +451,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] appel komt uit mijn eigen tuin.",
-      "options": { "correct": "Deze", "distractor": "Dit" },
-      "explanation": "'Appel' is a de-word, so the demonstrative is 'Deze' instead of 'Dit'."
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
     },
     {
       "challengeId": "ch_dem_12",
@@ -349,8 +463,11 @@
       "levelType": "demonstrative_shift",
       "levelNumber": 3,
       "sentenceTemplate": "[modifier] water is niet drinkbaar.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "'Water' is a het-word, so the demonstrative is 'Dit' instead of 'Deze'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Water' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
     },
     {
       "challengeId": "ch_dim_01",
@@ -358,8 +475,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "Kijk, een klein autootje! [modifier] autootje is van mijn zoon.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "Even though 'auto' is a de-word, the diminutive 'autootje' is always a het-word, so we use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'auto' een de-woord is, is de verkleinvorm 'autootje' altijd een het-woord, dus gebruiken we 'Dit'."
     },
     {
       "challengeId": "ch_dim_02",
@@ -367,8 +487,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "Er staat een klein stoeltje in de hoek. [modifier] stoeltje is rood.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "Even though 'stoel' is a de-word, the diminutive 'stoeltje' is always a het-word, so we use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'stoel' een de-woord is, is de verkleinvorm 'stoeltje' altijd een het-woord, dus gebruiken we 'Dit'."
     },
     {
       "challengeId": "ch_dim_03",
@@ -376,8 +499,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "Wat een schattig hondje! Van wie is [modifier] hondje?",
-      "options": { "correct": "dit", "distractor": "deze" },
-      "explanation": "Even though 'hond' is a de-word, the diminutive 'hondje' is always a het-word, so we use 'Dit'."
+      "options": {
+        "correct": "dit",
+        "distractor": "deze"
+      },
+      "explanation": "Hoewel 'hond' een de-woord is, is de verkleinvorm 'hondje' altijd een het-woord, dus gebruiken we 'Dit'."
     },
     {
       "challengeId": "ch_dim_04",
@@ -385,8 +511,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "Mijn dochter rijdt op een klein fietsje. [modifier] fietsje is roze.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "Even though 'fiets' is a de-word, the diminutive 'fietsje' is always a het-word, so we use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'fiets' een de-woord is, is de verkleinvorm 'fietsje' altijd een het-woord, dus gebruiken we 'Dit'."
     },
     {
       "challengeId": "ch_dim_05",
@@ -394,8 +523,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "Boven het bed hangt een lampje. [modifier] lampje is heel zacht.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "Even though 'lamp' is a de-word, the diminutive 'lampje' is always a het-word, so we use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'lamp' een de-woord is, is de verkleinvorm 'lampje' altijd een het-woord, dus gebruiken we 'Dit'."
     },
     {
       "challengeId": "ch_dim_06",
@@ -403,8 +535,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "Het kind eet een appeltje. [modifier] appeltje is heel zoet.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "Even though 'appel' is a de-word, the diminutive 'appeltje' is always a het-word, so we use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'appel' een de-woord is, is de verkleinvorm 'appeltje' altijd een het-woord, dus gebruiken we 'Dit'."
     },
     {
       "challengeId": "ch_dim_07",
@@ -412,8 +547,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "Op het balkon staat een tafeltje. [modifier] tafeltje is van hout.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "Even though 'tafel' is a de-word, the diminutive 'tafeltje' is always a het-word, so we use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'tafel' een de-woord is, is de verkleinvorm 'tafeltje' altijd een het-woord, dus gebruiken we 'Dit'."
     },
     {
       "challengeId": "ch_dim_08",
@@ -421,8 +559,11 @@
       "levelType": "diminutive_trap",
       "levelNumber": 4,
       "sentenceTemplate": "In de tuin staat een klein huisje. [modifier] huisje is voor de vogels.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "'Huis' is already a het-word, and 'huisje' stays het — but learners often overthink diminutives of het-words."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Huis' is al een het-woord, en 'huisje' blijft het — maar cursisten twijfelen vaak bij verkleinwoorden van het-woorden."
     },
     {
       "challengeId": "ch_cmpd_01",
@@ -430,8 +571,11 @@
       "levelType": "compound_clash",
       "levelNumber": 5,
       "sentenceTemplate": "De tafel + Het laken = Het tafellaken. [modifier] tafellaken is wit.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "In compounds, the last word determines gender. 'Laken' is het, so 'tafellaken' is het — use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Laken' is het, dus 'tafellaken' is het — gebruik 'Dit'."
     },
     {
       "challengeId": "ch_cmpd_02",
@@ -439,8 +583,11 @@
       "levelType": "compound_clash",
       "levelNumber": 5,
       "sentenceTemplate": "De auto + Het raam = Het autoraam. [modifier] autoraam is vies.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "In compounds, the last word determines gender. 'Raam' is het, so 'autoraam' is het — use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Raam' is het, dus 'autoraam' is het — gebruik 'Dit'."
     },
     {
       "challengeId": "ch_cmpd_03",
@@ -448,8 +595,11 @@
       "levelType": "compound_clash",
       "levelNumber": 5,
       "sentenceTemplate": "De hond + De mand = De hondenmand. [modifier] hondenmand staat in de hoek.",
-      "options": { "correct": "Deze", "distractor": "Dit" },
-      "explanation": "In compounds, the last word determines gender. 'Mand' is de, so 'hondenmand' is de — use 'Deze'."
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Mand' is de, dus 'hondenmand' is de — gebruik 'Deze'."
     },
     {
       "challengeId": "ch_cmpd_04",
@@ -457,8 +607,11 @@
       "levelType": "compound_clash",
       "levelNumber": 5,
       "sentenceTemplate": "De fiets + Het licht = Het fietslicht. [modifier] fietslicht doet het niet.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "In compounds, the last word determines gender. 'Licht' is het, so 'fietslicht' is het — use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Licht' is het, dus 'fietslicht' is het — gebruik 'Dit'."
     },
     {
       "challengeId": "ch_cmpd_05",
@@ -466,8 +619,11 @@
       "levelType": "compound_clash",
       "levelNumber": 5,
       "sentenceTemplate": "Het water + De fles = De waterfles. [modifier] waterfles is van mij.",
-      "options": { "correct": "Deze", "distractor": "Dit" },
-      "explanation": "In compounds, the last word determines gender. 'Fles' is de, so 'waterfles' is de — use 'Deze'."
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Fles' is de, dus 'waterfles' is de — gebruik 'Deze'."
     },
     {
       "challengeId": "ch_cmpd_06",
@@ -475,8 +631,239 @@
       "levelType": "compound_clash",
       "levelNumber": 5,
       "sentenceTemplate": "Het kind + Het boek = Het kinderboek. [modifier] kinderboek is heel populair.",
-      "options": { "correct": "Dit", "distractor": "Deze" },
-      "explanation": "In compounds, the last word determines gender. 'Boek' is het, so 'kinderboek' is het — use 'Dit'."
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boek' is het, dus 'kinderboek' is het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_adj_13",
+      "nounId": "noun_0012",
+      "levelType": "adjective_snag",
+      "levelNumber": 2,
+      "sentenceTemplate": "Zij verzorgt een [modifier] paard in de stal.",
+      "options": {
+        "correct": "mooi",
+        "distractor": "mooie"
+      },
+      "explanation": "'Paard' is een het-woord, dus na 'een' vervalt de -e: 'een mooi paard'."
+    },
+    {
+      "challengeId": "ch_adj_14",
+      "nounId": "noun_0013",
+      "levelType": "adjective_snag",
+      "levelNumber": 2,
+      "sentenceTemplate": "Boven de tafel hangt een [modifier] lamp.",
+      "options": {
+        "correct": "mooie",
+        "distractor": "mooi"
+      },
+      "explanation": "'Lamp' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een mooie lamp'."
+    },
+    {
+      "challengeId": "ch_adj_15",
+      "nounId": "noun_0015",
+      "levelType": "adjective_snag",
+      "levelNumber": 2,
+      "sentenceTemplate": "Hij plukt een [modifier] appel van de boom.",
+      "options": {
+        "correct": "rode",
+        "distractor": "rood"
+      },
+      "explanation": "'Appel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een rode appel'."
+    },
+    {
+      "challengeId": "ch_dem_13",
+      "nounId": "noun_0003",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 3,
+      "sentenceTemplate": "Kijk, [modifier] tafel is helemaal krom!",
+      "options": {
+        "correct": "deze",
+        "distractor": "dit"
+      },
+      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+    },
+    {
+      "challengeId": "ch_dem_14",
+      "nounId": "noun_0006",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 3,
+      "sentenceTemplate": "Spreekt [modifier] kind al Nederlands?",
+      "options": {
+        "correct": "dit",
+        "distractor": "deze"
+      },
+      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'."
+    },
+    {
+      "challengeId": "ch_dem_15",
+      "nounId": "noun_0011",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 3,
+      "sentenceTemplate": "Heeft [modifier] koffie nog suiker nodig?",
+      "options": {
+        "correct": "deze",
+        "distractor": "dit"
+      },
+      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'."
+    },
+    {
+      "challengeId": "ch_dim_09",
+      "nounId": "noun_0002",
+      "levelType": "diminutive_trap",
+      "levelNumber": 4,
+      "sentenceTemplate": "Ik lees elke avond een boekje voor. [modifier] boekje gaat over dieren.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'boek' was al het, dus 'boekje' blijft het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_dim_10",
+      "nounId": "noun_0006",
+      "levelType": "diminutive_trap",
+      "levelNumber": 4,
+      "sentenceTemplate": "Het kleine kindje lacht naar mij. [modifier] kindje is zo lief!",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Kind' is al het, dus 'kindje' blijft het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_dim_11",
+      "nounId": "noun_0008",
+      "levelType": "diminutive_trap",
+      "levelNumber": 4,
+      "sentenceTemplate": "Door het kleine raampje komt veel licht. [modifier] raampje zit hoog in de muur.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Raam' is al het, dus 'raampje' blijft het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_dim_12",
+      "nounId": "noun_0010",
+      "levelType": "diminutive_trap",
+      "levelNumber": 4,
+      "sentenceTemplate": "Op het terras bestel ik een watertje. [modifier] watertje is met ijs.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'water' is al het, dus 'watertje' blijft het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_dim_13",
+      "nounId": "noun_0011",
+      "levelType": "diminutive_trap",
+      "levelNumber": 4,
+      "sentenceTemplate": "Zij drinkt graag een koffietje na het eten. [modifier] koffietje is sterk.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'koffie' een de-woord is, is de verkleinvorm 'koffietje' altijd een het-woord, dus gebruiken we 'Dit'."
+    },
+    {
+      "challengeId": "ch_dim_14",
+      "nounId": "noun_0012",
+      "levelType": "diminutive_trap",
+      "levelNumber": 4,
+      "sentenceTemplate": "De kinderen aaien een klein paardje. [modifier] paardje heet Binky.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Paard' is al het, dus 'paardje' blijft het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_dim_15",
+      "nounId": "noun_0014",
+      "levelType": "diminutive_trap",
+      "levelNumber": 4,
+      "sentenceTemplate": "Bij de lunch eet ik een broodje kaas. [modifier] broodje is heerlijk.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Brood' is al het, dus 'broodje' blijft het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_cmpd_07",
+      "nounId": "noun_0015",
+      "levelType": "compound_clash",
+      "levelNumber": 5,
+      "sentenceTemplate": "De appel + De boom = De appelboom. [modifier] appelboom staat in de tuin.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boom' is de, dus 'appelboom' is de — gebruik 'Deze'."
+    },
+    {
+      "challengeId": "ch_cmpd_08",
+      "nounId": "noun_0004",
+      "levelType": "compound_clash",
+      "levelNumber": 5,
+      "sentenceTemplate": "Het huis + De sleutel = De huissleutel. [modifier] huissleutel past niet in het slot.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Sleutel' is de, dus 'huissleutel' is de — gebruik 'Deze'."
+    },
+    {
+      "challengeId": "ch_cmpd_09",
+      "nounId": "noun_0002",
+      "levelType": "compound_clash",
+      "levelNumber": 5,
+      "sentenceTemplate": "Het boek + De plank = De boekenplank. [modifier] boekenplank hangt aan de muur.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Plank' is de, dus 'boekenplank' is de — gebruik 'Deze'."
+    },
+    {
+      "challengeId": "ch_cmpd_10",
+      "nounId": "noun_0013",
+      "levelType": "compound_clash",
+      "levelNumber": 5,
+      "sentenceTemplate": "De lamp + De kap = De lampenkap. [modifier] lampenkap is gemaakt van stof.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kap' is de, dus 'lampenkap' is de — gebruik 'Deze'."
+    },
+    {
+      "challengeId": "ch_cmpd_11",
+      "nounId": "noun_0011",
+      "levelType": "compound_clash",
+      "levelNumber": 5,
+      "sentenceTemplate": "De koffie + Het kopje = Het koffiekopje. [modifier] koffiekopje is gebarsten.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kopje' is een verkleinwoord (het), dus 'koffiekopje' is het — gebruik 'Dit'."
+    },
+    {
+      "challengeId": "ch_cmpd_12",
+      "nounId": "noun_0008",
+      "levelType": "compound_clash",
+      "levelNumber": 5,
+      "sentenceTemplate": "Het raam + Het kozijn = Het raamkozijn. [modifier] raamkozijn moet geschilderd worden.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kozijn' is het, dus 'raamkozijn' is het — gebruik 'Dit'."
     }
   ]
 }

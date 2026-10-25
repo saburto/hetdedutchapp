@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import {
   loadProgress,
-  saveProgress,
   updateTheme,
   updateAudioEnabled,
   exportProgress,
@@ -38,7 +37,7 @@ export function SettingsPanel({ onClose }: Props) {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `dehet-progress-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `dehet-voortgang-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -53,7 +52,7 @@ export function SettingsPanel({ onClose }: Props) {
       const reader = new FileReader();
       reader.onload = () => {
         const success = importProgress(reader.result as string);
-        setImportMsg(success ? '✅ Imported!' : '❌ Invalid file');
+        setImportMsg(success ? '✅ Geïmporteerd!' : '❌ Ongeldig bestand');
         if (success) {
           const newProg = loadProgress();
           setTheme(newProg.theme);
@@ -68,7 +67,7 @@ export function SettingsPanel({ onClose }: Props) {
   }
 
   function handleReset() {
-    if (confirm('Delete all progress? This cannot be undone.')) {
+    if (confirm('Alle voortgang verwijderen? Dit kan niet ongedaan worden gemaakt.')) {
       resetProgress();
       window.location.reload();
     }
@@ -77,41 +76,41 @@ export function SettingsPanel({ onClose }: Props) {
   return (
     <div className="settings-panel">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h3>Settings</h3>
+        <h3>Instellingen</h3>
         <button className="settings-btn" onClick={onClose}>✕</button>
       </div>
 
       <div className="settings-row">
-        <label>Theme</label>
+        <label>Thema</label>
         <select
           value={theme}
           onChange={(e) => handleThemeChange(e.target.value as typeof theme)}
         >
-          <option value="light">☀️ Light</option>
-          <option value="dark">🌙 Dark</option>
-          <option value="system">💻 System</option>
+          <option value="light">☀️ Licht</option>
+          <option value="dark">🌙 Donker</option>
+          <option value="system">💻 Systeem</option>
         </select>
       </div>
 
       <div className="settings-row">
         <label>
-          Audio (Dutch TTS)
-          {!hasVoice && ' — not available'}
+          Audio (Nederlandse spraak)
+          {!hasVoice && ' — niet beschikbaar'}
         </label>
         <button
           onClick={() => handleAudioToggle(!audio)}
           disabled={!hasVoice}
           style={{ opacity: hasVoice ? 1 : 0.4 }}
         >
-          {audio ? '🔊 On' : '🔇 Off'}
+          {audio ? '🔊 Aan' : '🔇 Uit'}
         </button>
       </div>
 
       <div className="settings-row">
-        <label>Progress</label>
+        <label>Voortgang</label>
         <div style={{ display: 'flex', gap: '.5rem' }}>
-          <button onClick={handleExport}>📤 Export</button>
-          <button onClick={handleImport}>📥 Import</button>
+          <button onClick={handleExport}>📤 Exporteer</button>
+          <button onClick={handleImport}>📥 Importeer</button>
         </div>
       </div>
       {importMsg && (
@@ -119,9 +118,9 @@ export function SettingsPanel({ onClose }: Props) {
       )}
 
       <div className="settings-row">
-        <label>Danger zone</label>
+        <label>Opgepast</label>
         <button className="danger" onClick={handleReset}>
-          Reset all progress
+          Alle voortgang wissen
         </button>
       </div>
     </div>
