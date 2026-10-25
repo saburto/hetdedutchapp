@@ -5,6 +5,7 @@ import { ModifierSlot } from './ModifierSlot.tsx';
 import { RepairShop } from './RepairShop.tsx';
 import { ProgressDots } from './ProgressDots.tsx';
 import { SettingsPanel } from './SettingsPanel.tsx';
+import { Tour } from './Tour.tsx';
 import {
   createSession,
   nextChallenge,
@@ -42,6 +43,7 @@ export function ChallengeScreen() {
   const [repairStage, setRepairStage] = useState(1);
   const [repairChallenge, setRepairChallenge] = useState<Challenge | null>(null);
   const [showSettings, setShowSettings] = useState(false);
+  const [showTour, setShowTour] = useState(false);
   // Auto-load first challenge on boot and after queue refills.
   // Only when we don't have a challenge AND the user is selecting (not reviewing an answer).
   useEffect(() => {
@@ -183,13 +185,23 @@ export function ChallengeScreen() {
           <h1>De/Het Trainer</h1>
           <span className="level-badge">Niveau {session.level}</span>
         </div>
-        <button
-          className="settings-btn"
-          onClick={() => setShowSettings((s) => !s)}
-          title="Instellingen"
-        >
-          ⚙️
-        </button>
+        <div style={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}>
+          <button
+            className="tour-btn"
+            onClick={() => setShowTour(true)}
+            title="Tour"
+            aria-label="Open tour"
+          >
+            ?
+          </button>
+          <button
+            className="settings-btn"
+            onClick={() => setShowSettings((s) => !s)}
+            title="Instellingen"
+          >
+            ⚙️
+          </button>
+        </div>
       </header>
 
       {showSettings && <SettingsPanel onClose={() => setShowSettings(false)} />}
@@ -308,6 +320,8 @@ export function ChallengeScreen() {
           )}
         </div>
       )}
+
+      {showTour && <Tour onDone={() => setShowTour(false)} />}
     </div>
   );
 }

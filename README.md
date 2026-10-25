@@ -35,6 +35,7 @@ Je ziet een Nederlandse zin met een gat waar een bijvoeglijk naamwoord, bezittel
 - **Zinsherstel** — na een fout typ je de juiste zin na, dan krijg je hetzelfde woord in een andere structuur, daarna een contrastduel
 - **Nederlandse spraak** — de app leest elke zin hardop voor (Web Speech API, nl-NL)
 - **Donker thema** — licht/donker/systeem, geen gedoe
+- **Rondleiding** — klik op de `?` knop rechtsboven voor een interactieve tour door de app
 
 ## Snel starten
 

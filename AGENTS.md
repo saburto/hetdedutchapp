@@ -36,6 +36,7 @@ tests/          Playwright E2E specs
 - `ModifierSlot` — two option buttons, randomised left/right order
 - `RepairShop` — 3-stage repair: type-correct → structural-shift → contrast-duel
 - `SettingsPanel` — theme, audio toggle, export/import progress JSON
+- `Tour` — interactive product tour (8 steps), triggered by `?` button in header. Tour steps are defined as an array of `TourStep` objects (target selector, title, body, placement). The tour highlights elements and shows tooltips. Steps are in English (unlike the rest of the UI which is in Dutch).
 
 ### Engine
 - `session.ts` — `createSession` uses `buildAdaptiveQueue` (mastery-weighted, see below)
@@ -71,9 +72,16 @@ bunx playwright test # 6 E2E tests (requires bun run dev running or uses webServ
 ```
 
 ## Do NOT
-- Add English UI strings — everything user-facing is Dutch
+- Add English UI strings — everything user-facing is Dutch (except the tour in `Tour.tsx`, which is in English)
 - Nest `@media` inside CSS selector blocks
 - Call `setPhase` or other state setters inside `useCallback` computations (side-effect free only)
 - Mutate data in `data/` without running `bun run validate` after
 - Use `process.exit` in scripts (throw instead)
 - Import `fs` or Node builtins that need `@types/node` — use `Bun.write` if needed
+
+## Tour maintenance
+When you add, remove, or significantly change a UI feature, **update the tour steps** in `src/components/Tour.tsx`:
+- The `DEFAULT_STEPS` array defines every step (target CSS selector, title, body, placement).
+- Make sure each `target` selector still matches a visible element on the page.
+- Run `bunx playwright test tests/tour.spec.ts` after changing steps to verify the tour still works.
+- Tour text is in **English** (the only exception to the Dutch-only rule).
