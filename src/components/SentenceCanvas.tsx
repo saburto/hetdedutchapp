@@ -1,5 +1,8 @@
 import { useMemo, type ReactNode } from 'react';
 import type { Challenge } from '../../data/schema.ts';
+import nounsRaw from '../../data/nouns.json' with { type: 'json' };
+
+const ALL_NOUNS = (nounsRaw as { version: number; nouns: Array<{ id: string; article: 'de' | 'het' }> }).nouns;
 
 interface Props {
   challenge: Challenge;
@@ -9,21 +12,24 @@ interface Props {
 
 /**
  * Renders a challenge sentence with the modifier highlighted.
- * Static text flows naturally (spaces intact); only the modifier gets a styled span.
+ * On wrong answers, the noun gets a large animated article badge
+ * and a colored background glow to burn in the correct gender.
  */
 export function SentenceCanvas({ challenge, selectedAnswer, phase }: Props) {
   const nodes: ReactNode[] = useMemo(() => {
     const { sentenceTemplate, options } = challenge;
 
-    // Determine status classes for the modifier
-    let modStatus = 'pending';
-    let showCorrect = false;
+    const nounEntry = ALL_NOUNS.find((n) => n.id === challenge.nounId);
+    const article = nounEntry?.article ?? 'de';
+
+    let modStatus: 'pending' | 'correct' | 'incorrect' | 'locked' = 'pending';
+    let isWrong = false;
     if (phase === 'answered' && selectedAnswer) {
       if (selectedAnswer === options.correct) {
         modStatus = 'correct';
       } else {
         modStatus = 'incorrect';
-        showCorrect = true; // reveal the correct form
+        isWrong = true;
       }
     }
 
@@ -31,7 +37,7 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase }: Props) {
       selectedAnswer === null
         ? '___'
         : phase === 'answered' && selectedAnswer !== options.correct
-          ? selectedAnswer // show what they picked (struck-through)
+          ? selectedAnswer
           : options.correct;
 
     const parts = sentenceTemplate.split('[modifier]');
@@ -40,31 +46,67 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase }: Props) {
 
     // Before modifier
     if (parts[0]) {
-      result.push(<span key="before" className="sentence-word static pending">{parts[0]}</span>);
+      result.push(
+        <span key="before" className="sentence-word static pending">
+          {parts[0]}
+        </span>,
+      );
     }
 
     // Modifier slot
     result.push(
       <span
         key="modifier"
-        className={`sentence-word modifier ${modStatus}${phase === 'answered' && modStatus === 'incorrect' ? ' strikethrough' : ''}`}
+        className={`sentence-word modifier ${modStatus}${isWrong ? ' strikethrough' : ''}`}
       >
         {modifierText}
       </span>,
     );
 
-    // If they got it wrong, show the correct form as a hint
-    if (showCorrect) {
+    if (isWrong) {
+      // ── Wrong answer: dramatic correction ──
+
+      // Correction arrow + correct form
       result.push(
-        <span key="correction" className="sentence-word modifier locked" style={{ marginLeft: '.25rem' }}>
-          → {options.correct}
+        <span key="correction" className="sentence-word correction-hint">
+          → <strong>{options.correct}</strong>
         </span>,
       );
-    }
 
-    // After modifier
-    if (parts[1]) {
-      result.push(<span key="after" className="sentence-word static pending">{parts[1]}</span>);
+      // Split after-part into noun + rest so we can highlight the noun
+      if (parts[1]) {
+        const trimmed = parts[1].trimStart();
+        const firstSpace = trimmed.indexOf(' ');
+        const nounWord = firstSpace > -1 ? trimmed.slice(0, firstSpace) : trimmed;
+        const rest = firstSpace > -1 ? ' ' + trimmed.slice(firstSpace + 1) : '';
+
+        // Noun with colored background glow + large badge
+        result.push(
+          <span key="noun-badged" className={`noun-highlight ${article}`}>
+            <span className="sentence-word noun badged">{nounWord}</span>
+            <span className={`article-badge ${article}`}>
+              {article}-woord
+            </span>
+          </span>,
+        );
+
+        if (rest) {
+          result.push(
+            <span key="after" className="sentence-word static pending">
+              {rest}
+            </span>,
+          );
+        }
+      }
+    } else {
+      // Normal rendering
+      if (parts[1]) {
+        result.push(
+          <span key="after" className="sentence-word static pending">
+            {parts[1]}
+          </span>,
+        );
+      }
     }
 
     return result;

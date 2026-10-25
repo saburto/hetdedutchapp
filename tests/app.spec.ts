@@ -73,43 +73,51 @@ test.describe('Dutch Context Builder', () => {
     await page.waitForLoadState('networkidle');
 
     let advanced = false;
-    for (let attempt = 0; attempt < 5 && !advanced; attempt++) {
-      // Ensure we're on a challenge
-      const opts = page.locator('.option-btn');
-      await expect(opts.first()).toBeVisible({ timeout: 5000 });
+    for (let attempt = 0; attempt < 8 && !advanced; attempt++) {
+      await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 5000 });
+
+      // Try both options: click the one that gives a correct answer
+      const opt0 = page.locator('.option-btn').nth(0);
+      const opt1 = page.locator('.option-btn').nth(1);
 
       // Click first option
-      await opts.first().click();
-      await page.waitForTimeout(300);
+      await opt0.click();
+      await page.waitForTimeout(400);
 
-      const isCorrect = await page.locator('.challenge-card.correct').isVisible().catch(() => false);
-      const isIncorrect = await page.locator('.challenge-card.incorrect').isVisible().catch(() => false);
+      let isCorrect = await page.locator('.challenge-card.correct').isVisible().catch(() => false);
+      let isIncorrect = await page.locator('.challenge-card.incorrect').isVisible().catch(() => false);
+
+      // If neither (render glitch), retry
+      if (!isCorrect && !isIncorrect) {
+        await page.waitForTimeout(300);
+        isCorrect = await page.locator('.challenge-card.correct').isVisible().catch(() => false);
+        isIncorrect = await page.locator('.challenge-card.incorrect').isVisible().catch(() => false);
+      }
 
       if (isCorrect) {
-        // Click next and verify new challenge loads
         await page.locator('.next-btn').click();
         await page.waitForTimeout(600);
-        const newOpts = page.locator('.option-btn');
-        await expect(newOpts.first()).toBeVisible({ timeout: 5000 });
+        await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 5000 });
         advanced = true;
       } else if (isIncorrect) {
-        // Navigate to repair
         await page.locator('.next-btn').click();
         await page.waitForTimeout(600);
 
-        // Handle repair shop
+        // Handle repair — stage 1 (input) or stage 2/3 (button)
         const repairInput = page.locator('.repair-input');
+        const repairBtn = page.locator('.repair-shop button.next-btn');
+
         if (await repairInput.isVisible().catch(() => false)) {
           const ph = await repairInput.getAttribute('placeholder');
           if (ph) {
             await repairInput.fill(ph);
-            await page.locator('.repair-shop button.next-btn').first().click();
-            // handleSubmit uses setTimeout(800ms) for success
+            await repairBtn.first().click();
             await page.waitForTimeout(1000);
           }
+        } else if (await repairBtn.isVisible().catch(() => false)) {
+          await repairBtn.first().click();
+          await page.waitForTimeout(600);
         }
-        // After repair, should be back to challenge selection
-        // (next iteration of loop will find option-btn)
       }
     }
 

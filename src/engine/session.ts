@@ -1,10 +1,73 @@
-import type { Challenge, Noun } from '../../data/schema.ts';
+import type { Challenge, Noun, ProgressStore, LevelType } from '../../data/schema.ts';
 import challengesRaw from '../../data/challenges.json' with { type: 'json' };
 import nounsRaw from '../../data/nouns.json' with { type: 'json' };
 import { loadProgress, saveProgress } from './progress.ts';
 
 const ALL_CHALLENGES = (challengesRaw as { version: number; challenges: Challenge[] }).challenges;
 const ALL_NOUNS = (nounsRaw as { version: number; nouns: Noun[] }).nouns;
+
+// ── Adaptive Queue ──────────────────────────────────────────────
+
+/**
+ * Build a session queue weighted by per-noun mastery.
+ *
+ * Mastery tiers:
+ *   < 0.3  → struggling: all challenges for this noun at this level
+ *   0.3–0.7 → learning:   ~75% of challenges
+ *   0.7–0.9 → proficient:  1–2 challenges
+ *   > 0.9  → mastered:     33% chance of 1 refresher challenge
+ *
+ * Within a noun, challenges matching the noun's mistakeType are
+ * preferred (the mechanic they last failed on gets more reps).
+ */
+function buildAdaptiveQueue(level: number, progress: ProgressStore): string[] {
+  const levelChallenges = ALL_CHALLENGES.filter((c) => c.levelNumber === level);
+
+  // Group challenges by nounId
+  const byNoun = new Map<string, Challenge[]>();
+  for (const ch of levelChallenges) {
+    const arr = byNoun.get(ch.nounId);
+    if (arr) arr.push(ch);
+    else byNoun.set(ch.nounId, [ch]);
+  }
+
+  const queue: string[] = [];
+
+  for (const [nounId, challenges] of byNoun) {
+    const data = progress.nouns[nounId];
+    const mastery = data?.mastery ?? 0;
+    const mistakeType = data?.mistakeType as LevelType | undefined;
+
+    // How many challenges to include for this noun?
+    let count: number;
+    if (mastery < 0.3) {
+      count = challenges.length;                      // all
+    } else if (mastery < 0.7) {
+      count = Math.max(1, Math.ceil(challenges.length * 0.75));
+    } else if (mastery < 0.9) {
+      count = Math.min(2, challenges.length);          // 1–2
+    } else {
+      count = Math.random() < 0.33 ? 1 : 0;            // occasional refresher
+    }
+
+    if (count === 0) continue;
+
+    // Sort: challenges matching the mistakeType come first
+    const sorted = [...challenges].sort((a, b) => {
+      const aMatch = a.levelType === mistakeType ? 0 : 1;
+      const bMatch = b.levelType === mistakeType ? 0 : 1;
+      // Secondary sort: shuffle within same priority
+      return aMatch - bMatch || Math.random() - 0.5;
+    });
+
+    for (let i = 0; i < count && i < sorted.length; i++) {
+      queue.push(sorted[i].challengeId);
+    }
+  }
+
+  // Shuffle the final queue so nouns are interleaved (not blocked by noun)
+  return shuffle(queue);
+}
 
 export interface SessionState {
   currentChallenge: Challenge | null;
@@ -40,18 +103,8 @@ export function createSession(level: number): SessionState {
     return resumeFromQueue(level);
   }
 
-  // Build a fresh queue: shuffle challenges at this level
-  const levelChallenges = ALL_CHALLENGES.filter((c) => c.levelNumber === level);
-  // Prioritize nouns the user hasn't mastered yet
-  const masteredIds = new Set(
-    Object.entries(progress.nouns)
-      .filter(([, d]) => d.mastery >= 0.8)
-      .map(([id]) => id),
-  );
-  const unmastered = levelChallenges.filter((c) => !masteredIds.has(c.nounId));
-  const pool = unmastered.length > 0 ? unmastered : levelChallenges;
-
-  const queue = shuffle([...pool]).map((c) => c.challengeId);
+  // Build a fresh adaptive queue
+  const queue = buildAdaptiveQueue(level, progress);
 
   return {
     currentChallenge: null,
