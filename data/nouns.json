@@ -15,6 +15,26 @@
     { "id": "noun_0012", "noun": "paard", "article": "het", "translation": "horse", "category": "animals", "diminutive": "paardje", "grammaticalRules": ["monosyllabic_het"] },
     { "id": "noun_0013", "noun": "lamp", "article": "de", "translation": "lamp", "category": "household_objects", "diminutive": "lampje", "grammaticalRules": ["common_gender"] },
     { "id": "noun_0014", "noun": "brood", "article": "het", "translation": "bread", "category": "food_drink", "diminutive": "broodje", "grammaticalRules": ["monosyllabic_het"] },
-    { "id": "noun_0015", "noun": "appel", "article": "de", "translation": "apple", "category": "food_drink", "diminutive": "appeltje", "grammaticalRules": ["common_gender"] }
+    { "id": "noun_0015", "noun": "appel", "article": "de", "translation": "apple", "category": "food_drink", "diminutive": "appeltje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0016", "noun": "kat", "article": "de", "translation": "cat", "category": "animals", "diminutive": "katje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0017", "noun": "meisje", "article": "het", "translation": "girl", "category": "people", "diminutive": "meisje", "grammaticalRules": ["diminutive_het", "person_exception"] },
+    { "id": "noun_0018", "noun": "sleutel", "article": "de", "translation": "key", "category": "household_objects", "diminutive": "sleuteltje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0019", "noun": "kantoor", "article": "het", "translation": "office", "category": "buildings", "diminutive": "kantoortje", "grammaticalRules": ["disyllabic_het"] },
+    { "id": "noun_0020", "noun": "trein", "article": "de", "translation": "train", "category": "transport", "diminutive": "treintje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0021", "noun": "vliegtuig", "article": "het", "translation": "airplane", "category": "transport", "diminutive": "vliegtuigje", "grammaticalRules": ["compound_het"] },
+    { "id": "noun_0022", "noun": "school", "article": "de", "translation": "school", "category": "buildings", "diminutive": "schooltje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0023", "noun": "bed", "article": "het", "translation": "bed", "category": "household_objects", "diminutive": "bedje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0024", "noun": "stad", "article": "de", "translation": "city", "category": "places", "diminutive": "stadje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0025", "noun": "dorp", "article": "het", "translation": "village", "category": "places", "diminutive": "dorpje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0026", "noun": "jas", "article": "de", "translation": "coat", "category": "clothing", "diminutive": "jasje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0027", "noun": "hemd", "article": "het", "translation": "shirt", "category": "clothing", "diminutive": "hemdje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0028", "noun": "tuin", "article": "de", "translation": "garden", "category": "nature", "diminutive": "tuintje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0029", "noun": "park", "article": "het", "translation": "park", "category": "nature", "diminutive": "parkje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0030", "noun": "krant", "article": "de", "translation": "newspaper", "category": "media", "diminutive": "krantje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0031", "noun": "scherm", "article": "het", "translation": "screen", "category": "technology", "diminutive": "schermpje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0032", "noun": "telefoon", "article": "de", "translation": "phone", "category": "technology", "diminutive": "telefoontje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0033", "noun": "kasteel", "article": "het", "translation": "castle", "category": "buildings", "diminutive": "kasteeltje", "grammaticalRules": ["disyllabic_het"] },
+    { "id": "noun_0034", "noun": "tas", "article": "de", "translation": "bag", "category": "household_objects", "diminutive": "tasje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0035", "noun": "cadeau", "article": "het", "translation": "gift", "category": "household_objects", "diminutive": "cadeautje", "grammaticalRules": ["loanword_het"] }
   ]
 }

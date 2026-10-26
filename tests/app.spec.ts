@@ -172,4 +172,23 @@ test.describe('Dutch Context Builder', () => {
     expect(repairSeen).toBeTruthy();
   });
 
+  test('level 1 challenges load and present De/Het options correctly', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+
+    // Ensure we are on level 1
+    const sentence = page.locator('.sentence-canvas');
+    await expect(sentence).toBeVisible({ timeout: 5000 });
+
+    const options = page.locator('.option-btn');
+    await expect(options).toHaveCount(2);
+
+    const text0 = (await options.nth(0).textContent())?.trim();
+    const text1 = (await options.nth(1).textContent())?.trim();
+    const optionsSet = new Set([text0, text1]);
+
+    expect(optionsSet.has('De')).toBe(true);
+    expect(optionsSet.has('Het')).toBe(true);
+  });
+
 });

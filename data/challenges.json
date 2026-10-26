@@ -197,6 +197,266 @@
       "sentenceTranslation": "The apple tastes sweet."
     },
     {
+      "challengeId": "ch_art_16",
+      "nounId": "noun_0016",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] kat spint zachtjes.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Kat' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The cat purrs softly."
+    },
+    {
+      "challengeId": "ch_art_17",
+      "nounId": "noun_0017",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] meisje leest een boek.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Meisje' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The girl reads a book."
+    },
+    {
+      "challengeId": "ch_art_18",
+      "nounId": "noun_0018",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] sleutel ligt op de tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Sleutel' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The key is on the table."
+    },
+    {
+      "challengeId": "ch_art_19",
+      "nounId": "noun_0019",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] kantoor is vandaag gesloten.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Kantoor' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The office is closed today."
+    },
+    {
+      "challengeId": "ch_art_20",
+      "nounId": "noun_0020",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] trein vertrekt om acht uur.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Trein' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The train leaves at eight o'clock."
+    },
+    {
+      "challengeId": "ch_art_21",
+      "nounId": "noun_0021",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vliegtuig vliegt hoog in de lucht.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Vliegtuig' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The airplane flies high in the sky."
+    },
+    {
+      "challengeId": "ch_art_22",
+      "nounId": "noun_0022",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] school begint om negen uur.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'School' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The school starts at nine o'clock."
+    },
+    {
+      "challengeId": "ch_art_23",
+      "nounId": "noun_0023",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] bed staat in de slaapkamer.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Bed' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The bed is in the bedroom."
+    },
+    {
+      "challengeId": "ch_art_24",
+      "nounId": "noun_0024",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] stad is erg druk in het weekend.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Stad' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The city is very busy on the weekend."
+    },
+    {
+      "challengeId": "ch_art_25",
+      "nounId": "noun_0025",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] dorp is rustig en groen.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Dorp' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The village is quiet and green."
+    },
+    {
+      "challengeId": "ch_art_26",
+      "nounId": "noun_0026",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] jas hangt aan de kapstok.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Jas' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The coat hangs on the coat rack."
+    },
+    {
+      "challengeId": "ch_art_27",
+      "nounId": "noun_0027",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] hemd is netjes gewassen.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Hemd' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The shirt is freshly washed."
+    },
+    {
+      "challengeId": "ch_art_28",
+      "nounId": "noun_0028",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] tuin staat vol met bloemen.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Tuin' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The garden is full of flowers."
+    },
+    {
+      "challengeId": "ch_art_29",
+      "nounId": "noun_0029",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] park is erg mooi in het voorjaar.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Park' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The park is very beautiful in spring."
+    },
+    {
+      "challengeId": "ch_art_30",
+      "nounId": "noun_0030",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] krant ligt op de mat.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Krant' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The newspaper is lying on the mat."
+    },
+    {
+      "challengeId": "ch_art_31",
+      "nounId": "noun_0031",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] scherm van mijn laptop is heel helder.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Scherm' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The screen of my laptop is very bright."
+    },
+    {
+      "challengeId": "ch_art_32",
+      "nounId": "noun_0032",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] telefoon gaat over.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Telefoon' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The phone is ringing."
+    },
+    {
+      "challengeId": "ch_art_33",
+      "nounId": "noun_0033",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] kasteel is heel oud.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Kasteel' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The castle is very old."
+    },
+    {
+      "challengeId": "ch_art_34",
+      "nounId": "noun_0034",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] tas staat op de grond.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Tas' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The bag is on the ground."
+    },
+    {
+      "challengeId": "ch_art_35",
+      "nounId": "noun_0035",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] cadeau is leuk ingepakt.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Cadeau' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The gift is nicely wrapped."
+    },
+    {
       "challengeId": "ch_poss_01",
       "nounId": "noun_0001",
       "levelType": "possessive_pivot",
