@@ -4342,6 +4342,162 @@
       },
       "explanation": "\"honden\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
       "sentenceTranslation": "Those dogs over there are old."
+    },
+    {
+      "challengeId": "ch_dem_57",
+      "nounId": "noun_0001",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] auto is van jou?",
+      "options": {
+        "correct": "Welke",
+        "distractor": "Welk"
+      },
+      "explanation": "\"auto\" is een de-woord, dus gebruiken we \"Welke\" (met -e) in plaats van \"Welk\".",
+      "sentenceTranslation": "Which car is yours?"
+    },
+    {
+      "challengeId": "ch_dem_58",
+      "nounId": "noun_0002",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] boek is van jou?",
+      "options": {
+        "correct": "Welk",
+        "distractor": "Welke"
+      },
+      "explanation": "\"boek\" is een het-woord, dus gebruiken we \"Welk\" (zonder -e) in plaats van \"Welke\".",
+      "sentenceTranslation": "Which book are you reading?"
+    },
+    {
+      "challengeId": "ch_dem_59",
+      "nounId": "noun_0003",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] tafel is van jou?",
+      "options": {
+        "correct": "Welke",
+        "distractor": "Welk"
+      },
+      "explanation": "\"tafel\" is een de-woord, dus gebruiken we \"Welke\" (met -e) in plaats van \"Welk\".",
+      "sentenceTranslation": "Which table is free?"
+    },
+    {
+      "challengeId": "ch_dem_60",
+      "nounId": "noun_0004",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] huis is van jou?",
+      "options": {
+        "correct": "Welk",
+        "distractor": "Welke"
+      },
+      "explanation": "\"huis\" is een het-woord, dus gebruiken we \"Welk\" (zonder -e) in plaats van \"Welke\".",
+      "sentenceTranslation": "Which house is the prettiest?"
+    },
+    {
+      "challengeId": "ch_dem_61",
+      "nounId": "noun_0007",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] hond is van jou?",
+      "options": {
+        "correct": "Welke",
+        "distractor": "Welk"
+      },
+      "explanation": "\"hond\" is een de-woord, dus gebruiken we \"Welke\" (met -e) in plaats van \"Welk\".",
+      "sentenceTranslation": "Which dog is the friendliest?"
+    },
+    {
+      "challengeId": "ch_dem_62",
+      "nounId": "noun_0008",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] raam is van jou?",
+      "options": {
+        "correct": "Welk",
+        "distractor": "Welke"
+      },
+      "explanation": "\"raam\" is een het-woord, dus gebruiken we \"Welk\" (zonder -e) in plaats van \"Welke\".",
+      "sentenceTranslation": "Which window is open?"
+    },
+    {
+      "challengeId": "ch_dem_63",
+      "nounId": "noun_0013",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] lamp is van jou?",
+      "options": {
+        "correct": "Welke",
+        "distractor": "Welk"
+      },
+      "explanation": "\"lamp\" is een de-woord, dus gebruiken we \"Welke\" (met -e) in plaats van \"Welk\".",
+      "sentenceTranslation": "Which lamp gives the most light?"
+    },
+    {
+      "challengeId": "ch_dem_64",
+      "nounId": "noun_0014",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] brood is van jou?",
+      "options": {
+        "correct": "Welk",
+        "distractor": "Welke"
+      },
+      "explanation": "\"brood\" is een het-woord, dus gebruiken we \"Welk\" (zonder -e) in plaats van \"Welke\".",
+      "sentenceTranslation": "Which bread is the freshest?"
+    },
+    {
+      "challengeId": "ch_dem_65",
+      "nounId": "noun_0020",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] trein is van jou?",
+      "options": {
+        "correct": "Welke",
+        "distractor": "Welk"
+      },
+      "explanation": "\"trein\" is een de-woord, dus gebruiken we \"Welke\" (met -e) in plaats van \"Welk\".",
+      "sentenceTranslation": "Which train goes to Amsterdam?"
+    },
+    {
+      "challengeId": "ch_dem_66",
+      "nounId": "noun_0023",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] bed is van jou?",
+      "options": {
+        "correct": "Welk",
+        "distractor": "Welke"
+      },
+      "explanation": "\"bed\" is een het-woord, dus gebruiken we \"Welk\" (zonder -e) in plaats van \"Welke\".",
+      "sentenceTranslation": "Which bed is the most comfortable?"
+    },
+    {
+      "challengeId": "ch_dem_67",
+      "nounId": "noun_0007",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] honden is van jou?",
+      "options": {
+        "correct": "Welke",
+        "distractor": "Welk"
+      },
+      "explanation": "\"honden\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Welke\".",
+      "sentenceTranslation": "Which dogs are yours?"
+    },
+    {
+      "challengeId": "ch_dem_68",
+      "nounId": "noun_0002",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] boeken is van jou?",
+      "options": {
+        "correct": "Welke",
+        "distractor": "Welk"
+      },
+      "explanation": "\"boeken\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Welke\".",
+      "sentenceTranslation": "Which books are on the list?"
     }
   ]
 }
