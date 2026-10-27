@@ -85,6 +85,21 @@
     { "id": "noun_0082", "noun": "film", "article": "de", "translation": "movie", "category": "media", "diminutive": "filmpje", "grammaticalRules": ["common_gender"] },
     { "id": "noun_0083", "noun": "lied", "article": "het", "translation": "song", "category": "media", "diminutive": "liedje", "grammaticalRules": ["monosyllabic_het"] },
     { "id": "noun_0084", "noun": "muziek", "article": "de", "translation": "music", "category": "media", "diminutive": "muziekje", "grammaticalRules": ["mass_noun"] },
-    { "id": "noun_0085", "noun": "feest", "article": "het", "translation": "party", "category": "events", "diminutive": "feestje", "grammaticalRules": ["monosyllabic_het"] }
+    { "id": "noun_0085", "noun": "feest", "article": "het", "translation": "party", "category": "events", "diminutive": "feestje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0086", "noun": "muis", "article": "de", "translation": "mouse", "category": "animals", "diminutive": "muisje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0087", "noun": "konijn", "article": "het", "translation": "rabbit", "category": "animals", "diminutive": "konijntje", "grammaticalRules": ["disyllabic_het"] },
+    { "id": "noun_0088", "noun": "wolk", "article": "de", "translation": "cloud", "category": "nature", "diminutive": "wolkje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0089", "noun": "strand", "article": "het", "translation": "beach", "category": "places", "diminutive": "strandje", "grammaticalRules": ["monosyllabic_het"] },
+    { "id": "noun_0090", "noun": "hoed", "article": "de", "translation": "hat", "category": "clothing", "diminutive": "hoedje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0091", "noun": "terras", "article": "het", "translation": "terrace", "category": "places", "diminutive": "terrasje", "grammaticalRules": ["disyllabic_het"] },
+    { "id": "noun_0092", "noun": "klok", "article": "de", "translation": "clock", "category": "household_objects", "diminutive": "klokje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0093", "noun": "geheim", "article": "het", "translation": "secret", "category": "communication", "diminutive": "geheimje", "grammaticalRules": ["disyllabic_het"] },
+    { "id": "noun_0094", "noun": "spiegel", "article": "de", "translation": "mirror", "category": "household_objects", "diminutive": "spiegeltje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0095", "noun": "museum", "article": "het", "translation": "museum", "category": "places", "diminutive": "museumpje", "grammaticalRules": ["loanword_het"] },
+    { "id": "noun_0096", "noun": "paraplu", "article": "de", "translation": "umbrella", "category": "household_objects", "diminutive": "parapluutje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0097", "noun": "eiland", "article": "het", "translation": "island", "category": "places", "diminutive": "eilandje", "grammaticalRules": ["disyllabic_het"] },
+    { "id": "noun_0098", "noun": "recept", "article": "het", "translation": "recipe", "category": "food_drink", "diminutive": "receptje", "grammaticalRules": ["disyllabic_het"] },
+    { "id": "noun_0099", "noun": "ster", "article": "de", "translation": "star", "category": "nature", "diminutive": "sterretje", "grammaticalRules": ["common_gender"] },
+    { "id": "noun_0100", "noun": "potlood", "article": "het", "translation": "pencil", "category": "education", "diminutive": "potloodje", "grammaticalRules": ["disyllabic_het"] }
   ]
 }
