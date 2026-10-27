@@ -90,21 +90,23 @@ export function ChallengeScreen() {
 
   const advanceOrRefill = useCallback(
     (s: SessionState): { session: SessionState; newPhase?: Phase } => {
+      // Check level-up FIRST — even if queue has items left.
+      // Once all three criteria are met, there's no need to finish the queue.
+      if (shouldLevelUp(s.score, s.correctNouns, s.recentResults)) {
+        const prog = loadProgress();
+        const nextLvl = Math.min(6, s.level + 1);
+        prog.currentLevel = nextLvl;
+        prog.sessionQueue = [];
+        saveProgress(prog);
+        if (nextLvl > 6) {
+          return { session: { ...s, level: nextLvl }, newPhase: 'done' };
+        }
+        return { session: { ...s, level: nextLvl }, newPhase: 'levelup' };
+      }
+
       const ns = nextChallenge(s);
       if (!ns.currentChallenge && ns.queue.length === 0) {
-        // Queue exhausted — check level up first
-        if (shouldLevelUp(ns.score, ns.correctNouns)) {
-          const prog = loadProgress();
-          const nextLvl = Math.min(6, ns.level + 1);
-          prog.currentLevel = nextLvl;
-          prog.sessionQueue = [];
-          saveProgress(prog);
-          if (nextLvl > 6) {
-            return { session: { ...ns, level: nextLvl }, newPhase: 'done' };
-          }
-          return { session: { ...ns, level: nextLvl }, newPhase: 'levelup' };
-        }
-        // Rebuild the queue for the same level
+        // Queue exhausted without meeting level-up — rebuild for same level
         const prog = loadProgress();
         const rebuilt = createSession(prog.currentLevel);
         return { session: rebuilt, newPhase: 'selecting' };
@@ -189,6 +191,9 @@ export function ChallengeScreen() {
       ? repairChallenge
       : session.currentChallenge;
 
+  // Expose current challenge for E2E tests
+  (window as unknown as Record<string, unknown>).__currentChallenge = ch;
+
   return (
     <div className="app-shell">
       {/* Header */}
@@ -232,11 +237,7 @@ export function ChallengeScreen() {
       <LevelProgress
         attempts={session.score.correct + session.score.wrong}
         distinctNouns={new Set(session.correctNouns).size}
-        accuracy={
-          session.score.correct + session.score.wrong > 0
-            ? session.score.correct / (session.score.correct + session.score.wrong)
-            : 0
-        }
+        recentResults={session.recentResults}
       />
 
       {/* Main content */}
@@ -326,7 +327,7 @@ export function ChallengeScreen() {
               )}
               {/* Compound stem breakdown for Level 6 */}
               {ch.levelType === 'compound_clash' && (
-                <CompoundStems template={ch.sentenceTemplate} />
+                <CompoundStems explanation={ch.explanation} />
               )}
             </div>
           )}
@@ -346,67 +347,46 @@ export function ChallengeScreen() {
 }
 
 /**
- * Parse a compound challenge template (e.g. "De appel + De boom = De appelboom.")
- * and render a visual stem breakdown highlighting which word determines gender.
+ * Parse a compound challenge explanation and render a visual stem breakdown.
+ * Explanation format: '"tafellaken" is een samenstelling van tafel (de) + laken (het)...'
  */
-function CompoundStems({ template }: { template: string }) {
-  // Template format: "De appel + De boom = De appelboom. [modifier] appelboom..."
-  const match = template.match(/^([^.]+)\./);
-  if (!match) return null;
+function CompoundStems({ explanation }: { explanation: string }) {
+  // Match: "X" is een samenstelling van Y (art) + Z (art)
+  const match = explanation.match(/"(\w+)" is een samenstelling van (\w+) \((\w+)\) \+ (\w+) \((\w+)\)/);
+  if (!match) {
+    // Try reverse format: "Glas" is een het-woord... geen samenstelling
+    // Or alternate format for non-compound explanations
+    return null;
+  }
 
-  const formula = match[1].trim(); // "De appel + De boom = De appelboom"
-  const parts = formula.split('=');
-  if (parts.length !== 2) return null;
-
-  const leftSide = parts[0].trim(); // "De appel + De boom"
-  const rightSide = parts[1].trim(); // "De appelboom"
-
-  const stems = leftSide.split('+').map(s => s.trim());
-
-  // Extract the last stem's article and noun (it determines gender)
-  const lastStem = stems[stems.length - 1];
-  const lastArticleMatch = lastStem.match(/^(De|Het)\s+(.+)$/);
-  const decisiveArticle = lastArticleMatch?.[1] ?? '';
+  const [, compound, stem1, art1, stem2, art2] = match;
+  const isLastHet = art2 === 'het' || art2.includes('het');
+  const isLastDe = art2 === 'de' || art2.includes('de');
+  const decisiveArt = isLastHet ? 'Het' : isLastDe ? 'De' : art2;
 
   return (
     <div className="compound-stems">
-      {stems.map((stem, i) => {
-        const isLast = i === stems.length - 1;
-        const artMatch = stem.match(/^(De|Het)\s+(.+)$/);
-        const art = artMatch?.[1] ?? '';
-        const word = artMatch?.[2] ?? stem;
-        return (
-          <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: 0 }}>
-            <span style={{
-              fontSize: '.75rem',
-              color: 'var(--text-muted)',
-              marginRight: '.15rem',
-            }}>
-              {art}
-            </span>
-            <span style={{
-              fontWeight: isLast ? 700 : 400,
-              color: isLast ? 'var(--accent)' : 'var(--text)',
-              textDecoration: isLast ? 'underline' : 'none',
-              textUnderlineOffset: '3px',
-            }}>
-              {word}
-            </span>
-            {i < stems.length - 1 && (
-              <span style={{ margin: '0 .35rem', color: 'var(--text-muted)' }}>+</span>
-            )}
-          </span>
-        );
-      })}
+      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 0 }}>
+        <span style={{ fontSize: '.75rem', color: 'var(--text-muted)', marginRight: '.15rem' }}>
+          {art1 === 'de' ? 'De' : 'Het'}
+        </span>
+        <span style={{ fontWeight: 400 }}>{stem1}</span>
+      </span>
+      <span style={{ margin: '0 .35rem', color: 'var(--text-muted)' }}>+</span>
+      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 0 }}>
+        <span style={{ fontSize: '.75rem', color: 'var(--text-muted)', marginRight: '.15rem' }}>
+          {isLastHet ? 'Het' : isLastDe ? 'De' : art2}
+        </span>
+        <span style={{ fontWeight: 700, color: 'var(--accent)', textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+          {stem2}
+        </span>
+      </span>
       <span style={{ margin: '0 .5rem', color: 'var(--text-muted)', fontWeight: 700 }}>=</span>
-      <span style={{
-        fontWeight: 700,
-        color: decisiveArticle === 'Het' ? 'var(--het-accent, #9b59b6)' : 'var(--de-accent, #2980b9)',
-      }}>
-        {rightSide}
+      <span style={{ fontWeight: 700, color: isLastHet ? 'var(--correct)' : 'var(--accent)' }}>
+        {decisiveArt} {compound}
       </span>
       <div style={{ fontSize: '.75rem', color: 'var(--text-muted)', marginTop: '.35rem' }}>
-        ⬆️ Het <strong>laatste woord</strong> ({decisiveArticle}) bepaalt het geslacht
+        ⬆️ Het <strong>laatste woord</strong> ({stem2}) bepaalt het geslacht
       </div>
     </div>
   );

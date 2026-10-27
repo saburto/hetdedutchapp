@@ -853,11 +853,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "Is [modifier] stoel nog vrij?",
       "options": {
-        "correct": "deze",
-        "distractor": "dit"
+        "correct": "die",
+        "distractor": "dat"
       },
-      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "Is this chair still free?"
+      "explanation": "'Stoel' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "Is that chair still free?"
     },
     {
       "challengeId": "ch_dem_02",
@@ -866,11 +866,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] boek moet terug naar de bibliotheek.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This book must go back to the library."
+      "explanation": "'Boek' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That book must go back to the library."
     },
     {
       "challengeId": "ch_dem_03",
@@ -905,11 +905,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] hond is heel vriendelijk.",
       "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
+        "correct": "Die",
+        "distractor": "Dat"
       },
-      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "This dog is very friendly."
+      "explanation": "'Hond' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "That dog is very friendly."
     },
     {
       "challengeId": "ch_dem_06",
@@ -918,11 +918,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] raam kan niet open.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This window cannot open."
+      "explanation": "'Raam' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That window cannot open."
     },
     {
       "challengeId": "ch_dem_07",
@@ -931,11 +931,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] fiets is niet van mij.",
       "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
+        "correct": "Die",
+        "distractor": "Dat"
       },
-      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "This bicycle is not mine."
+      "explanation": "'Fiets' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "That bicycle is not mine."
     },
     {
       "challengeId": "ch_dem_08",
@@ -944,11 +944,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] paard kan heel hard rennen.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This horse can run very fast."
+      "explanation": "'Paard' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That horse can run very fast."
     },
     {
       "challengeId": "ch_dem_09",
@@ -957,11 +957,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "Doet [modifier] lamp het nog?",
       "options": {
-        "correct": "deze",
-        "distractor": "dit"
+        "correct": "die",
+        "distractor": "dat"
       },
-      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "Does this lamp still work?"
+      "explanation": "'Lamp' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "Does that lamp still work?"
     },
     {
       "challengeId": "ch_dem_10",
@@ -970,11 +970,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] brood smaakt echt heerlijk.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This bread tastes really delicious."
+      "explanation": "'Brood' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That bread tastes really delicious."
     },
     {
       "challengeId": "ch_dem_11",
@@ -983,11 +983,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] appel komt uit mijn egen tuin.",
       "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
+        "correct": "Die",
+        "distractor": "Dat"
       },
-      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "This apple comes from my own garden."
+      "explanation": "'Appel' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "That apple comes from my own garden."
     },
     {
       "challengeId": "ch_dem_12",
@@ -996,11 +996,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] water is niet drinkbaar.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Water' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This water is not drinkable."
+      "explanation": "'Water' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That water is not drinkable."
     },
     {
       "challengeId": "ch_dem_13",
@@ -1009,11 +1009,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "Kijk, [modifier] tafel is helemaal krom!",
       "options": {
-        "correct": "deze",
-        "distractor": "dit"
+        "correct": "die",
+        "distractor": "dat"
       },
-      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "Look, this table is completely crooked!"
+      "explanation": "'Tafel' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "Look, that table is completely crooked!"
     },
     {
       "challengeId": "ch_dem_14",
@@ -1022,11 +1022,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "Spreekt [modifier] kind al Nederlands?",
       "options": {
-        "correct": "dit",
-        "distractor": "deze"
+        "correct": "dat",
+        "distractor": "die"
       },
-      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "Does this child already speak Dutch?"
+      "explanation": "'Kind' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "Does that child already speak Dutch?"
     },
     {
       "challengeId": "ch_dem_15",
@@ -1035,362 +1035,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "Heeft [modifier] koffie nog suiker nodig?",
       "options": {
-        "correct": "deze",
-        "distractor": "dit"
+        "correct": "die",
+        "distractor": "dat"
       },
-      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "Does this coffee still need sugar?"
-    },
-    {
-      "challengeId": "ch_dim_01",
-      "nounId": "noun_0001",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Kijk, een klein autootje! [modifier] autootje is van mijn zoon.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'auto' een de-woord is, is de verkleinvorm 'autootje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "Look, a little car! This little car belongs to my son."
-    },
-    {
-      "challengeId": "ch_dim_02",
-      "nounId": "noun_0005",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Er staat een klein stoeltje in de hoek. [modifier] stoeltje is rood.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'stoel' een de-woord is, is de verkleinvorm 'stoeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "There is a little chair in the corner. This little chair is red."
-    },
-    {
-      "challengeId": "ch_dim_03",
-      "nounId": "noun_0007",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Wat een schattig hondje! Van wie is [modifier] hondje?",
-      "options": {
-        "correct": "dit",
-        "distractor": "deze"
-      },
-      "explanation": "Hoewel 'hond' een de-woord is, is de verkleinvorm 'hondje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "What a cute little dog! Whose little dog is this?"
-    },
-    {
-      "challengeId": "ch_dim_04",
-      "nounId": "noun_0009",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Mijn dochter rijdt op een klein fietsje. [modifier] fietsje is roze.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'fiets' een de-woord is, is de verkleinvorm 'fietsje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "My daughter rides a little bicycle. This little bicycle is pink."
-    },
-    {
-      "challengeId": "ch_dim_05",
-      "nounId": "noun_0013",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Boven het bed hangt een lampje. [modifier] lampje is heel zacht.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'lamp' een de-woord is, is de verkleinvorm 'lampje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "A little lamp hangs above the bed. This little lamp is very soft."
-    },
-    {
-      "challengeId": "ch_dim_06",
-      "nounId": "noun_0015",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Het kind eet een appeltje. [modifier] appeltje is heel zoet.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'appel' een de-woord is, is de verkleinvorm 'appeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "The child eats a little apple. This little apple is very sweet."
-    },
-    {
-      "challengeId": "ch_dim_07",
-      "nounId": "noun_0003",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Op het balkon staat een tafeltje. [modifier] tafeltje is van hout.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'tafel' een de-woord is, is de verkleinvorm 'tafeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "A little table is on the balcony. This little table is made of wood."
-    },
-    {
-      "challengeId": "ch_dim_08",
-      "nounId": "noun_0004",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "In de tuin staat een klein huisje. [modifier] huisje is voor de vogels.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "'Huis' is al een het-woord, en 'huisje' blijft het — maar cursisten twijfelen vaak bij verkleinwoorden van het-woorden.",
-      "sentenceTranslation": "There is a little house in the garden. This little house is for the birds."
-    },
-    {
-      "challengeId": "ch_dim_09",
-      "nounId": "noun_0002",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Ik lees elke avond een boekje voor. [modifier] boekje gaat over dieren.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'boek' was al het, dus 'boekje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "Every evening I read a little book aloud. This little book is about animals."
-    },
-    {
-      "challengeId": "ch_dim_10",
-      "nounId": "noun_0006",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Het kleine kindje lacht naar mij. [modifier] kindje is zo lief!",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Kind' is al het, dus 'kindje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "The little child smiles at me. This little child is so sweet!"
-    },
-    {
-      "challengeId": "ch_dim_11",
-      "nounId": "noun_0008",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Door het kleine raampje komt veel licht. [modifier] raampje zit hoog in de muur.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Raam' is al het, dus 'raampje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "A lot of light comes through the little window. This little window is high in the wall."
-    },
-    {
-      "challengeId": "ch_dim_12",
-      "nounId": "noun_0010",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Op het terras bestel ik een watertje. [modifier] watertje is met ijs.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'water' is al het, dus 'watertje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "On the terrace I order a little water. This little water is with ice."
-    },
-    {
-      "challengeId": "ch_dim_13",
-      "nounId": "noun_0011",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Zij drinkt graag een koffietje na het eten. [modifier] koffietje is sterk.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'koffie' een de-woord is, is de verkleinvorm 'koffietje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "She likes to drink a little coffee after dinner. This little coffee is strong."
-    },
-    {
-      "challengeId": "ch_dim_14",
-      "nounId": "noun_0012",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "De kinderen aaien een klein paardje. [modifier] paardje heet Binky.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Paard' is al het, dus 'paardje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "The children pet a little horse. This little horse is called Binky."
-    },
-    {
-      "challengeId": "ch_dim_15",
-      "nounId": "noun_0014",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Bij de lunch eet ik een broodje kaas. [modifier] broodje is heerlijk.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Brood' is al het, dus 'broodje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "At lunch I eat a little bread with cheese. This little bread is delicious."
-    },
-    {
-      "challengeId": "ch_cmpd_01",
-      "nounId": "noun_0003",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De tafel + Het laken = Het tafellaken. [modifier] tafellaken is wit.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Laken' is het, dus 'tafellaken' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The table + The cloth = The tablecloth. This tablecloth is white."
-    },
-    {
-      "challengeId": "ch_cmpd_02",
-      "nounId": "noun_0001",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De auto + Het raam = Het autoraam. [modifier] autoraam is vies.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Raam' is het, dus 'autoraam' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The car + The window = The car window. This car window is dirty."
-    },
-    {
-      "challengeId": "ch_cmpd_03",
-      "nounId": "noun_0007",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De hond + De mand = De hondenmand. [modifier] hondenmand staat in de hoek.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Mand' is de, dus 'hondenmand' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The dog + The basket = The dog basket. This dog basket is in the corner."
-    },
-    {
-      "challengeId": "ch_cmpd_04",
-      "nounId": "noun_0009",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De fiets + Het licht = Het fietslicht. [modifier] fietslicht doet het niet.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Licht' is het, dus 'fietslicht' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The bicycle + The light = The bicycle light. This bicycle light does not work."
-    },
-    {
-      "challengeId": "ch_cmpd_05",
-      "nounId": "noun_0010",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het water + De fles = De waterfles. [modifier] waterfles is van mij.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Fles' is de, dus 'waterfles' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The water + The bottle = The water bottle. This water bottle is mine."
-    },
-    {
-      "challengeId": "ch_cmpd_06",
-      "nounId": "noun_0006",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het kind + Het boek = Het kinderboek. [modifier] kinderboek is heel populair.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boek' is het, dus 'kinderboek' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The child + The book = The children's book. This children's book is very popular."
-    },
-    {
-      "challengeId": "ch_cmpd_07",
-      "nounId": "noun_0015",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De appel + De boom = De appelboom. [modifier] appelboom staat in de tuin.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boom' is de, dus 'appelboom' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The apple + The tree = The apple tree. This apple tree is in the garden."
-    },
-    {
-      "challengeId": "ch_cmpd_08",
-      "nounId": "noun_0004",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het huis + De sleutel = De huissleutel. [modifier] huissleutel past niet in het slot.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Sleutel' is de, dus 'huissleutel' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The house + The key = The house key. This house key does not fit in the lock."
-    },
-    {
-      "challengeId": "ch_cmpd_09",
-      "nounId": "noun_0002",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het boek + De plank = De boekenplank. [modifier] boekenplank hangt aan de muur.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Plank' is de, dus 'boekenplank' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The book + The shelf = The bookshelf. This bookshelf hangs on the wall."
-    },
-    {
-      "challengeId": "ch_cmpd_10",
-      "nounId": "noun_0013",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De lamp + De kap = De lampenkap. [modifier] lampenkap is gemaakt van stof.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kap' is de, dus 'lampenkap' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The lamp + The shade = The lampshade. This lampshade is made of fabric."
-    },
-    {
-      "challengeId": "ch_cmpd_11",
-      "nounId": "noun_0011",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De koffie + Het kopje = Het koffiekopje. [modifier] koffiekopje is gebarsten.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kopje' is een verkleinwoord (het), dus 'koffiekopje' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The coffee + The cup = The coffee cup. This coffee cup is cracked."
-    },
-    {
-      "challengeId": "ch_cmpd_12",
-      "nounId": "noun_0008",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het raam + Het kozijn = Het raamkozijn. [modifier] raamkozijn moet geschilderd worden.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kozijn' is het, dus 'raamkozijn' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The window + The frame = The window frame. This window frame needs to be painted."
+      "explanation": "'Koffie' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "Does that coffee still need sugar?"
     },
     {
       "challengeId": "ch_art_36",
@@ -2439,11 +2088,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] boom geeft heel veel schaduw.",
       "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
+        "correct": "Die",
+        "distractor": "Dat"
       },
-      "explanation": "'Boom' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "This tree gives a lot of shade."
+      "explanation": "'Boom' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "That tree gives a lot of shade."
     },
     {
       "challengeId": "ch_dem_17",
@@ -2452,11 +2101,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] bos is een beschermd natuurgebied.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Bos' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This forest is a protected nature area."
+      "explanation": "'Bos' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That forest is a protected nature area."
     },
     {
       "challengeId": "ch_dem_18",
@@ -2465,11 +2114,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] schoen zit een beetje te strak.",
       "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
+        "correct": "Die",
+        "distractor": "Dat"
       },
-      "explanation": "'Schoen' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "This shoe is a bit too tight."
+      "explanation": "'Schoen' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "That shoe is a bit too tight."
     },
     {
       "challengeId": "ch_dem_19",
@@ -2478,11 +2127,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] vest past mij prima.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Vest' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This cardigan fits me fine."
+      "explanation": "'Vest' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That cardigan fits me fine."
     },
     {
       "challengeId": "ch_dem_20",
@@ -2491,11 +2140,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "Is [modifier] brief voor mij bedoeld?",
       "options": {
-        "correct": "deze",
-        "distractor": "dit"
+        "correct": "die",
+        "distractor": "dat"
       },
-      "explanation": "'Brief' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "Is this letter meant for me?"
+      "explanation": "'Brief' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "Is that letter meant for me?"
     },
     {
       "challengeId": "ch_dem_21",
@@ -2504,11 +2153,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "[modifier] bericht komt uit de krant.",
       "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
+        "correct": "Dat",
+        "distractor": "Die"
       },
-      "explanation": "'Bericht' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
-      "sentenceTranslation": "This message comes from the newspaper."
+      "explanation": "'Bericht' is een het-woord, dus gebruiken we 'Dat' in plaats van 'Die'.",
+      "sentenceTranslation": "That message comes from the newspaper."
     },
     {
       "challengeId": "ch_dem_22",
@@ -2517,11 +2166,11 @@
       "levelNumber": 4,
       "sentenceTemplate": "Kan [modifier] deur dicht?",
       "options": {
-        "correct": "deze",
-        "distractor": "dit"
+        "correct": "die",
+        "distractor": "dat"
       },
-      "explanation": "'Deur' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
-      "sentenceTranslation": "Can this door be closed?"
+      "explanation": "'Deur' is een de-woord, dus gebruiken we 'Die' in plaats van 'Dat'.",
+      "sentenceTranslation": "Can that door be closed?"
     },
     {
       "challengeId": "ch_dem_23",
@@ -2626,370 +2275,6 @@
       },
       "explanation": "'Lied' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
       "sentenceTranslation": "This song is sung very beautifully."
-    },
-    {
-      "challengeId": "ch_dim_16",
-      "nounId": "noun_0036",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Er staat een klein boompje in de tuin. [modifier] boompje groeit snel.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'boom' een de-woord is, is de verkleinvorm 'boompje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "There is a small tree in the garden. This small tree grows fast."
-    },
-    {
-      "challengeId": "ch_dim_17",
-      "nounId": "noun_0038",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Kijk, een klein vogeltje! [modifier] vogeltje zingt vrolijk.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'vogel' een de-woord is, is de verkleinvorm 'vogeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "Look, a small bird! This small bird sings cheerfully."
-    },
-    {
-      "challengeId": "ch_dim_18",
-      "nounId": "noun_0040",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "De baby draagt een klein schoentje. [modifier] schoentje is zo schattig!",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'schoen' een de-woord is, is de verkleinvorm 'schoentje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "The baby wears a small shoe. This small shoe is so cute!"
-    },
-    {
-      "challengeId": "ch_dim_19",
-      "nounId": "noun_0046",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Het kind zwaait met een klein handje. [modifier] handje is erg schattig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'hand' een de-woord is, is de verkleinvorm 'handje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "The child waves with a small hand. This small hand is very cute."
-    },
-    {
-      "challengeId": "ch_dim_20",
-      "nounId": "noun_0052",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Ik schrijf een klein briefje. [modifier] briefje ligt op het bureau.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'brief' een de-woord is, is de verkleinvorm 'briefje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "I write a small note. This small note is on the desk."
-    },
-    {
-      "challengeId": "ch_dim_21",
-      "nounId": "noun_0056",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "In het poppenhuis zit een klein deurtje. [modifier] deurtje kan echt open.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'deur' een de-woord is, is de verkleinvorm 'deurtje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "In the dollhouse there is a small door. This small door can really open."
-    },
-    {
-      "challengeId": "ch_dim_22",
-      "nounId": "noun_0060",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "De peuter eet met een klein vorkje. [modifier] vorkje is van plastic.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'vork' een de-woord is, is de verkleinvorm 'vorkje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "The toddler eats with a small fork. This small fork is made of plastic."
-    },
-    {
-      "challengeId": "ch_dim_23",
-      "nounId": "noun_0062",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Zij geeft de baby een flesje. [modifier] flesje is warm.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'fles' een de-woord is, is de verkleinvorm 'flesje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "She gives the baby a little bottle. This little bottle is warm."
-    },
-    {
-      "challengeId": "ch_dim_24",
-      "nounId": "noun_0066",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Bij de borrel eten we een kaasje. [modifier] kaasje is erg lekker.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'kaas' een de-woord is, is de verkleinvorm 'kaasje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "With drinks we eat a little cheese. This little cheese is very tasty."
-    },
-    {
-      "challengeId": "ch_dim_25",
-      "nounId": "noun_0074",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "We lopen over een smal weggetje. [modifier] weggetje is heel rustig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'weg' een de-woord is, is de verkleinvorm 'weggetje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "We walk over a narrow small road. This small road is very quiet."
-    },
-    {
-      "challengeId": "ch_dim_26",
-      "nounId": "noun_0078",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Mag ik een kort vraagje stellen? [modifier] vraagje duurt niet lang.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'vraag' een de-woord is, is de verkleinvorm 'vraagje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "May I ask a short question? This small question won't take long."
-    },
-    {
-      "challengeId": "ch_dim_27",
-      "nounId": "noun_0080",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "We krijgen een kort lesje over grammatica. [modifier] lesje is erg nuttig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'les' een de-woord is, is de verkleinvorm 'lesje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "We get a short lesson about grammar. This short lesson is very useful."
-    },
-    {
-      "challengeId": "ch_dim_28",
-      "nounId": "noun_0082",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Bekijk [modifier] kort filmpje op YouTube.",
-      "options": {
-        "correct": "dit",
-        "distractor": "deze"
-      },
-      "explanation": "Hoewel 'film' een de-woord is, is de verkleinvorm 'filmpje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "Watch this short video on YouTube."
-    },
-    {
-      "challengeId": "ch_dim_29",
-      "nounId": "noun_0039",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Het kind eet een eitje. [modifier] eitje is zachtgekookt.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Ei' was al het, dus 'eitje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "The child eats a small egg. This small egg is soft-boiled."
-    },
-    {
-      "challengeId": "ch_dim_30",
-      "nounId": "noun_0083",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "De moeder zingt een klein liedje. [modifier] liedje is erg rustgevend.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Lied' was al het, dus 'liedje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "The mother sings a small song. This small song is very calming."
-    },
-    {
-      "challengeId": "ch_cmpd_13",
-      "nounId": "noun_0036",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De boom + Het huis = Het boomhuis. [modifier] boomhuis is gebouwd in de eik.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Huis' is het, dus 'boomhuis' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The tree + The house = The treehouse. This treehouse is built in the oak."
-    },
-    {
-      "challengeId": "ch_cmpd_14",
-      "nounId": "noun_0038",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De vogel + Het kooitje = Het vogelkooitje. [modifier] vogelkooitje staat in de kamer.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kooitje' is een verkleinwoord (het), dus 'vogelkooitje' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The bird + The cage = The birdcage. This birdcage is in the room."
-    },
-    {
-      "challengeId": "ch_cmpd_15",
-      "nounId": "noun_0040",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De schoen + De doos = De schoenendoos. [modifier] schoenendoos staat op de kast.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Doos' is de, dus 'schoenendoos' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The shoe + The box = The shoebox. This shoebox is on the closet."
-    },
-    {
-      "challengeId": "ch_cmpd_16",
-      "nounId": "noun_0046",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De hand + De doek = De handdoek. [modifier] handdoek is nog nat.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Doek' is de, dus 'handdoek' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The hand + The towel = The towel. This towel is still wet."
-    },
-    {
-      "challengeId": "ch_cmpd_17",
-      "nounId": "noun_0052",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De brief + De bus = De brievenbus. [modifier] brievenbus is rood.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Bus' is de, dus 'brievenbus' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The letter + The box = The mailbox. This mailbox is red."
-    },
-    {
-      "challengeId": "ch_cmpd_18",
-      "nounId": "noun_0056",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De deur + Het matje = Het deurmatje. [modifier] deurmatje ligt bij de ingang.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Matje' is een verkleinwoord (het), dus 'deurmatje' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The door + The mat = The doormat. This doormat is at the entrance."
-    },
-    {
-      "challengeId": "ch_cmpd_19",
-      "nounId": "noun_0058",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De keuken + De tafel = De keukentafel. [modifier] keukentafel is erg groot.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Tafel' is de, dus 'keukentafel' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The kitchen + The table = The kitchen table. This kitchen table is very big."
-    },
-    {
-      "challengeId": "ch_cmpd_20",
-      "nounId": "noun_0062",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De fles + De opener = De flesopener. [modifier] flesopener ligt in de lade.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Opener' is de, dus 'flesopener' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The bottle + The opener = The bottle opener. This bottle opener is in the drawer."
-    },
-    {
-      "challengeId": "ch_cmpd_21",
-      "nounId": "noun_0066",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De kaas + Het mes = Het kaasmes. [modifier] kaasmes is erg handig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Mes' is het, dus 'kaasmes' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The cheese + The knife = The cheese knife. This cheese knife is very handy."
-    },
-    {
-      "challengeId": "ch_cmpd_22",
-      "nounId": "noun_0068",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De zon + De bril = De zonnebril. [modifier] zonnebril is heel stijlvol.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Bril' is de, dus 'zonnebril' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The sun + The glasses = The sunglasses. These sunglasses are very stylish."
-    },
-    {
-      "challengeId": "ch_cmpd_23",
-      "nounId": "noun_0070",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De regen + De jas = De regenjas. [modifier] regenjas is waterdicht.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Jas' is de, dus 'regenjas' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The rain + The coat = The raincoat. This raincoat is waterproof."
-    },
-    {
-      "challengeId": "ch_cmpd_24",
-      "nounId": "noun_0076",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De bus + De halte = De bushalte. [modifier] bushalte is om de hoek.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Halte' is de, dus 'bushalte' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The bus + The stop = The bus stop. This bus stop is around the corner."
-    },
-    {
-      "challengeId": "ch_cmpd_25",
-      "nounId": "noun_0080",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De les + Het lokaal = Het leslokaal. [modifier] leslokaal is erg ruim.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Lokaal' is het, dus 'leslokaal' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The lesson + The room = The classroom. This classroom is very spacious."
     },
     {
       "challengeId": "ch_art_86",
@@ -3577,266 +2862,6 @@
       "sentenceTranslation": "Look, this star gives bright light."
     },
     {
-      "challengeId": "ch_dim_31",
-      "nounId": "noun_0086",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Er piept een muisje. [modifier] muisje zit onder de vloer.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'muis' een de-woord is, is de verkleinvorm 'muisje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "A little mouse squeaks. This little mouse is under the floor."
-    },
-    {
-      "challengeId": "ch_dim_32",
-      "nounId": "noun_0088",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Er waait een wolkje voorbij. [modifier] wolkje is sneeuwwit.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'wolk' een de-woord is, is de verkleinvorm 'wolkje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "A small cloud floats by. This small cloud is snow white."
-    },
-    {
-      "challengeId": "ch_dim_33",
-      "nounId": "noun_0090",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Hij zet een klein hoedje op. [modifier] hoedje is erg grappig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'hoed' een de-woord is, is de verkleinvorm 'hoedje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "He puts on a small hat. This small hat is very funny."
-    },
-    {
-      "challengeId": "ch_dim_34",
-      "nounId": "noun_0092",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Het kind heeft een klokje gekregen. [modifier] klokje tikt vrolijk.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'klok' een de-woord is, is de verkleinvorm 'klokje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "The child got a small clock. This small clock ticks cheerfully."
-    },
-    {
-      "challengeId": "ch_dim_35",
-      "nounId": "noun_0094",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Zij heeft een spiegeltje in haar tas. [modifier] spiegeltje is erg handig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'spiegel' een de-woord is, is de verkleinvorm 'spiegeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "She has a small mirror in her bag. This small mirror is very handy."
-    },
-    {
-      "challengeId": "ch_dim_36",
-      "nounId": "noun_0096",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Ze draagt een klein parapluutje. [modifier] parapluutje heeft bloemetjes.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'paraplu' een de-woord is, is de verkleinvorm 'parapluutje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "She carries a small umbrella. This small umbrella has flowers."
-    },
-    {
-      "challengeId": "ch_dim_37",
-      "nounId": "noun_0099",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Ik zie een klein sterretje aan de hemel. [modifier] sterretje fonkelt mooi.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Hoewel 'ster' een de-woord is, is de verkleinvorm 'sterretje' altijd een het-woord, dus gebruiken we 'Dit'.",
-      "sentenceTranslation": "I see a small star in the sky. This small star sparkles beautifully."
-    },
-    {
-      "challengeId": "ch_dim_38",
-      "nounId": "noun_0087",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Het kind aait een schattig konijntje. [modifier] konijntje is erg zacht.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Konijn' was al het, dus 'konijntje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "The child pets a cute little rabbit. This little rabbit is very soft."
-    },
-    {
-      "challengeId": "ch_dim_39",
-      "nounId": "noun_0089",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "We liggen op een klein strandje. [modifier] strandje is erg rustig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Strand' was al het, dus 'strandje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "We are lying on a small beach. This small beach is very quiet."
-    },
-    {
-      "challengeId": "ch_dim_40",
-      "nounId": "noun_0100",
-      "levelType": "diminutive_trap",
-      "levelNumber": 5,
-      "sentenceTemplate": "Het kind heeft een klein potloodje. [modifier] potloodje is groen.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Potlood' was al het, dus 'potloodje' blijft het — gebruik 'Dit'.",
-      "sentenceTranslation": "The child has a small pencil. This small pencil is green."
-    },
-    {
-      "challengeId": "ch_cmpd_26",
-      "nounId": "noun_0086",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De muis + De val = De muizenval. [modifier] muizenval staat in de schuur.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Val' is de, dus 'muizenval' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The mouse + The trap = The mousetrap. This mousetrap is in the shed."
-    },
-    {
-      "challengeId": "ch_cmpd_27",
-      "nounId": "noun_0087",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het konijn + Het hok = Het konijnenhok. [modifier] konijnenhok staat in de tuin.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Hok' is het, dus 'konijnenhok' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The rabbit + The hutch = The rabbit hutch. This rabbit hutch is in the garden."
-    },
-    {
-      "challengeId": "ch_cmpd_28",
-      "nounId": "noun_0089",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het strand + De stoel = De strandstoel. [modifier] strandstoel zit erg lekker.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Stoel' is de, dus 'strandstoel' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The beach + The chair = The beach chair. This beach chair is very comfortable."
-    },
-    {
-      "challengeId": "ch_cmpd_29",
-      "nounId": "noun_0090",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De hoed + De doos = De hoedendoos. [modifier] hoedendoos is heel oud.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Doos' is de, dus 'hoedendoos' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The hat + The box = The hatbox. This hatbox is very old."
-    },
-    {
-      "challengeId": "ch_cmpd_30",
-      "nounId": "noun_0092",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De klok + Het spel = Het klokkenspel. [modifier] klokkenspel klinkt prachtig.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Spel' is het, dus 'klokkenspel' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The clock + The play = The chimes. These chimes sound beautiful."
-    },
-    {
-      "challengeId": "ch_cmpd_31",
-      "nounId": "noun_0094",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De spiegel + Het beeld = Het spiegelbeeld. [modifier] spiegelbeeld is helder.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Beeld' is het, dus 'spiegelbeeld' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The mirror + The image = The mirror image. This mirror image is clear."
-    },
-    {
-      "challengeId": "ch_cmpd_32",
-      "nounId": "noun_0095",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het museum + De tuin = De museumtuin. [modifier] museumtuin is prachtig onderhouden.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Tuin' is de, dus 'museumtuin' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The museum + The garden = The museum garden. This museum garden is beautifully maintained."
-    },
-    {
-      "challengeId": "ch_cmpd_33",
-      "nounId": "noun_0097",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het eiland + De raad = De eilandsraad. [modifier] eilandsraad vergadert vanavond.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Raad' is de, dus 'eilandsraad' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The island + The council = The island council. This island council meets tonight."
-    },
-    {
-      "challengeId": "ch_cmpd_34",
-      "nounId": "noun_0098",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het recept + Het boek = Het receptenboek. [modifier] receptenboek staat vol lekkere gerechten.",
-      "options": {
-        "correct": "Dit",
-        "distractor": "Deze"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Boek' is het, dus 'receptenboek' is het — gebruik 'Dit'.",
-      "sentenceTranslation": "The recipe + The book = The recipe book. This recipe book is full of tasty dishes."
-    },
-    {
-      "challengeId": "ch_cmpd_35",
-      "nounId": "noun_0100",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "Het potlood + De doos = De potlodendoos. [modifier] potlodendoos zit vol met kleuren.",
-      "options": {
-        "correct": "Deze",
-        "distractor": "Dit"
-      },
-      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Doos' is de, dus 'potlodendoos' is de — gebruik 'Deze'.",
-      "sentenceTranslation": "The pencil + The box = The pencil box. This pencil box is full of colors."
-    },
-    {
       "challengeId": "ch_adj_41",
       "nounId": "noun_0002",
       "levelType": "adjective_snag",
@@ -3967,17 +2992,992 @@
       "sentenceTranslation": "The comfortable bed in the corner is comfortable."
     },
     {
-      "challengeId": "ch_cmpd_36",
-      "nounId": "noun_0011",
-      "levelType": "compound_clash",
-      "levelNumber": 6,
-      "sentenceTemplate": "De koffie + Het kopje = [modifier] koffiekopje staat op tafel.",
+      "challengeId": "ch_dim_01",
+      "nounId": "noun_0001",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] autootje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"autootje\" is een verkleinwoord van \"auto\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"auto\" een de-woord.",
+      "sentenceTranslation": "The little auto is mine."
+    },
+    {
+      "challengeId": "ch_dim_02",
+      "nounId": "noun_0001",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] autootje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"autootje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little auto is in the room."
+    },
+    {
+      "challengeId": "ch_dim_03",
+      "nounId": "noun_0001",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] autootje is heel mooi.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"autootje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dat\" (ver weg) of \"Dat\" (ver weg), niet \"Die\"/\"Die\".",
+      "sentenceTranslation": "That little auto is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_04",
+      "nounId": "noun_0001",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] autootje gekregen.",
+      "options": {
+        "correct": "klein",
+        "distractor": "kleine"
+      },
+      "explanation": "\"autootje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een klein autootje\" (zonder -e).",
+      "sentenceTranslation": "I received a klein little auto."
+    },
+    {
+      "challengeId": "ch_dim_05",
+      "nounId": "noun_0002",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] boekje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"boekje\" is een verkleinwoord van \"boek\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"boek\" een het-woord.",
+      "sentenceTranslation": "The little boek is mine."
+    },
+    {
+      "challengeId": "ch_dim_06",
+      "nounId": "noun_0002",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] boekje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"boekje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little boek is in the room."
+    },
+    {
+      "challengeId": "ch_dim_07",
+      "nounId": "noun_0002",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] boekje is heel mooi.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"boekje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dat\" (ver weg) of \"Dat\" (ver weg), niet \"Die\"/\"Die\".",
+      "sentenceTranslation": "That little boek is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_08",
+      "nounId": "noun_0002",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] boekje gekregen.",
+      "options": {
+        "correct": "mooi",
+        "distractor": "mooie"
+      },
+      "explanation": "\"boekje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een mooi boekje\" (zonder -e).",
+      "sentenceTranslation": "I received a mooi little boek."
+    },
+    {
+      "challengeId": "ch_dim_09",
+      "nounId": "noun_0003",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] tafeltje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"tafeltje\" is een verkleinwoord van \"tafel\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"tafel\" een de-woord.",
+      "sentenceTranslation": "The little tafel is mine."
+    },
+    {
+      "challengeId": "ch_dim_10",
+      "nounId": "noun_0003",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] tafeltje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"tafeltje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little tafel is in the room."
+    },
+    {
+      "challengeId": "ch_dim_11",
+      "nounId": "noun_0003",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] tafeltje is heel mooi.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"tafeltje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dat\" (ver weg) of \"Dat\" (ver weg), niet \"Die\"/\"Die\".",
+      "sentenceTranslation": "That little tafel is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_12",
+      "nounId": "noun_0003",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] tafeltje gekregen.",
+      "options": {
+        "correct": "klein",
+        "distractor": "kleine"
+      },
+      "explanation": "\"tafeltje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een klein tafeltje\" (zonder -e).",
+      "sentenceTranslation": "I received a klein little tafel."
+    },
+    {
+      "challengeId": "ch_dim_13",
+      "nounId": "noun_0004",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] huisje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"huisje\" is een verkleinwoord van \"huis\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"huis\" een het-woord.",
+      "sentenceTranslation": "The little huis is mine."
+    },
+    {
+      "challengeId": "ch_dim_14",
+      "nounId": "noun_0004",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] huisje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"huisje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little huis is in the room."
+    },
+    {
+      "challengeId": "ch_dim_15",
+      "nounId": "noun_0004",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] huisje is heel mooi.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"huisje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dat\" (ver weg) of \"Dat\" (ver weg), niet \"Die\"/\"Die\".",
+      "sentenceTranslation": "That little huis is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_16",
+      "nounId": "noun_0004",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] huisje gekregen.",
+      "options": {
+        "correct": "mooi",
+        "distractor": "mooie"
+      },
+      "explanation": "\"huisje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een mooi huisje\" (zonder -e).",
+      "sentenceTranslation": "I received a mooi little huis."
+    },
+    {
+      "challengeId": "ch_dim_17",
+      "nounId": "noun_0005",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] stoeltje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"stoeltje\" is een verkleinwoord van \"stoel\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"stoel\" een de-woord.",
+      "sentenceTranslation": "The little stoel is mine."
+    },
+    {
+      "challengeId": "ch_dim_18",
+      "nounId": "noun_0005",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] stoeltje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"stoeltje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little stoel is in the room."
+    },
+    {
+      "challengeId": "ch_dim_19",
+      "nounId": "noun_0005",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] stoeltje is heel mooi.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"stoeltje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dat\" (ver weg) of \"Dat\" (ver weg), niet \"Die\"/\"Die\".",
+      "sentenceTranslation": "That little stoel is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_20",
+      "nounId": "noun_0005",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] stoeltje gekregen.",
+      "options": {
+        "correct": "klein",
+        "distractor": "kleine"
+      },
+      "explanation": "\"stoeltje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een klein stoeltje\" (zonder -e).",
+      "sentenceTranslation": "I received a klein little stoel."
+    },
+    {
+      "challengeId": "ch_dim_21",
+      "nounId": "noun_0007",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] hondje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"hondje\" is een verkleinwoord van \"hond\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"hond\" een de-woord.",
+      "sentenceTranslation": "The little hond is mine."
+    },
+    {
+      "challengeId": "ch_dim_22",
+      "nounId": "noun_0007",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] hondje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"hondje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little hond is in the room."
+    },
+    {
+      "challengeId": "ch_dim_23",
+      "nounId": "noun_0007",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] hondje is heel mooi.",
       "options": {
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "\"Kopje\" is een verkleinwoord (het). Bij \"koffiekopje\" bepaalt \"kopje\" het geslacht: het-woord. Gebruik \"Dit\".",
-      "sentenceTranslation": "The coffee + The little cup = This little coffee cup is on the table."
+      "explanation": "\"hondje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dit\" (dichtbij) of \"Dat\" (ver weg), niet \"Deze\"/\"Die\".",
+      "sentenceTranslation": "This little hond is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_24",
+      "nounId": "noun_0007",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] hondje gekregen.",
+      "options": {
+        "correct": "klein",
+        "distractor": "kleine"
+      },
+      "explanation": "\"hondje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een klein hondje\" (zonder -e).",
+      "sentenceTranslation": "I received a klein little hond."
+    },
+    {
+      "challengeId": "ch_dim_25",
+      "nounId": "noun_0008",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] raampje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"raampje\" is een verkleinwoord van \"raam\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"raam\" een het-woord.",
+      "sentenceTranslation": "The little raam is mine."
+    },
+    {
+      "challengeId": "ch_dim_26",
+      "nounId": "noun_0008",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] raampje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"raampje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little raam is in the room."
+    },
+    {
+      "challengeId": "ch_dim_27",
+      "nounId": "noun_0008",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] raampje is heel mooi.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"raampje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dit\" (dichtbij) of \"Dat\" (ver weg), niet \"Deze\"/\"Die\".",
+      "sentenceTranslation": "This little raam is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_28",
+      "nounId": "noun_0008",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] raampje gekregen.",
+      "options": {
+        "correct": "mooi",
+        "distractor": "mooie"
+      },
+      "explanation": "\"raampje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een mooi raampje\" (zonder -e).",
+      "sentenceTranslation": "I received a mooi little raam."
+    },
+    {
+      "challengeId": "ch_dim_29",
+      "nounId": "noun_0009",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] fietsje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"fietsje\" is een verkleinwoord van \"fiets\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"fiets\" een de-woord.",
+      "sentenceTranslation": "The little fiets is mine."
+    },
+    {
+      "challengeId": "ch_dim_30",
+      "nounId": "noun_0009",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] fietsje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"fietsje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little fiets is in the room."
+    },
+    {
+      "challengeId": "ch_dim_31",
+      "nounId": "noun_0009",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] fietsje is heel mooi.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"fietsje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dit\" (dichtbij) of \"Dat\" (ver weg), niet \"Deze\"/\"Die\".",
+      "sentenceTranslation": "This little fiets is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_32",
+      "nounId": "noun_0009",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] fietsje gekregen.",
+      "options": {
+        "correct": "klein",
+        "distractor": "kleine"
+      },
+      "explanation": "\"fietsje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een klein fietsje\" (zonder -e).",
+      "sentenceTranslation": "I received a klein little fiets."
+    },
+    {
+      "challengeId": "ch_dim_33",
+      "nounId": "noun_0013",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] lampje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"lampje\" is een verkleinwoord van \"lamp\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"lamp\" een de-woord.",
+      "sentenceTranslation": "The little lamp is mine."
+    },
+    {
+      "challengeId": "ch_dim_34",
+      "nounId": "noun_0013",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] lampje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"lampje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little lamp is in the room."
+    },
+    {
+      "challengeId": "ch_dim_35",
+      "nounId": "noun_0013",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] lampje is heel mooi.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"lampje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dit\" (dichtbij) of \"Dat\" (ver weg), niet \"Deze\"/\"Die\".",
+      "sentenceTranslation": "This little lamp is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_36",
+      "nounId": "noun_0013",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] lampje gekregen.",
+      "options": {
+        "correct": "klein",
+        "distractor": "kleine"
+      },
+      "explanation": "\"lampje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een klein lampje\" (zonder -e).",
+      "sentenceTranslation": "I received a klein little lamp."
+    },
+    {
+      "challengeId": "ch_dim_37",
+      "nounId": "noun_0014",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] broodje is van mij.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "\"broodje\" is een verkleinwoord van \"brood\". Alle verkleinwoorden zijn het-woorden, dus gebruiken we \"Het\" — ook al is \"brood\" een het-woord.",
+      "sentenceTranslation": "The little brood is mine."
+    },
+    {
+      "challengeId": "ch_dim_38",
+      "nounId": "noun_0014",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] broodje staat in de kamer.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "\"broodje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Ons\", niet \"Onze\".",
+      "sentenceTranslation": "Our little brood is in the room."
+    },
+    {
+      "challengeId": "ch_dim_39",
+      "nounId": "noun_0014",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "[modifier] broodje is heel mooi.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"broodje\" is een het-woord (verkleinwoord). Bij het-woorden gebruiken we \"Dit\" (dichtbij) of \"Dat\" (ver weg), niet \"Deze\"/\"Die\".",
+      "sentenceTranslation": "This little brood is very beautiful."
+    },
+    {
+      "challengeId": "ch_dim_40",
+      "nounId": "noun_0014",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik heb een [modifier] broodje gekregen.",
+      "options": {
+        "correct": "mooi",
+        "distractor": "mooie"
+      },
+      "explanation": "\"broodje\" is een het-woord (verkleinwoord). Na \"een\" vervalt de -e bij het-woorden: \"een mooi broodje\" (zonder -e).",
+      "sentenceTranslation": "I received a mooi little brood."
+    },
+    {
+      "challengeId": "ch_cmpd_01",
+      "nounId": "noun_0003",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] tafellaken is wit.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"tafellaken\" is een samenstelling van tafel (de) + laken (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"laken\" is het, dus \"tafellaken\" is ook het. Gebruik \"Dat\".",
+      "sentenceTranslation": "That tablecloth is white."
+    },
+    {
+      "challengeId": "ch_cmpd_02",
+      "nounId": "noun_0001",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] autoraam is vies.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"autoraam\" is een samenstelling van auto (de) + raam (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"raam\" is het, dus \"autoraam\" is ook het. Gebruik \"Dat\".",
+      "sentenceTranslation": "That car window is dirty."
+    },
+    {
+      "challengeId": "ch_cmpd_03",
+      "nounId": "noun_0007",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] hondenmand staat in de hoek.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"hondenmand\" is een samenstelling van hond (de) + mand (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"mand\" is de, dus \"hondenmand\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That dog basket is in the corner."
+    },
+    {
+      "challengeId": "ch_cmpd_04",
+      "nounId": "noun_0009",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] fietslicht doet het niet.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"fietslicht\" is een samenstelling van fiets (de) + licht (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"licht\" is het, dus \"fietslicht\" is ook het. Gebruik \"Dat\".",
+      "sentenceTranslation": "That bicycle light does not work."
+    },
+    {
+      "challengeId": "ch_cmpd_05",
+      "nounId": "noun_0010",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] waterfles is van mij.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"waterfles\" is een samenstelling van water (het) + fles (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"fles\" is de, dus \"waterfles\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That water bottle is mine."
+    },
+    {
+      "challengeId": "ch_cmpd_06",
+      "nounId": "noun_0006",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] kinderboek is heel populair.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"kinderboek\" is een samenstelling van kind (het) + boek (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"boek\" is het, dus \"kinderboek\" is ook het. Gebruik \"Dat\".",
+      "sentenceTranslation": "That childrens book is very popular."
+    },
+    {
+      "challengeId": "ch_cmpd_07",
+      "nounId": "noun_0015",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] appelboom staat in de tuin.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"appelboom\" is een samenstelling van appel (de) + boom (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"boom\" is de, dus \"appelboom\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That apple tree is in the garden."
+    },
+    {
+      "challengeId": "ch_cmpd_08",
+      "nounId": "noun_0018",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] huissleutel past niet in het slot.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"huissleutel\" is een samenstelling van huis (het) + sleutel (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"sleutel\" is de, dus \"huissleutel\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That house key does not fit in the lock."
+    },
+    {
+      "challengeId": "ch_cmpd_09",
+      "nounId": "noun_0002",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] boekenplank hangt aan de muur.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"boekenplank\" is een samenstelling van boek (het) + plank (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"plank\" is de, dus \"boekenplank\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That bookshelf hangs on the wall."
+    },
+    {
+      "challengeId": "ch_cmpd_10",
+      "nounId": "noun_0013",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] lampenkap is gemaakt van stof.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"lampenkap\" is een samenstelling van lamp (de) + kap (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"kap\" is de, dus \"lampenkap\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That lampshade is made of fabric."
+    },
+    {
+      "challengeId": "ch_cmpd_11",
+      "nounId": "noun_0011",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] koffiekopje is gebarsten.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"koffiekopje\" is een samenstelling van koffie (de) + kopje (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"kopje\" is het (verkleinwoord), dus \"koffiekopje\" is ook het (verkleinwoord). Gebruik \"Dat\".",
+      "sentenceTranslation": "That coffee cup is cracked."
+    },
+    {
+      "challengeId": "ch_cmpd_12",
+      "nounId": "noun_0008",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] raamkozijn moet geschilderd worden.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"raamkozijn\" is een samenstelling van raam (het) + kozijn (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"kozijn\" is het, dus \"raamkozijn\" is ook het. Gebruik \"Dat\".",
+      "sentenceTranslation": "That window frame needs to be painted."
+    },
+    {
+      "challengeId": "ch_cmpd_13",
+      "nounId": "noun_0036",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] boomhuis is gebouwd in de eik.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"boomhuis\" is een samenstelling van boom (de) + huis (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"huis\" is het, dus \"boomhuis\" is ook het. Gebruik \"Dat\".",
+      "sentenceTranslation": "That treehouse is built in the oak."
+    },
+    {
+      "challengeId": "ch_cmpd_14",
+      "nounId": "noun_0038",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] vogelkooitje staat in de kamer.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"vogelkooitje\" is een samenstelling van vogel (de) + kooitje (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"kooitje\" is het (verkleinwoord), dus \"vogelkooitje\" is ook het (verkleinwoord). Gebruik \"Dat\".",
+      "sentenceTranslation": "That birdcage is in the room."
+    },
+    {
+      "challengeId": "ch_cmpd_15",
+      "nounId": "noun_0040",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] schoenendoos staat op de kast.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"schoenendoos\" is een samenstelling van schoen (de) + doos (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"doos\" is de, dus \"schoenendoos\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That shoebox is on the closet."
+    },
+    {
+      "challengeId": "ch_cmpd_16",
+      "nounId": "noun_0046",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] handdoek is nog nat.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"handdoek\" is een samenstelling van hand (de) + doek (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"doek\" is de, dus \"handdoek\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That towel is still wet."
+    },
+    {
+      "challengeId": "ch_cmpd_17",
+      "nounId": "noun_0052",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] brievenbus is rood.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"brievenbus\" is een samenstelling van brief (de) + bus (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"bus\" is de, dus \"brievenbus\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That mailbox is red."
+    },
+    {
+      "challengeId": "ch_cmpd_18",
+      "nounId": "noun_0056",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] deurmatje ligt bij de ingang.",
+      "options": {
+        "correct": "Dat",
+        "distractor": "Die"
+      },
+      "explanation": "\"deurmatje\" is een samenstelling van deur (de) + matje (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"matje\" is het (verkleinwoord), dus \"deurmatje\" is ook het (verkleinwoord). Gebruik \"Dat\".",
+      "sentenceTranslation": "That doormat is by the entrance."
+    },
+    {
+      "challengeId": "ch_cmpd_19",
+      "nounId": "noun_0058",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] keukentafel is erg groot.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"keukentafel\" is een samenstelling van keuken (de) + tafel (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"tafel\" is de, dus \"keukentafel\" is ook de. Gebruik \"Die\".",
+      "sentenceTranslation": "That kitchen table is very big."
+    },
+    {
+      "challengeId": "ch_cmpd_20",
+      "nounId": "noun_0062",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] flesopener ligt in de lade.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"flesopener\" is een samenstelling van fles (de) + opener (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"opener\" is de, dus \"flesopener\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This bottle opener is in the drawer."
+    },
+    {
+      "challengeId": "ch_cmpd_21",
+      "nounId": "noun_0066",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] kaasmes is erg handig.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"kaasmes\" is een samenstelling van kaas (de) + mes (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"mes\" is het, dus \"kaasmes\" is ook het. Gebruik \"Dit\".",
+      "sentenceTranslation": "This cheese knife is very handy."
+    },
+    {
+      "challengeId": "ch_cmpd_22",
+      "nounId": "noun_0068",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] zonnebril is heel stijlvol.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"zonnebril\" is een samenstelling van zon (de) + bril (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"bril\" is de, dus \"zonnebril\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "These sunglasses are very stylish."
+    },
+    {
+      "challengeId": "ch_cmpd_23",
+      "nounId": "noun_0070",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] regenjas is waterdicht.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"regenjas\" is een samenstelling van regen (de) + jas (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"jas\" is de, dus \"regenjas\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This raincoat is waterproof."
+    },
+    {
+      "challengeId": "ch_cmpd_24",
+      "nounId": "noun_0076",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] bushalte is om de hoek.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"bushalte\" is een samenstelling van bus (de) + halte (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"halte\" is de, dus \"bushalte\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This bus stop is around the corner."
+    },
+    {
+      "challengeId": "ch_cmpd_25",
+      "nounId": "noun_0080",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] leslokaal is erg ruim.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"leslokaal\" is een samenstelling van les (de) + lokaal (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"lokaal\" is het, dus \"leslokaal\" is ook het. Gebruik \"Dit\".",
+      "sentenceTranslation": "This classroom is very spacious."
+    },
+    {
+      "challengeId": "ch_cmpd_26",
+      "nounId": "noun_0086",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] muizenval staat in de schuur.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"muizenval\" is een samenstelling van muis (de) + val (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"val\" is de, dus \"muizenval\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This mousetrap is in the shed."
+    },
+    {
+      "challengeId": "ch_cmpd_27",
+      "nounId": "noun_0087",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] konijnenhok staat in de tuin.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"konijnenhok\" is een samenstelling van konijn (het) + hok (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"hok\" is het, dus \"konijnenhok\" is ook het. Gebruik \"Dit\".",
+      "sentenceTranslation": "This rabbit hutch is in the garden."
+    },
+    {
+      "challengeId": "ch_cmpd_28",
+      "nounId": "noun_0089",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] strandstoel zit erg lekker.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"strandstoel\" is een samenstelling van strand (het) + stoel (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"stoel\" is de, dus \"strandstoel\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This beach chair is very comfortable."
+    },
+    {
+      "challengeId": "ch_cmpd_29",
+      "nounId": "noun_0090",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] hoedendoos is heel oud.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"hoedendoos\" is een samenstelling van hoed (de) + doos (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"doos\" is de, dus \"hoedendoos\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This hatbox is very old."
+    },
+    {
+      "challengeId": "ch_cmpd_30",
+      "nounId": "noun_0092",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] klokkenspel klinkt prachtig.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"klokkenspel\" is een samenstelling van klok (de) + spel (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"spel\" is het, dus \"klokkenspel\" is ook het. Gebruik \"Dit\".",
+      "sentenceTranslation": "This carillon sounds beautiful."
+    },
+    {
+      "challengeId": "ch_cmpd_31",
+      "nounId": "noun_0094",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] spiegelbeeld is helder.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"spiegelbeeld\" is een samenstelling van spiegel (de) + beeld (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"beeld\" is het, dus \"spiegelbeeld\" is ook het. Gebruik \"Dit\".",
+      "sentenceTranslation": "This mirror image is clear."
+    },
+    {
+      "challengeId": "ch_cmpd_32",
+      "nounId": "noun_0095",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] museumtuin is prachtig onderhouden.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"museumtuin\" is een samenstelling van museum (het) + tuin (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"tuin\" is de, dus \"museumtuin\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This museum garden is beautifully maintained."
+    },
+    {
+      "challengeId": "ch_cmpd_33",
+      "nounId": "noun_0097",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] eilandbewoner kent alle stranden.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"eilandbewoner\" is een samenstelling van eiland (het) + bewoner (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"bewoner\" is de, dus \"eilandbewoner\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This islander knows all the beaches."
+    },
+    {
+      "challengeId": "ch_cmpd_34",
+      "nounId": "noun_0098",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] receptenboek staat vol lekkere gerechten.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"receptenboek\" is een samenstelling van recept (het) + boek (het). Bij samenstellingen bepaalt het laatste woord het geslacht: \"boek\" is het, dus \"receptenboek\" is ook het. Gebruik \"Dit\".",
+      "sentenceTranslation": "This recipe book is full of delicious dishes."
+    },
+    {
+      "challengeId": "ch_cmpd_35",
+      "nounId": "noun_0100",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] potlodendoos zit vol met kleuren.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"potlodendoos\" is een samenstelling van potlood (het) + doos (de). Bij samenstellingen bepaalt het laatste woord het geslacht: \"doos\" is de, dus \"potlodendoos\" is ook de. Gebruik \"Deze\".",
+      "sentenceTranslation": "This pencil case is full of colors."
+    },
+    {
+      "challengeId": "ch_cmpd_36",
+      "nounId": "noun_0011",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] koffiekopje staat op tafel.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"Koffiekopje\" is een samenstelling van koffie (de) + kopje (het). Het laatste woord \"kopje\" (verkleinwoord, dus het) bepaalt het geslacht: het-woord. Gebruik \"Dit\".",
+      "sentenceTranslation": "This little coffee cup is on the table."
     },
     {
       "challengeId": "ch_cmpd_37",
@@ -3997,39 +3997,351 @@
       "nounId": "noun_0024",
       "levelType": "compound_clash",
       "levelNumber": 6,
-      "sentenceTemplate": "De stad + Het centrum = Het stadscentrum. [modifier] stadscentrum is druk.",
+      "sentenceTemplate": "[modifier] stadscentrum is druk.",
       "options": {
         "correct": "Dit",
         "distractor": "Deze"
       },
-      "explanation": "\"Centrum\" is het, dus \"stadscentrum\" is het — het laatste woord wint. Gebruik \"Dit\".",
-      "sentenceTranslation": "The city + The center = The city center. This city center is busy."
+      "explanation": "\"Stadscentrum\" is een samenstelling van stad (de) + centrum (het). Het laatste woord \"centrum\" (het) bepaalt het geslacht: het-woord. Gebruik \"Dit\".",
+      "sentenceTranslation": "This city center is busy."
     },
     {
       "challengeId": "ch_cmpd_39",
       "nounId": "noun_0010",
       "levelType": "compound_clash",
       "levelNumber": 6,
-      "sentenceTemplate": "Het water + De fles = De waterfles. Maar let op: [modifier] fles water is van glas.",
+      "sentenceTemplate": "[modifier] fles water is van glas.",
       "options": {
         "correct": "Deze",
         "distractor": "Dit"
       },
-      "explanation": "\"Fles water\" is geen samenstelling — \"fles\" (de) bepaalt het geslacht. Bij de samenstelling \"waterfles\" bepaalt \"fles\" ook: de-woord. Gebruik \"Deze\".",
-      "sentenceTranslation": "The water + The bottle = The water bottle. This bottle of water is made of glass."
+      "explanation": "\"Fles water\" is geen samenstelling — het zijn twee losse woorden. \"Fles\" (de) bepaalt daarom het geslacht. Bij een samenstelling zou het \"waterfles\" zijn (de, omdat \"fles\" het laatste woord is). Gebruik \"Deze\".",
+      "sentenceTranslation": "This bottle of water is made of glass."
     },
     {
       "challengeId": "ch_cmpd_40",
       "nounId": "noun_0010",
       "levelType": "compound_clash",
       "levelNumber": 6,
-      "sentenceTemplate": "Het water + De fles = De waterfles. Ik heb een [modifier] waterfles gekocht.",
+      "sentenceTemplate": "Ik heb een [modifier] waterfles gekocht.",
       "options": {
         "correct": "mooie",
         "distractor": "mooi"
       },
-      "explanation": "\"Waterfles\" is de (laatste woord \"fles\" bepaalt). Na \"een\" krijgt het bijvoeglijk naamwoord bij een de-woord wél -e: \"een mooie waterfles\".",
+      "explanation": "\"Waterfles\" is een samenstelling van water (het) + fles (de). Het laatste woord \"fles\" (de) bepaalt het geslacht: de-woord. Na \"een\" krijgt een bijvoeglijk naamwoord bij een de-woord wél -e: \"een mooie waterfles\".",
       "sentenceTranslation": "I bought a beautiful water bottle."
+    },
+    {
+      "challengeId": "ch_art_101",
+      "nounId": "noun_0002",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] boeken liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"boek\" is een het-woord, maar het meervoud \"boeken\" is altijd de! Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The books are on the table."
+    },
+    {
+      "challengeId": "ch_dem_41",
+      "nounId": "noun_0002",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] boeken zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"boeken\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These books are mine."
+    },
+    {
+      "challengeId": "ch_dem_42",
+      "nounId": "noun_0002",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] boeken daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"boeken\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those books over there are old."
+    },
+    {
+      "challengeId": "ch_art_102",
+      "nounId": "noun_0004",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] huizen liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"huis\" is een het-woord, maar het meervoud \"huizen\" is altijd de! Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The houses are on the table."
+    },
+    {
+      "challengeId": "ch_dem_43",
+      "nounId": "noun_0004",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] huizen zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"huizen\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These houses are mine."
+    },
+    {
+      "challengeId": "ch_dem_44",
+      "nounId": "noun_0004",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] huizen daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"huizen\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those houses over there are old."
+    },
+    {
+      "challengeId": "ch_art_103",
+      "nounId": "noun_0006",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] kinderen liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"kind\" is een het-woord, maar het meervoud \"kinderen\" is altijd de! Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The children are on the table."
+    },
+    {
+      "challengeId": "ch_dem_45",
+      "nounId": "noun_0006",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] kinderen zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"kinderen\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These children are mine."
+    },
+    {
+      "challengeId": "ch_dem_46",
+      "nounId": "noun_0006",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] kinderen daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"kinderen\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those children over there are old."
+    },
+    {
+      "challengeId": "ch_art_104",
+      "nounId": "noun_0008",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] ramen liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"raam\" is een het-woord, maar het meervoud \"ramen\" is altijd de! Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The windows are on the table."
+    },
+    {
+      "challengeId": "ch_dem_47",
+      "nounId": "noun_0008",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] ramen zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"ramen\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These windows are mine."
+    },
+    {
+      "challengeId": "ch_dem_48",
+      "nounId": "noun_0008",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] ramen daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"ramen\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those windows over there are old."
+    },
+    {
+      "challengeId": "ch_art_105",
+      "nounId": "noun_0010",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] wateren liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"water\" is een het-woord, maar het meervoud \"wateren\" is altijd de! Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The waters are on the table."
+    },
+    {
+      "challengeId": "ch_dem_49",
+      "nounId": "noun_0010",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] wateren zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"wateren\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These waters are mine."
+    },
+    {
+      "challengeId": "ch_dem_50",
+      "nounId": "noun_0010",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] wateren daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"wateren\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those waters over there are old."
+    },
+    {
+      "challengeId": "ch_art_106",
+      "nounId": "noun_0012",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] paarden liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"paard\" is een het-woord, maar het meervoud \"paarden\" is altijd de! Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The horses are on the table."
+    },
+    {
+      "challengeId": "ch_dem_51",
+      "nounId": "noun_0012",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] paarden zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"paarden\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These horses are mine."
+    },
+    {
+      "challengeId": "ch_dem_52",
+      "nounId": "noun_0012",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] paarden daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"paarden\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those horses over there are old."
+    },
+    {
+      "challengeId": "ch_art_107",
+      "nounId": "noun_0001",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] auto's liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"auto's\" is het meervoud van \"auto\". Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The cars are on the table."
+    },
+    {
+      "challengeId": "ch_dem_53",
+      "nounId": "noun_0001",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] auto's zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"auto's\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These cars are mine."
+    },
+    {
+      "challengeId": "ch_dem_54",
+      "nounId": "noun_0001",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] auto's daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"auto's\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those cars over there are old."
+    },
+    {
+      "challengeId": "ch_art_108",
+      "nounId": "noun_0007",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] honden liggen op tafel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "\"honden\" is het meervoud van \"hond\". Alle meervouden zijn de-woorden, dus gebruiken we \"De\".",
+      "sentenceTranslation": "The dogs are on the table."
+    },
+    {
+      "challengeId": "ch_dem_55",
+      "nounId": "noun_0007",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] honden zijn van mij.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"honden\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Deze\" (dichtbij) of \"Die\" (ver weg).",
+      "sentenceTranslation": "These dogs are mine."
+    },
+    {
+      "challengeId": "ch_dem_56",
+      "nounId": "noun_0007",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] honden daar zijn oud.",
+      "options": {
+        "correct": "Die",
+        "distractor": "Dat"
+      },
+      "explanation": "\"honden\" is een meervoud. Alle meervouden zijn de-woorden, dus gebruiken we \"Die\" (ver weg) of \"Deze\" (dichtbij).",
+      "sentenceTranslation": "Those dogs over there are old."
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import type { Challenge } from '../../data/schema.ts';
 
 interface Props {
@@ -9,12 +10,12 @@ interface Props {
 
 /** Renders the two clickable option buttons (correct vs distractor in random order). */
 export function ModifierSlot({ challenge, disabled, chosenAnswer, onSelect }: Props) {
-  // Randomise left/right order on mount
-  const [left, right] = (() => {
+  // Randomise left/right order once per challenge — stable across re-renders
+  const [left, right] = useMemo(() => {
     const options = [challenge.options.correct, challenge.options.distractor];
     if (Math.random() > 0.5) return options;
     return [options[1], options[0]];
-  })();
+  }, [challenge.challengeId]);
 
   function getClassName(opt: string): string {
     if (!chosenAnswer) return 'option-btn';

@@ -30,6 +30,9 @@ function getDecayedMastery(
   return clampMastery(decayed);
 }
 
+/** Window size for rolling accuracy calculation. Only the last N answers count. */
+const ROLLING_WINDOW = 20;
+
 /**
  * Build a session queue weighted by per-noun mastery (with time decay).
  *
@@ -100,6 +103,7 @@ export interface SessionState {
   level: number;
   score: { correct: number; wrong: number };
   correctNouns: string[]; // nounIds answered correctly this session
+  recentResults: boolean[]; // last ROLLING_WINDOW results (true = correct)
   streak: number;
   isRepairing: boolean;
   repairChallenge: Challenge | null;
@@ -180,6 +184,7 @@ export function createSession(level: number): SessionState {
     level,
     score: { correct: 0, wrong: 0 },
     correctNouns: [],
+    recentResults: [],
     streak: 0,
     isRepairing: false,
     repairChallenge: null,
@@ -195,6 +200,7 @@ function resumeFromQueue(level: number): SessionState {
     level,
     score: { correct: 0, wrong: 0 },
     correctNouns: [],
+    recentResults: [],
     streak: 0,
     isRepairing: false,
     repairChallenge: null,
@@ -291,6 +297,12 @@ export function submitAnswer(
     ? [...state.correctNouns, nounId]
     : state.correctNouns;
 
+  // Rolling window of recent results
+  const newRecent = [...state.recentResults, correct];
+  if (newRecent.length > ROLLING_WINDOW) {
+    newRecent.shift();
+  }
+
   // Keep currentChallenge set so the explanation/feedback can reference it.
   // The caller (ChallengeScreen) clears it when advancing to the next challenge.
   const newState: SessionState = {
@@ -300,6 +312,7 @@ export function submitAnswer(
       wrong: state.score.wrong + (correct ? 0 : 1),
     },
     correctNouns: newCorrectNouns,
+    recentResults: newRecent,
     streak: correct ? state.streak + 1 : 0,
     isRepairing: false,
     repairChallenge: state.currentChallenge,
@@ -311,14 +324,27 @@ export function submitAnswer(
 /**
  * Progress to the next level when the user:
  * - Has made ≥16 attempts
- * - Has ≥80% accuracy
+ * - Has ≥80% accuracy over the rolling window (last 20 answers)
  * - Has answered at least 8 distinct nouns correctly
  */
-export function shouldLevelUp(score: { correct: number; wrong: number }, correctNouns: string[]): boolean {
+export function shouldLevelUp(
+  score: { correct: number; wrong: number },
+  correctNouns: string[],
+  recentResults: boolean[],
+): boolean {
   const total = score.correct + score.wrong;
   if (total < 16) return false;
-  if (score.correct / total < 0.8) return false;
   if (new Set(correctNouns).size < 8) return false;
+
+  // Rolling accuracy: if window has < 8 answers, use total accuracy instead
+  if (recentResults.length >= 8) {
+    const recentCorrect = recentResults.filter(Boolean).length;
+    if (recentCorrect / recentResults.length < 0.8) return false;
+  } else {
+    // Not enough recent data yet — fall back to total accuracy
+    if (score.correct / total < 0.8) return false;
+  }
+
   return true;
 }
 

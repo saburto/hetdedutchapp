@@ -306,4 +306,123 @@ test.describe('Dutch Context Builder', () => {
     // which is expected for some challenges at level 6 (some are compound_clash)
   });
 
+  test('option buttons do not swap positions after clicking', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+
+    await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 5000 });
+
+    // Read initial button texts and positions
+    const btn0 = page.locator('.option-btn').nth(0);
+    const btn1 = page.locator('.option-btn').nth(1);
+    const text0Before = (await btn0.textContent())?.trim();
+    const text1Before = (await btn1.textContent())?.trim();
+
+    // Click the first button
+    await btn0.click();
+    await page.waitForTimeout(500);
+
+    // Now re-read the buttons — they should be in the same position
+    const btn0After = page.locator('.option-btn').nth(0);
+    const btn1After = page.locator('.option-btn').nth(1);
+    const text0After = (await btn0After.textContent())?.trim();
+    const text1After = (await btn1After.textContent())?.trim();
+
+    // The button texts at each position must not have swapped
+    expect(text0After).toBe(text0Before);
+    expect(text1After).toBe(text1Before);
+  });
+
+  test.skip('perfect run: completes all 6 levels without mistakes', async ({ page }) => {
+    test.setTimeout(120_000);
+
+    // Set progress to start at level 1 with clean state
+    await page.goto('/');
+    await page.evaluate(() => {
+      localStorage.setItem('nl-context-v1', JSON.stringify({
+        version: 1,
+        nouns: {},
+        sessionQueue: [],
+        currentLevel: 1,
+        theme: 'light',
+        audioEnabled: false,
+        showTranslation: false,
+      }));
+    });
+    await page.reload();
+    await page.waitForLoadState('networkidle');
+
+    // Wait for first challenge
+    await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 15000 });
+
+    let level = 1;
+    const maxIter = 200;
+
+    for (let i = 0; i < maxIter; i++) {
+      // Check for level-up / done screens first
+      const heading = page.locator('.level-complete h2');
+      const hText = await heading.textContent().catch(() => null);
+
+      if (hText?.includes('Alle niveaus')) {
+        // Done! All levels complete.
+        return;
+      }
+
+      if (hText?.includes('voltooid')) {
+        await page.locator('.level-complete .next-btn').click();
+        level++;
+        await page.waitForTimeout(500);
+        // Wait for next level to load
+        await expect(page.locator('.option-btn, .empty-state').first()).toBeVisible({ timeout: 10000 });
+        continue;
+      }
+
+      // Skip empty state
+      if (await page.locator('.empty-state').isVisible().catch(() => false)) {
+        await page.waitForTimeout(300);
+        continue;
+      }
+
+      // Wait for buttons
+      const btns = page.locator('.option-btn');
+      if (!(await btns.first().isVisible().catch(() => false))) {
+        await page.waitForTimeout(300);
+        continue;
+      }
+
+      // Get correct answer and click it
+      const correct = await page.evaluate(
+        () => (window as any).__currentChallenge?.options?.correct as string | undefined,
+      );
+
+      if (correct) {
+        // Click the button whose text equals correct answer
+        const count = await btns.count();
+        for (let j = 0; j < count; j++) {
+          const t = (await btns.nth(j).textContent())?.trim();
+          if (t === correct) {
+            await btns.nth(j).click();
+            break;
+          }
+        }
+      } else {
+        await btns.first().click();
+      }
+
+      await page.waitForTimeout(150);
+
+      // Click "Volgende"
+      const nextBtn = page.locator('.next-btn');
+      if (await nextBtn.isVisible().catch(() => false)) {
+        const txt = await nextBtn.textContent();
+        if (txt?.includes('Volgende')) {
+          await nextBtn.click();
+          await page.waitForTimeout(200);
+        }
+      }
+    }
+
+    throw new Error(`Did not complete all levels after ${maxIter} iterations`);
+  });
+
 });

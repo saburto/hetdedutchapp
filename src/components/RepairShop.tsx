@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import type { Challenge } from '../../data/schema.ts';
 import { ALL_NOUNS } from '../engine/session.ts';
 import { loadProgress } from '../engine/progress.ts';
@@ -104,11 +104,11 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
     3: 'Contrast duel',
   };
 
-  // Randomise button order for stages 2 & 3
-  const [leftOpt, rightOpt] = (() => {
+  // Randomise button order once per challenge — stable across re-renders
+  const [leftOpt, rightOpt] = useMemo(() => {
     const opts = [challenge.options.correct, challenge.options.distractor];
     return Math.random() > 0.5 ? opts : [opts[1], opts[0]];
-  })();
+  }, [challenge.challengeId]);
 
   function getBtnClassName(opt: string): string {
     if (!chosenAnswer) return 'option-btn';

@@ -1,18 +1,28 @@
 interface Props {
   attempts: number;
   distinctNouns: number;
-  accuracy: number; // 0–1
+  /** Last N results (true = correct, false = wrong). Used for rolling accuracy. */
+  recentResults: boolean[];
 }
 
 /**
  * Three stacked progress bars showing level-up criteria:
- * - ≥16 pogingen (attempts)
+ * - ≥16 pogingen (total attempts)
  * - ≥8 zelfstandige naamwoorden (distinct nouns correct)
- * - ≥80% juist (accuracy)
+ * - ≥80% juist (rolling accuracy over last 20 answers)
  *
  * Each bar fills left-to-right and turns green when its threshold is met.
  */
-export function LevelProgress({ attempts, distinctNouns, accuracy }: Props) {
+export function LevelProgress({ attempts, distinctNouns, recentResults }: Props) {
+  // Rolling accuracy: last 20 answers, or total if fewer than 8
+  const recentCorrect = recentResults.filter(Boolean).length;
+  const rollingAccuracy =
+    recentResults.length >= 8
+      ? recentCorrect / recentResults.length
+      : attempts > 0
+        ? (recentCorrect / Math.max(1, recentResults.length))
+        : 0;
+
   const criteria = [
     {
       label: 'Pogingen',
@@ -30,10 +40,12 @@ export function LevelProgress({ attempts, distinctNouns, accuracy }: Props) {
     },
     {
       label: 'Juist',
-      current: Math.round(accuracy * 100),
+      current: Math.round(rollingAccuracy * 100),
       target: 80,
-      met: accuracy >= 0.8,
-      display: `${Math.round(accuracy * 100)}%`,
+      met: recentResults.length >= 8
+        ? rollingAccuracy >= 0.8
+        : attempts >= 16 && rollingAccuracy >= 0.8,
+      display: `${Math.round(rollingAccuracy * 100)}%`,
     },
   ];
 
@@ -54,6 +66,11 @@ export function LevelProgress({ attempts, distinctNouns, accuracy }: Props) {
           </div>
         );
       })}
+      {recentResults.length >= 8 && (
+        <div style={{ fontSize: '.7rem', color: 'var(--text-muted)', textAlign: 'center', marginTop: '.15rem' }}>
+          Op basis van de laatste {recentResults.length} antwoorden
+        </div>
+      )}
     </div>
   );
 }
