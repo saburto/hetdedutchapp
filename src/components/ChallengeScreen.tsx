@@ -3,7 +3,7 @@ import type { Challenge } from '../../data/schema.ts';
 import { SentenceCanvas } from './SentenceCanvas.tsx';
 import { ModifierSlot } from './ModifierSlot.tsx';
 import { RepairShop } from './RepairShop.tsx';
-import { ProgressDots } from './ProgressDots.tsx';
+import { LevelProgress } from './LevelProgress.tsx';
 import { SettingsPanel } from './SettingsPanel.tsx';
 import { Tour } from './Tour.tsx';
 import {
@@ -228,15 +228,15 @@ export function ChallengeScreen() {
         <span style={{ marginLeft: 'auto' }}>Nog: {session.queue.length}</span>
       </div>
 
-      {/* Progress dots */}
-      <ProgressDots
-        current={
-          session.queue.length > 0
-            ? (session.score.correct + session.score.wrong) % 10
+      {/* Level progress */}
+      <LevelProgress
+        attempts={session.score.correct + session.score.wrong}
+        distinctNouns={new Set(session.correctNouns).size}
+        accuracy={
+          session.score.correct + session.score.wrong > 0
+            ? session.score.correct / (session.score.correct + session.score.wrong)
             : 0
         }
-        total={10}
-        results={[]}
       />
 
       {/* Main content */}

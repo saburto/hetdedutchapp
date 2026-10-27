@@ -585,6 +585,60 @@ body{
 .app-footer a:hover{color:var(--accent)}
 .footer-sep{opacity:.4}
 
+/* ===== Level Progress Bars ===== */
+.level-progress {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.lp-row {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  font-size: .82rem;
+}
+
+.lp-label {
+  width: 6.5rem;
+  text-align: right;
+  color: var(--text-muted);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.lp-track {
+  flex: 1;
+  height: 10px;
+  background: var(--bg-slot);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.lp-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 99px;
+  transition: width .4s ease, background .3s;
+}
+
+.lp-row.met .lp-fill {
+  background: var(--correct);
+}
+
+.lp-value {
+  width: 2.8rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+.lp-row.met .lp-value {
+  color: var(--correct);
+}
+
 /* ===== Compound Stems Breakdown ===== */
 .compound-stems{
   margin-top:.75rem;

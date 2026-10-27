@@ -39,6 +39,12 @@ const DEFAULT_STEPS: TourStep[] = [
     placement: 'bottom',
   },
   {
+    target: '.level-progress',
+    title: 'Level-Up Progress',
+    body: 'Three bars show what you need to unlock the next level: at least 16 attempts, 8 distinct nouns answered correctly, and 80% accuracy. Each bar turns green when its goal is met!',
+    placement: 'bottom',
+  },
+  {
     target: '.challenge-card',
     title: 'The Challenge',
     body: 'Each exercise shows a Dutch sentence with a missing modifier. Choose the correct form based on the hidden noun\'s gender.',
