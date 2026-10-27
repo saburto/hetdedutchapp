@@ -584,3 +584,16 @@ body{
 }
 .app-footer a:hover{color:var(--accent)}
 .footer-sep{opacity:.4}
+
+/* ===== Compound Stems Breakdown ===== */
+.compound-stems{
+  margin-top:.75rem;
+  padding:.75rem 1rem;
+  background:var(--bg);
+  border:1px dashed var(--border);
+  border-radius:var(--radius-sm);
+  font-size:.95rem;
+  line-height:1.8;
+  text-align:center;
+  animation:fadeInUp .4s ease;
+}

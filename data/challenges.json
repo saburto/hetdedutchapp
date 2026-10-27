@@ -3835,6 +3835,201 @@
       },
       "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Doos' is de, dus 'potlodendoos' is de — gebruik 'Deze'.",
       "sentenceTranslation": "The pencil + The box = The pencil box. This pencil box is full of colors."
+    },
+    {
+      "challengeId": "ch_adj_41",
+      "nounId": "noun_0002",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] boek op tafel is interessant.",
+      "options": {
+        "correct": "Het mooie",
+        "distractor": "Het mooi"
+      },
+      "explanation": "\"Boek\" is een het-woord, dus na \"een\" valt de -e weg: \"een mooi boek\". Maar na \"het\" komt er wél een -e: \"het mooie boek\".",
+      "sentenceTranslation": "The beautiful book on the table is interesting."
+    },
+    {
+      "challengeId": "ch_adj_42",
+      "nounId": "noun_0004",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] huis op de hoek is groot.",
+      "options": {
+        "correct": "Het mooie",
+        "distractor": "Het mooi"
+      },
+      "explanation": "\"Huis\" is een het-woord. Na \"een\" geen -e: \"een mooi huis\". Maar na \"het\" komt er wél een -e: \"het mooie huis\".",
+      "sentenceTranslation": "The beautiful house on the corner is big."
+    },
+    {
+      "challengeId": "ch_adj_43",
+      "nounId": "noun_0008",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] raam in de keuken is vies.",
+      "options": {
+        "correct": "Het vieze",
+        "distractor": "Het vies"
+      },
+      "explanation": "\"Raam\" is een het-woord. Na \"een\" geen -e: \"een vies raam\". Maar na \"het\" moet het wél met -e: \"het vieze raam\".",
+      "sentenceTranslation": "The dirty window in the kitchen is dirty."
+    },
+    {
+      "challengeId": "ch_adj_44",
+      "nounId": "noun_0010",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] water in de fles is koud.",
+      "options": {
+        "correct": "Het koude",
+        "distractor": "Het koud"
+      },
+      "explanation": "\"Water\" is een het-woord. Na \"een\" geen -e: \"een koud water\". Maar na \"het\" moet het wél met -e: \"het koude water\".",
+      "sentenceTranslation": "The cold water in the bottle is cold."
+    },
+    {
+      "challengeId": "ch_adj_45",
+      "nounId": "noun_0012",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] paard in de wei is snel.",
+      "options": {
+        "correct": "Het snelle",
+        "distractor": "Het snel"
+      },
+      "explanation": "\"Paard\" is een het-woord. Na \"een\" geen -e: \"een snel paard\". Maar na \"het\" moet het wél met -e: \"het snelle paard\".",
+      "sentenceTranslation": "The fast horse in the meadow is fast."
+    },
+    {
+      "challengeId": "ch_adj_46",
+      "nounId": "noun_0014",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] brood van de bakker is vers.",
+      "options": {
+        "correct": "Het verse",
+        "distractor": "Het vers"
+      },
+      "explanation": "\"Brood\" is een het-woord. Na \"een\" geen -e: \"een vers brood\". Maar na \"het\" moet het wél met -e: \"het verse brood\".",
+      "sentenceTranslation": "The fresh bread from the baker is fresh."
+    },
+    {
+      "challengeId": "ch_adj_47",
+      "nounId": "noun_0006",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] kind in de klas lacht lief.",
+      "options": {
+        "correct": "Het lieve",
+        "distractor": "Het lief"
+      },
+      "explanation": "\"Kind\" is een het-woord. Na \"een\" geen -e: \"een lief kind\". Maar na \"het\" moet het wél met -e: \"het lieve kind\".",
+      "sentenceTranslation": "The sweet child in the class laughs sweetly."
+    },
+    {
+      "challengeId": "ch_adj_48",
+      "nounId": "noun_0002",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] boek moet je lezen.",
+      "options": {
+        "correct": "Dit goede",
+        "distractor": "Dit goed"
+      },
+      "explanation": "\"Boek\" is een het-woord. Na \"dit\" komt er ook een -e, net zoals na \"het\": \"dit goede boek\". Alleen na \"een\" vervalt de -e bij het-woorden.",
+      "sentenceTranslation": "This good book you must read."
+    },
+    {
+      "challengeId": "ch_adj_49",
+      "nounId": "noun_0004",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] huis is pas geverfd.",
+      "options": {
+        "correct": "Dit witte",
+        "distractor": "Dit wit"
+      },
+      "explanation": "\"Huis\" is een het-woord. Na \"dit\" komt er ook een -e: \"dit witte huis\". De regel is: alleen na \"een\" vervalt de -e bij het-woorden.",
+      "sentenceTranslation": "This white house is freshly painted."
+    },
+    {
+      "challengeId": "ch_adj_50",
+      "nounId": "noun_0023",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "[modifier] bed in de hoek is comfortabel.",
+      "options": {
+        "correct": "Het comfortabele",
+        "distractor": "Het comfortabel"
+      },
+      "explanation": "\"Bed\" is een het-woord. Na \"het\" met -e: \"het comfortabele bed\". Let op: na \"een\" is het \"een comfortabel bed\" zonder -e.",
+      "sentenceTranslation": "The comfortable bed in the corner is comfortable."
+    },
+    {
+      "challengeId": "ch_cmpd_36",
+      "nounId": "noun_0011",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De koffie + Het kopje = [modifier] koffiekopje staat op tafel.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"Kopje\" is een verkleinwoord (het). Bij \"koffiekopje\" bepaalt \"kopje\" het geslacht: het-woord. Gebruik \"Dit\".",
+      "sentenceTranslation": "The coffee + The little cup = This little coffee cup is on the table."
+    },
+    {
+      "challengeId": "ch_cmpd_37",
+      "nounId": "noun_0063",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "[modifier] glas bier is voor jou.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"Glas\" is een het-woord. \"Glas bier\" is geen samenstelling maar twee woorden — \"glas\" bepaalt het geslacht. Gebruik \"Dit\".",
+      "sentenceTranslation": "This glass of beer is for you."
+    },
+    {
+      "challengeId": "ch_cmpd_38",
+      "nounId": "noun_0024",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De stad + Het centrum = Het stadscentrum. [modifier] stadscentrum is druk.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "\"Centrum\" is het, dus \"stadscentrum\" is het — het laatste woord wint. Gebruik \"Dit\".",
+      "sentenceTranslation": "The city + The center = The city center. This city center is busy."
+    },
+    {
+      "challengeId": "ch_cmpd_39",
+      "nounId": "noun_0010",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "Het water + De fles = De waterfles. Maar let op: [modifier] fles water is van glas.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "\"Fles water\" is geen samenstelling — \"fles\" (de) bepaalt het geslacht. Bij de samenstelling \"waterfles\" bepaalt \"fles\" ook: de-woord. Gebruik \"Deze\".",
+      "sentenceTranslation": "The water + The bottle = The water bottle. This bottle of water is made of glass."
+    },
+    {
+      "challengeId": "ch_cmpd_40",
+      "nounId": "noun_0010",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "Het water + De fles = De waterfles. Ik heb een [modifier] waterfles gekocht.",
+      "options": {
+        "correct": "mooie",
+        "distractor": "mooi"
+      },
+      "explanation": "\"Waterfles\" is de (laatste woord \"fles\" bepaalt). Na \"een\" krijgt het bijvoeglijk naamwoord bij een de-woord wél -e: \"een mooie waterfles\".",
+      "sentenceTranslation": "I bought a beautiful water bottle."
     }
   ]
 }

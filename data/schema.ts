@@ -9,6 +9,7 @@ export const NounSchema = z.object({
   category: z.string().min(1),
   diminutive: z.string().optional(), // e.g. "autootje"
   grammaticalRules: z.array(z.string()),
+  ruleHint: z.string().optional(), // e.g. "-ing woorden zijn altijd de"
 });
 export type Noun = z.infer<typeof NounSchema>;
 

@@ -6,7 +6,7 @@ test.describe('Dataset Expansion', () => {
   test('dataset contains expanded nouns and level challenges', async ({ page }) => {
     // Assert data counts
     expect(nounsRaw.nouns.length).toBe(100);
-    expect(challengesRaw.challenges.length).toBe(295);
+    expect(challengesRaw.challenges.length).toBe(310);
 
     // Verify level breakdown has expanded counts across all levels
     const byLevel: Record<number, number> = {};
@@ -15,10 +15,10 @@ test.describe('Dataset Expansion', () => {
     }
     expect(byLevel[1]).toBe(100);
     expect(byLevel[2]).toBe(40);
-    expect(byLevel[3]).toBe(40);
+    expect(byLevel[3]).toBe(50);
     expect(byLevel[4]).toBe(40);
     expect(byLevel[5]).toBe(40);
-    expect(byLevel[6]).toBe(35);
+    expect(byLevel[6]).toBe(40);
 
     await page.goto('/');
 

@@ -25,17 +25,20 @@ const REPAIR_LEVELS: LevelType[] = [
 
 /**
  * Get a repair challenge for the given noun and mistake stage.
+ * @param currentLevel The user's current level (unlocked levels).
+ * Stage 2 shifts are restricted to mechanics at or below this level.
  */
 export function getRepairChallenge(
   nounId: string,
   stage: number, // 1, 2, or 3
   failedLevelType: LevelType,
+  currentLevel: number,
 ): Challenge | null {
   if (stage === 1) {
     return getStage1Repair(nounId, failedLevelType);
   }
   if (stage === 2) {
-    return getStage2Repair(nounId);
+    return getStage2Repair(nounId, failedLevelType, currentLevel);
   }
   if (stage === 3) {
     return getStage3ContrastDuel(nounId);
@@ -52,11 +55,16 @@ function getStage1Repair(nounId: string, failedType: LevelType): Challenge | nul
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
-/** Stage 2: Structural shift — change the mechanic for the same noun. */
-function getStage2Repair(nounId: string): Challenge | null {
-  // Pick a different level type than the failed one (but stay in 01-03)
+/** Stage 2: Structural shift — change the mechanic for the same noun,
+ *  but only to mechanics at or below currentLevel. */
+function getStage2Repair(nounId: string, failedLevelType: LevelType, currentLevel: number): Challenge | null {
+  // Pick a different level type to the failed one, restricted to unlocked levels
   const pool = ALL_CHALLENGES.filter(
-    (c) => c.nounId === nounId && REPAIR_LEVELS.includes(c.levelType),
+    (c) =>
+      c.nounId === nounId &&
+      c.levelType !== failedLevelType &&
+      c.levelNumber <= currentLevel &&
+      REPAIR_LEVELS.includes(c.levelType),
   );
   if (pool.length === 0) return null;
   return pool[Math.floor(Math.random() * pool.length)];

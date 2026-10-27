@@ -8,17 +8,41 @@ const ALL_NOUNS = (nounsRaw as { version: number; nouns: Noun[] }).nouns;
 
 // ── Adaptive Queue ──────────────────────────────────────────────
 
+/** Half-life in days for mastery decay (14 days → mastery halves). */
+const MASTERY_DECAY_DAYS = 14;
+
+/** Compute effective mastery with exponential decay based on time since last seen. */
+function getDecayedMastery(
+  nounId: string,
+  progress: ProgressStore,
+): number {
+  const data = progress.nouns[nounId];
+  const rawMastery = data?.mastery ?? 0;
+  if (!data?.lastSeen) return rawMastery;
+
+  const lastSeen = new Date(data.lastSeen).getTime();
+  if (isNaN(lastSeen)) return rawMastery;
+
+  const daysSince = (Date.now() - lastSeen) / (1000 * 60 * 60 * 24);
+  if (daysSince <= 0) return rawMastery;
+
+  const decayed = rawMastery * Math.exp(-daysSince / MASTERY_DECAY_DAYS);
+  return clampMastery(decayed);
+}
+
 /**
- * Build a session queue weighted by per-noun mastery.
+ * Build a session queue weighted by per-noun mastery (with time decay).
  *
- * Mastery tiers:
- *   < 0.3  → struggling: all challenges for this noun at this level
- *   0.3–0.7 → learning:   ~75% of challenges
+ * Effective mastery tiers (after decay):
+ *   < 0.3  → struggling: up to 2 challenges (capped)
+ *   0.3–0.7 → learning:   ~75% of challenges, capped at 2
  *   0.7–0.9 → proficient:  1–2 challenges
  *   > 0.9  → mastered:     33% chance of 1 refresher challenge
  *
  * Within a noun, challenges matching the noun's mistakeType are
  * preferred (the mechanic they last failed on gets more reps).
+ *
+ * Max 2 challenges per noun per session to prevent cramming.
  */
 function buildAdaptiveQueue(level: number, progress: ProgressStore): string[] {
   const levelChallenges = ALL_CHALLENGES.filter((c) => c.levelNumber === level);
@@ -34,17 +58,17 @@ function buildAdaptiveQueue(level: number, progress: ProgressStore): string[] {
   const queue: string[] = [];
 
   for (const [nounId, challenges] of byNoun) {
+    const effectiveMastery = getDecayedMastery(nounId, progress);
     const data = progress.nouns[nounId];
-    const mastery = data?.mastery ?? 0;
     const mistakeType = data?.mistakeType as LevelType | undefined;
 
     // How many challenges to include for this noun?
     let count: number;
-    if (mastery < 0.3) {
-      count = challenges.length;                      // all
-    } else if (mastery < 0.7) {
-      count = Math.max(1, Math.ceil(challenges.length * 0.75));
-    } else if (mastery < 0.9) {
+    if (effectiveMastery < 0.3) {
+      count = Math.min(2, challenges.length);          // capped at 2
+    } else if (effectiveMastery < 0.7) {
+      count = Math.min(2, Math.max(1, Math.ceil(challenges.length * 0.75)));
+    } else if (effectiveMastery < 0.9) {
       count = Math.min(2, challenges.length);          // 1–2
     } else {
       count = Math.random() < 0.33 ? 1 : 0;            // occasional refresher
@@ -65,8 +89,8 @@ function buildAdaptiveQueue(level: number, progress: ProgressStore): string[] {
     }
   }
 
-  // Shuffle the final queue so nouns are interleaved (not blocked by noun)
-  return shuffle(queue);
+  // Shuffle enforcing spacing (≥4 other nouns between same noun)
+  return spacedShuffle(queue);
 }
 
 export interface SessionState {
@@ -75,6 +99,7 @@ export interface SessionState {
   queue: string[]; // challengeIds
   level: number;
   score: { correct: number; wrong: number };
+  correctNouns: string[]; // nounIds answered correctly this session
   streak: number;
   isRepairing: boolean;
   repairChallenge: Challenge | null;
@@ -89,6 +114,48 @@ function shuffle<T>(arr: T[]): T[] {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+/** Map a challengeId to its nounId for spacing enforcement. */
+function getNounIdForChallenge(challengeId: string): string {
+  const ch = ALL_CHALLENGES.find((c) => c.challengeId === challengeId);
+  return ch?.nounId ?? challengeId;
+}
+
+/**
+ * Shuffle with constraint: at least MIN_SPACING other nouns between
+ * occurrences of the same nounId. Falls back to Fisher-Yates if the
+ * constraint is impossible (e.g. too few distinct nouns).
+ */
+const MIN_SPACING = 4;
+
+function spacedShuffle(queue: string[]): string[] {
+  // Quick path: if very short queue, just shuffle normally
+  if (queue.length <= MIN_SPACING + 1) return shuffle(queue);
+
+  // Try spaced shuffle up to 20 attempts; fall back to random if impossible
+  for (let attempt = 0; attempt < 20; attempt++) {
+    const result = [...queue];
+    shuffle(result);
+
+    let valid = true;
+    // Check spacing: for each pair of same nounId, distance must be >= MIN_SPACING
+    const lastPos = new Map<string, number>();
+    for (let i = 0; i < result.length; i++) {
+      const nounId = getNounIdForChallenge(result[i]);
+      const prev = lastPos.get(nounId);
+      if (prev !== undefined && i - prev < MIN_SPACING) {
+        valid = false;
+        break;
+      }
+      lastPos.set(nounId, i);
+    }
+
+    if (valid) return result;
+  }
+
+  // Fallback: plain shuffle
+  return shuffle([...queue]);
 }
 
 /**
@@ -112,6 +179,7 @@ export function createSession(level: number): SessionState {
     queue,
     level,
     score: { correct: 0, wrong: 0 },
+    correctNouns: [],
     streak: 0,
     isRepairing: false,
     repairChallenge: null,
@@ -126,6 +194,7 @@ function resumeFromQueue(level: number): SessionState {
     queue: [...progress.sessionQueue],
     level,
     score: { correct: 0, wrong: 0 },
+    correctNouns: [],
     streak: 0,
     isRepairing: false,
     repairChallenge: null,
@@ -194,11 +263,19 @@ export function submitAnswer(
     wrong: nounData.wrong + (correct ? 0 : 1),
     lastSeen: new Date().toISOString(),
     mastery: clampMastery(
-      nounData.mastery + (correct ? 0.08 : -0.05),
+      nounData.mastery + (correct ? 0.07 : -0.14),
     ),
-    mistakeStage: correct ? 0 : Math.min(3, (nounData.mistakeStage || 0) + 1),
+    // Stage logic:
+    // - Correct in normal play: reset to 0 (they've demonstrated knowledge)
+    // - Wrong: increment stage (1→2→3, capped at 3)
+    // - The RepairShop's onRepairComplete handles advancing/resetting
+    //   stages during the repair loop; this only fires for the initial
+    //   challenge answer that may trigger the repair.
+    mistakeStage: correct
+      ? 0
+      : Math.min(3, (nounData.mistakeStage || 0) + 1),
     mistakeType: correct
-      ? (nounData.mistakeStage === 0 ? undefined : nounData.mistakeType)
+      ? undefined
       : state.currentChallenge.levelType,
   };
 
@@ -209,6 +286,11 @@ export function submitAnswer(
   progress.currentLevel = state.level;
   saveProgress(progress);
 
+  // Track distinct nouns answered correctly this session
+  const newCorrectNouns = correct && !state.correctNouns.includes(nounId)
+    ? [...state.correctNouns, nounId]
+    : state.correctNouns;
+
   // Keep currentChallenge set so the explanation/feedback can reference it.
   // The caller (ChallengeScreen) clears it when advancing to the next challenge.
   const newState: SessionState = {
@@ -217,6 +299,7 @@ export function submitAnswer(
       correct: state.score.correct + (correct ? 1 : 0),
       wrong: state.score.wrong + (correct ? 0 : 1),
     },
+    correctNouns: newCorrectNouns,
     streak: correct ? state.streak + 1 : 0,
     isRepairing: false,
     repairChallenge: state.currentChallenge,
@@ -226,12 +309,17 @@ export function submitAnswer(
 }
 
 /**
- * Progress to the next level when the user scores ≥80% with ≥8 attempts.
+ * Progress to the next level when the user:
+ * - Has made ≥16 attempts
+ * - Has ≥80% accuracy
+ * - Has answered at least 8 distinct nouns correctly
  */
-export function shouldLevelUp(score: { correct: number; wrong: number }): boolean {
+export function shouldLevelUp(score: { correct: number; wrong: number }, correctNouns: string[]): boolean {
   const total = score.correct + score.wrong;
-  if (total < 8) return false;
-  return score.correct / total >= 0.8;
+  if (total < 16) return false;
+  if (score.correct / total < 0.8) return false;
+  if (new Set(correctNouns).size < 8) return false;
+  return true;
 }
 
 function clampMastery(v: number): number {
