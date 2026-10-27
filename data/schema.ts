@@ -25,7 +25,7 @@ export type LevelType = z.infer<typeof LevelType>;
 
 /** A single context challenge */
 export const ChallengeSchema = z.object({
-  challengeId: z.string().regex(/^ch_[a-z]+_\d{2}$/, "challengeId must match ch_X_NN"),
+  challengeId: z.string().regex(/^ch_[a-z]+_\d{2,}$/, "challengeId must match ch_X_NN"),
   nounId: z.string(),
   levelType: LevelType,
   levelNumber: z.number().int().min(1).max(6),

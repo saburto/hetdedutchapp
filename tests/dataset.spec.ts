@@ -1,7 +1,25 @@
 import { test, expect } from '@playwright/test';
+import nounsRaw from '../data/nouns.json' with { type: 'json' };
+import challengesRaw from '../data/challenges.json' with { type: 'json' };
 
 test.describe('Dataset Expansion', () => {
-  test('app displays expanded dataset nouns and level options', async ({ page }) => {
+  test('dataset contains expanded nouns and level challenges', async ({ page }) => {
+    // Assert data counts
+    expect(nounsRaw.nouns.length).toBe(100);
+    expect(challengesRaw.challenges.length).toBe(295);
+
+    // Verify level breakdown has expanded counts across all levels
+    const byLevel: Record<number, number> = {};
+    for (const c of challengesRaw.challenges) {
+      byLevel[c.levelNumber] = (byLevel[c.levelNumber] || 0) + 1;
+    }
+    expect(byLevel[1]).toBe(100);
+    expect(byLevel[2]).toBe(40);
+    expect(byLevel[3]).toBe(40);
+    expect(byLevel[4]).toBe(40);
+    expect(byLevel[5]).toBe(40);
+    expect(byLevel[6]).toBe(35);
+
     await page.goto('/');
 
     // Verify session initializes properly with the sentence canvas
