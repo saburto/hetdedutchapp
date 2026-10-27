@@ -1391,6 +1391,1605 @@
       },
       "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kozijn' is het, dus 'raamkozijn' is het — gebruik 'Dit'.",
       "sentenceTranslation": "The window + The frame = The window frame. This window frame needs to be painted."
+    },
+    {
+      "challengeId": "ch_art_36",
+      "nounId": "noun_0036",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] boom heeft groene bladeren.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Boom' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The tree has green leaves."
+    },
+    {
+      "challengeId": "ch_art_37",
+      "nounId": "noun_0037",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] bos is erg groot en donker.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Bos' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The forest is very big and dark."
+    },
+    {
+      "challengeId": "ch_art_38",
+      "nounId": "noun_0038",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vogel zingt een mooi lied.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Vogel' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The bird sings a beautiful song."
+    },
+    {
+      "challengeId": "ch_art_39",
+      "nounId": "noun_0039",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] ei ligt in het nest.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Ei' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The egg is in the nest."
+    },
+    {
+      "challengeId": "ch_art_40",
+      "nounId": "noun_0040",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] schoen staat onder de kast.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Schoen' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The shoe is under the closet."
+    },
+    {
+      "challengeId": "ch_art_41",
+      "nounId": "noun_0041",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vest is gemaakt van wol.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Vest' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The cardigan is made of wool."
+    },
+    {
+      "challengeId": "ch_art_42",
+      "nounId": "noun_0042",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] man loopt op straat.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Man' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The man walks on the street."
+    },
+    {
+      "challengeId": "ch_art_43",
+      "nounId": "noun_0043",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] oog van de kat is blauw.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Oog' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The eye of the cat is blue."
+    },
+    {
+      "challengeId": "ch_art_44",
+      "nounId": "noun_0044",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vrouw werkt in de tuin.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Vrouw' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The woman works in the garden."
+    },
+    {
+      "challengeId": "ch_art_45",
+      "nounId": "noun_0045",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] oor doet een beetje zeer.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Oor' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The ear hurts a little bit."
+    },
+    {
+      "challengeId": "ch_art_46",
+      "nounId": "noun_0046",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] hand is koud van de winterlucht.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Hand' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The hand is cold from the winter air."
+    },
+    {
+      "challengeId": "ch_art_47",
+      "nounId": "noun_0047",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] hoofd doet hem pijn.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Hoofd' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The head hurts him."
+    },
+    {
+      "challengeId": "ch_art_48",
+      "nounId": "noun_0048",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] voet past niet in de schoen.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Voet' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The foot does not fit in the shoe."
+    },
+    {
+      "challengeId": "ch_art_49",
+      "nounId": "noun_0049",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] been is gebroken.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Been' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The leg is broken."
+    },
+    {
+      "challengeId": "ch_art_50",
+      "nounId": "noun_0050",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] zuster helpt de patiënt.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Zuster' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The sister helps the patient."
+    },
+    {
+      "challengeId": "ch_art_51",
+      "nounId": "noun_0051",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] gezin woont in een leuk huis.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Gezin' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The family lives in a nice house."
+    },
+    {
+      "challengeId": "ch_art_52",
+      "nounId": "noun_0052",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] brief ligt in de brievenbus.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Brief' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The letter is in the mailbox."
+    },
+    {
+      "challengeId": "ch_art_53",
+      "nounId": "noun_0053",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] bericht is erg belangrijk.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Bericht' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The message is very important."
+    },
+    {
+      "challengeId": "ch_art_54",
+      "nounId": "noun_0054",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] muur is wit geschilderd.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Muur' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The wall is painted white."
+    },
+    {
+      "challengeId": "ch_art_55",
+      "nounId": "noun_0055",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] dak is rood gekleurd.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Dak' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The roof is colored red."
+    },
+    {
+      "challengeId": "ch_art_56",
+      "nounId": "noun_0056",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] deur staat op een kier.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Deur' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The door is ajar."
+    },
+    {
+      "challengeId": "ch_art_57",
+      "nounId": "noun_0057",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] slot is erg oud.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Slot' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The lock is very old."
+    },
+    {
+      "challengeId": "ch_art_58",
+      "nounId": "noun_0058",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] keuken is heel schoon.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Keuken' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The kitchen is very clean."
+    },
+    {
+      "challengeId": "ch_art_59",
+      "nounId": "noun_0059",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] bord staat op tafel.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Bord' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The plate is on the table."
+    },
+    {
+      "challengeId": "ch_art_60",
+      "nounId": "noun_0060",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vork valt op de grond.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Vork' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The fork falls on the floor."
+    },
+    {
+      "challengeId": "ch_art_61",
+      "nounId": "noun_0061",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] mes is erg scherp.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Mes' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The knife is very sharp."
+    },
+    {
+      "challengeId": "ch_art_62",
+      "nounId": "noun_0062",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] fles staat in de koelkast.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Fles' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The bottle is in the fridge."
+    },
+    {
+      "challengeId": "ch_art_63",
+      "nounId": "noun_0063",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] glas is helemaal vol.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Glas' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The glass is completely full."
+    },
+    {
+      "challengeId": "ch_art_64",
+      "nounId": "noun_0064",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] soep is erg warm.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Soep' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The soup is very hot."
+    },
+    {
+      "challengeId": "ch_art_65",
+      "nounId": "noun_0065",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vlees smaakt goed.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Vlees' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The meat tastes good."
+    },
+    {
+      "challengeId": "ch_art_66",
+      "nounId": "noun_0066",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] kaas komt uit Gouda.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Kaas' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The cheese comes from Gouda."
+    },
+    {
+      "challengeId": "ch_art_67",
+      "nounId": "noun_0067",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] fruit is vers gekocht.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Fruit' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The fruit is freshly bought."
+    },
+    {
+      "challengeId": "ch_art_68",
+      "nounId": "noun_0068",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] zon schijnt fel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Zon' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The sun shines brightly."
+    },
+    {
+      "challengeId": "ch_art_69",
+      "nounId": "noun_0069",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] weer is vandaag erg mooi.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Weer' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The weather is very nice today."
+    },
+    {
+      "challengeId": "ch_art_70",
+      "nounId": "noun_0070",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] regen tikt tegen het raam.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Regen' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The rain taps against the window."
+    },
+    {
+      "challengeId": "ch_art_71",
+      "nounId": "noun_0071",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] ijs is heerlijk koud.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Ijs' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The ice cream is deliciously cold."
+    },
+    {
+      "challengeId": "ch_art_72",
+      "nounId": "noun_0072",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] zee is erg wild vandaag.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Zee' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The sea is very rough today."
+    },
+    {
+      "challengeId": "ch_art_73",
+      "nounId": "noun_0073",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] schip vaart naar de haven.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Schip' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The ship sails to the harbor."
+    },
+    {
+      "challengeId": "ch_art_74",
+      "nounId": "noun_0074",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] weg is erg smal.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Weg' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The road is very narrow."
+    },
+    {
+      "challengeId": "ch_art_75",
+      "nounId": "noun_0075",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] spoor is geblokkeerd.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Spoor' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The track is blocked."
+    },
+    {
+      "challengeId": "ch_art_76",
+      "nounId": "noun_0076",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] bus komt over vijf minuten.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Bus' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The bus comes in five minutes."
+    },
+    {
+      "challengeId": "ch_art_77",
+      "nounId": "noun_0077",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] station is pas vernieuwd.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Station' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The station was recently renovated."
+    },
+    {
+      "challengeId": "ch_art_78",
+      "nounId": "noun_0078",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vraag is niet zo moeilijk.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Vraag' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The question is not that difficult."
+    },
+    {
+      "challengeId": "ch_art_79",
+      "nounId": "noun_0079",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] antwoord staat op de kaart.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Antwoord' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The answer is on the card."
+    },
+    {
+      "challengeId": "ch_art_80",
+      "nounId": "noun_0080",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] les begint om tien uur.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Les' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The lesson starts at ten o'clock."
+    },
+    {
+      "challengeId": "ch_art_81",
+      "nounId": "noun_0081",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] verhaal was erg spannend.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Verhaal' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The story was very exciting."
+    },
+    {
+      "challengeId": "ch_art_82",
+      "nounId": "noun_0082",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] film begint zo dadelijk.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Film' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The movie starts in a moment."
+    },
+    {
+      "challengeId": "ch_art_83",
+      "nounId": "noun_0083",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] lied is erg populair.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Lied' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The song is very popular."
+    },
+    {
+      "challengeId": "ch_art_84",
+      "nounId": "noun_0084",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] muziek klinkt erg mooi.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Muziek' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The music sounds very nice."
+    },
+    {
+      "challengeId": "ch_art_85",
+      "nounId": "noun_0085",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] feest duurt tot laat.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Feest' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The party lasts until late."
+    },
+    {
+      "challengeId": "ch_poss_16",
+      "nounId": "noun_0036",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] boom staat in de tuin.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Boom' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our tree is in the garden."
+    },
+    {
+      "challengeId": "ch_poss_17",
+      "nounId": "noun_0037",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] bos is prachtig in het najaar.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Bos' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our forest is beautiful in autumn."
+    },
+    {
+      "challengeId": "ch_poss_18",
+      "nounId": "noun_0038",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] vogel vliegt weg.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Vogel' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our bird flies away."
+    },
+    {
+      "challengeId": "ch_poss_19",
+      "nounId": "noun_0039",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] ei is kookklaar.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Ei' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our egg is ready to boil."
+    },
+    {
+      "challengeId": "ch_poss_20",
+      "nounId": "noun_0040",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] schoen is nog helemaal nieuw.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Schoen' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our shoe is still completely new."
+    },
+    {
+      "challengeId": "ch_poss_21",
+      "nounId": "noun_0041",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] vest is erg warm.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Vest' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our cardigan is very warm."
+    },
+    {
+      "challengeId": "ch_poss_22",
+      "nounId": "noun_0046",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] hand is schoon.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Hand' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our hand is clean."
+    },
+    {
+      "challengeId": "ch_poss_23",
+      "nounId": "noun_0047",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] hoofd is koel.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Hoofd' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our head is cool."
+    },
+    {
+      "challengeId": "ch_poss_24",
+      "nounId": "noun_0052",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] brief is verstuurd.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Brief' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our letter is sent."
+    },
+    {
+      "challengeId": "ch_poss_25",
+      "nounId": "noun_0053",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] bericht is aangekomen.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Bericht' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our message has arrived."
+    },
+    {
+      "challengeId": "ch_poss_26",
+      "nounId": "noun_0056",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] deur staat altijd open.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Deur' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our door is always open."
+    },
+    {
+      "challengeId": "ch_poss_27",
+      "nounId": "noun_0057",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] slot werkt heel goed.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Slot' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our lock works very well."
+    },
+    {
+      "challengeId": "ch_poss_28",
+      "nounId": "noun_0062",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] fles is bijna leeg.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Fles' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our bottle is almost empty."
+    },
+    {
+      "challengeId": "ch_poss_29",
+      "nounId": "noun_0063",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] glas is schoon.",
+      "options": {
+        "correct": "Ons",
+        "distractor": "Onze"
+      },
+      "explanation": "'Glas' is een het-woord, dus gebruiken we 'Ons' in plaats van 'Onze'.",
+      "sentenceTranslation": "Our glass is clean."
+    },
+    {
+      "challengeId": "ch_poss_30",
+      "nounId": "noun_0082",
+      "levelType": "possessive_pivot",
+      "levelNumber": 2,
+      "sentenceTemplate": "[modifier] film is genomineerd.",
+      "options": {
+        "correct": "Onze",
+        "distractor": "Ons"
+      },
+      "explanation": "'Film' is een de-woord, dus gebruiken we 'Onze' in plaats van 'Ons'.",
+      "sentenceTranslation": "Our movie is nominated."
+    },
+    {
+      "challengeId": "ch_adj_16",
+      "nounId": "noun_0036",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Er staat een [modifier] boom in het park.",
+      "options": {
+        "correct": "hoge",
+        "distractor": "hoog"
+      },
+      "explanation": "'Boom' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een hoge boom'.",
+      "sentenceTranslation": "There is a tall tree in the park."
+    },
+    {
+      "challengeId": "ch_adj_17",
+      "nounId": "noun_0037",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Wij lopen door een [modifier] bos.",
+      "options": {
+        "correct": "groot",
+        "distractor": "grote"
+      },
+      "explanation": "'Bos' is een het-woord, dus na 'een' vervalt de -e: 'een groot bos'.",
+      "sentenceTranslation": "We walk through a large forest."
+    },
+    {
+      "challengeId": "ch_adj_18",
+      "nounId": "noun_0038",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Ik zie een [modifier] vogel in de lucht.",
+      "options": {
+        "correct": "kleine",
+        "distractor": "klein"
+      },
+      "explanation": "'Vogel' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een kleine vogel'.",
+      "sentenceTranslation": "I see a small bird in the sky."
+    },
+    {
+      "challengeId": "ch_adj_19",
+      "nounId": "noun_0039",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Zij bakt een [modifier] ei voor het ontbijt.",
+      "options": {
+        "correct": "vers",
+        "distractor": "verse"
+      },
+      "explanation": "'Ei' is een het-woord, dus na 'een' vervalt de -e: 'een vers ei'.",
+      "sentenceTranslation": "She fries a fresh egg for breakfast."
+    },
+    {
+      "challengeId": "ch_adj_20",
+      "nounId": "noun_0040",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Hij draagt een [modifier] schoen.",
+      "options": {
+        "correct": "zwarte",
+        "distractor": "zwart"
+      },
+      "explanation": "'Schoen' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een zwarte schoen'.",
+      "sentenceTranslation": "He wears a black shoe."
+    },
+    {
+      "challengeId": "ch_adj_21",
+      "nounId": "noun_0041",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Zij koopt een [modifier] vest in de winkel.",
+      "options": {
+        "correct": "warm",
+        "distractor": "warme"
+      },
+      "explanation": "'Vest' is een het-woord, dus na 'een' vervalt de -e: 'een warm vest'.",
+      "sentenceTranslation": "She buys a warm cardigan in the store."
+    },
+    {
+      "challengeId": "ch_adj_22",
+      "nounId": "noun_0052",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Ik schrijf een [modifier] brief aan mijn vriend.",
+      "options": {
+        "correct": "lange",
+        "distractor": "lang"
+      },
+      "explanation": "'Brief' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een lange brief'.",
+      "sentenceTranslation": "I am writing a long letter to my friend."
+    },
+    {
+      "challengeId": "ch_adj_23",
+      "nounId": "noun_0053",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Hij stuurt een [modifier] bericht naar de groep.",
+      "options": {
+        "correct": "kort",
+        "distractor": "korte"
+      },
+      "explanation": "'Bericht' is een het-woord, dus na 'een' vervalt de -e: 'een kort bericht'.",
+      "sentenceTranslation": "He sends a short message to the group."
+    },
+    {
+      "challengeId": "ch_adj_24",
+      "nounId": "noun_0054",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Ze bouwen een [modifier] muur rond de tuin.",
+      "options": {
+        "correct": "sterke",
+        "distractor": "sterk"
+      },
+      "explanation": "'Muur' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een sterke muur'.",
+      "sentenceTranslation": "They build a strong wall around the garden."
+    },
+    {
+      "challengeId": "ch_adj_25",
+      "nounId": "noun_0055",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Het huis heeft een [modifier] dak.",
+      "options": {
+        "correct": "schuin",
+        "distractor": "schuine"
+      },
+      "explanation": "'Dak' is een het-woord, dus na 'een' vervalt de -e: 'een schuin dak'.",
+      "sentenceTranslation": "The house has a sloped roof."
+    },
+    {
+      "challengeId": "ch_adj_26",
+      "nounId": "noun_0060",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Hij pakt een [modifier] vork uit de la.",
+      "options": {
+        "correct": "schone",
+        "distractor": "schoon"
+      },
+      "explanation": "'Vork' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een schone vork'.",
+      "sentenceTranslation": "He takes a clean fork from the drawer."
+    },
+    {
+      "challengeId": "ch_adj_27",
+      "nounId": "noun_0061",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Mag ik een [modifier] mes van jou?",
+      "options": {
+        "correct": "scherp",
+        "distractor": "scherpe"
+      },
+      "explanation": "'Mes' is een het-woord, dus na 'een' vervalt de -e: 'een scherp mes'.",
+      "sentenceTranslation": "May I have a sharp knife from you?"
+    },
+    {
+      "challengeId": "ch_adj_28",
+      "nounId": "noun_0078",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Dat is een [modifier] vraag.",
+      "options": {
+        "correct": "goede",
+        "distractor": "goed"
+      },
+      "explanation": "'Vraag' is een de-woord, dus het bijvoeglijk naamwoord na 'een' krijgt een -e: 'een goede vraag'.",
+      "sentenceTranslation": "That is a good question."
+    },
+    {
+      "challengeId": "ch_adj_29",
+      "nounId": "noun_0079",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "Hij geeft een [modifier] antwoord.",
+      "options": {
+        "correct": "duidelijk",
+        "distractor": "duidelijke"
+      },
+      "explanation": "'Antwoord' is een het-woord, dus na 'een' vervalt de -e: 'een duidelijk antwoord'.",
+      "sentenceTranslation": "He gives a clear answer."
+    },
+    {
+      "challengeId": "ch_adj_30",
+      "nounId": "noun_0085",
+      "levelType": "adjective_snag",
+      "levelNumber": 3,
+      "sentenceTemplate": "We vieren een [modifier] feest in het park.",
+      "options": {
+        "correct": "groot",
+        "distractor": "grote"
+      },
+      "explanation": "'Feest' is een het-woord, dus na 'een' vervalt de -e: 'een groot feest'.",
+      "sentenceTranslation": "We celebrate a big party in the park."
+    },
+    {
+      "challengeId": "ch_dem_16",
+      "nounId": "noun_0036",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] boom geeft heel veel schaduw.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Boom' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This tree gives a lot of shade."
+    },
+    {
+      "challengeId": "ch_dem_17",
+      "nounId": "noun_0037",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] bos is een beschermd natuurgebied.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Bos' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This forest is a protected nature area."
+    },
+    {
+      "challengeId": "ch_dem_18",
+      "nounId": "noun_0040",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] schoen zit een beetje te strak.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Schoen' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This shoe is a bit too tight."
+    },
+    {
+      "challengeId": "ch_dem_19",
+      "nounId": "noun_0041",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] vest past mij prima.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Vest' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This cardigan fits me fine."
+    },
+    {
+      "challengeId": "ch_dem_20",
+      "nounId": "noun_0052",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "Is [modifier] brief voor mij bedoeld?",
+      "options": {
+        "correct": "deze",
+        "distractor": "dit"
+      },
+      "explanation": "'Brief' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "Is this letter meant for me?"
+    },
+    {
+      "challengeId": "ch_dem_21",
+      "nounId": "noun_0053",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] bericht komt uit de krant.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Bericht' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This message comes from the newspaper."
+    },
+    {
+      "challengeId": "ch_dem_22",
+      "nounId": "noun_0056",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "Kan [modifier] deur dicht?",
+      "options": {
+        "correct": "deze",
+        "distractor": "dit"
+      },
+      "explanation": "'Deur' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "Can this door be closed?"
+    },
+    {
+      "challengeId": "ch_dem_23",
+      "nounId": "noun_0057",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] slot is verroest.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Slot' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This lock is rusted."
+    },
+    {
+      "challengeId": "ch_dem_24",
+      "nounId": "noun_0062",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] fles bevat frisdrank.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Fles' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This bottle contains soda."
+    },
+    {
+      "challengeId": "ch_dem_25",
+      "nounId": "noun_0063",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] glas valt zo van de tafel!",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Glas' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This glass is about to fall off the table!"
+    },
+    {
+      "challengeId": "ch_dem_26",
+      "nounId": "noun_0074",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] weg leidt naar de stad.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Weg' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This road leads to the city."
+    },
+    {
+      "challengeId": "ch_dem_27",
+      "nounId": "noun_0075",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] spoor loopt naar Utrecht.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Spoor' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This track leads to Utrecht."
+    },
+    {
+      "challengeId": "ch_dem_28",
+      "nounId": "noun_0078",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] vraag is te moeilijk.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "'Vraag' is een de-woord, dus gebruiken we 'Deze' in plaats van 'Dit'.",
+      "sentenceTranslation": "This question is too difficult."
+    },
+    {
+      "challengeId": "ch_dem_29",
+      "nounId": "noun_0079",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] antwoord klopt precies.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Antwoord' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This answer is exactly right."
+    },
+    {
+      "challengeId": "ch_dem_30",
+      "nounId": "noun_0083",
+      "levelType": "demonstrative_shift",
+      "levelNumber": 4,
+      "sentenceTemplate": "[modifier] lied is erg mooi gezongen.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "'Lied' is een het-woord, dus gebruiken we 'Dit' in plaats van 'Deze'.",
+      "sentenceTranslation": "This song is sung very beautifully."
+    },
+    {
+      "challengeId": "ch_dim_16",
+      "nounId": "noun_0036",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Er staat een klein boompje in de tuin. [modifier] boompje groeit snel.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'boom' een de-woord is, is de verkleinvorm 'boompje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "There is a small tree in the garden. This small tree grows fast."
+    },
+    {
+      "challengeId": "ch_dim_17",
+      "nounId": "noun_0038",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Kijk, een klein vogeltje! [modifier] vogeltje zingt vrolijk.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'vogel' een de-woord is, is de verkleinvorm 'vogeltje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "Look, a small bird! This small bird sings cheerfully."
+    },
+    {
+      "challengeId": "ch_dim_18",
+      "nounId": "noun_0040",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "De baby draagt een klein schoentje. [modifier] schoentje is zo schattig!",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'schoen' een de-woord is, is de verkleinvorm 'schoentje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "The baby wears a small shoe. This small shoe is so cute!"
+    },
+    {
+      "challengeId": "ch_dim_19",
+      "nounId": "noun_0046",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Het kind zwaait met een klein handje. [modifier] handje is erg schattig.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'hand' een de-woord is, is de verkleinvorm 'handje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "The child waves with a small hand. This small hand is very cute."
+    },
+    {
+      "challengeId": "ch_dim_20",
+      "nounId": "noun_0052",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Ik schrijf een klein briefje. [modifier] briefje ligt op het bureau.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'brief' een de-woord is, is de verkleinvorm 'briefje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "I write a small note. This small note is on the desk."
+    },
+    {
+      "challengeId": "ch_dim_21",
+      "nounId": "noun_0056",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "In het poppenhuis zit een klein deurtje. [modifier] deurtje kan echt open.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'deur' een de-woord is, is de verkleinvorm 'deurtje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "In the dollhouse there is a small door. This small door can really open."
+    },
+    {
+      "challengeId": "ch_dim_22",
+      "nounId": "noun_0060",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "De peuter eet met een klein vorkje. [modifier] vorkje is van plastic.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'vork' een de-woord is, is de verkleinvorm 'vorkje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "The toddler eats with a small fork. This small fork is made of plastic."
+    },
+    {
+      "challengeId": "ch_dim_23",
+      "nounId": "noun_0062",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Zij geeft de baby een flesje. [modifier] flesje is warm.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'fles' een de-woord is, is de verkleinvorm 'flesje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "She gives the baby a little bottle. This little bottle is warm."
+    },
+    {
+      "challengeId": "ch_dim_24",
+      "nounId": "noun_0066",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Bij de borrel eten we een kaasje. [modifier] kaasje is erg lekker.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'kaas' een de-woord is, is de verkleinvorm 'kaasje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "With drinks we eat a little cheese. This little cheese is very tasty."
+    },
+    {
+      "challengeId": "ch_dim_25",
+      "nounId": "noun_0074",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "We lopen over een smal weggetje. [modifier] weggetje is heel rustig.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'weg' een de-woord is, is de verkleinvorm 'weggetje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "We walk over a narrow small road. This small road is very quiet."
+    },
+    {
+      "challengeId": "ch_dim_26",
+      "nounId": "noun_0078",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Mag ik een kort vraagje stellen? [modifier] vraagje duurt niet lang.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'vraag' een de-woord is, is de verkleinvorm 'vraagje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "May I ask a short question? This small question won't take long."
+    },
+    {
+      "challengeId": "ch_dim_27",
+      "nounId": "noun_0080",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "We krijgen een kort lesje over grammatica. [modifier] lesje is erg nuttig.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Hoewel 'les' een de-woord is, is de verkleinvorm 'lesje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "We get a short lesson about grammar. This short lesson is very useful."
+    },
+    {
+      "challengeId": "ch_dim_28",
+      "nounId": "noun_0082",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Bekijk [modifier] kort filmpje op YouTube.",
+      "options": {
+        "correct": "dit",
+        "distractor": "deze"
+      },
+      "explanation": "Hoewel 'film' een de-woord is, is de verkleinvorm 'filmpje' altijd een het-woord, dus gebruiken we 'Dit'.",
+      "sentenceTranslation": "Watch this short video on YouTube."
+    },
+    {
+      "challengeId": "ch_dim_29",
+      "nounId": "noun_0039",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "Het kind eet een eitje. [modifier] eitje is zachtgekookt.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Ei' was al het, dus 'eitje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "The child eats a small egg. This small egg is soft-boiled."
+    },
+    {
+      "challengeId": "ch_dim_30",
+      "nounId": "noun_0083",
+      "levelType": "diminutive_trap",
+      "levelNumber": 5,
+      "sentenceTemplate": "De moeder zingt een klein liedje. [modifier] liedje is erg rustgevend.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Alle verkleinwoorden zijn het-woorden. 'Lied' was al het, dus 'liedje' blijft het — gebruik 'Dit'.",
+      "sentenceTranslation": "The mother sings a small song. This small song is very calming."
+    },
+    {
+      "challengeId": "ch_cmpd_13",
+      "nounId": "noun_0036",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De boom + Het huis = Het boomhuis. [modifier] boomhuis is gebouwd in de eik.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Huis' is het, dus 'boomhuis' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The tree + The house = The treehouse. This treehouse is built in the oak."
+    },
+    {
+      "challengeId": "ch_cmpd_14",
+      "nounId": "noun_0038",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De vogel + Het kooitje = Het vogelkooitje. [modifier] vogelkooitje staat in de kamer.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Kooitje' is een verkleinwoord (het), dus 'vogelkooitje' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The bird + The cage = The birdcage. This birdcage is in the room."
+    },
+    {
+      "challengeId": "ch_cmpd_15",
+      "nounId": "noun_0040",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De schoen + De doos = De schoenendoos. [modifier] schoenendoos staat op de kast.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Doos' is de, dus 'schoenendoos' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The shoe + The box = The shoebox. This shoebox is on the closet."
+    },
+    {
+      "challengeId": "ch_cmpd_16",
+      "nounId": "noun_0046",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De hand + De doek = De handdoek. [modifier] handdoek is nog nat.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Doek' is de, dus 'handdoek' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The hand + The towel = The towel. This towel is still wet."
+    },
+    {
+      "challengeId": "ch_cmpd_17",
+      "nounId": "noun_0052",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De brief + De bus = De brievenbus. [modifier] brievenbus is rood.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Bus' is de, dus 'brievenbus' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The letter + The box = The mailbox. This mailbox is red."
+    },
+    {
+      "challengeId": "ch_cmpd_18",
+      "nounId": "noun_0056",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De deur + Het matje = Het deurmatje. [modifier] deurmatje ligt bij de ingang.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Matje' is een verkleinwoord (het), dus 'deurmatje' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The door + The mat = The doormat. This doormat is at the entrance."
+    },
+    {
+      "challengeId": "ch_cmpd_19",
+      "nounId": "noun_0058",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De keuken + De tafel = De keukentafel. [modifier] keukentafel is erg groot.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Tafel' is de, dus 'keukentafel' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The kitchen + The table = The kitchen table. This kitchen table is very big."
+    },
+    {
+      "challengeId": "ch_cmpd_20",
+      "nounId": "noun_0062",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De fles + De opener = De flesopener. [modifier] flesopener ligt in de lade.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Opener' is de, dus 'flesopener' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The bottle + The opener = The bottle opener. This bottle opener is in the drawer."
+    },
+    {
+      "challengeId": "ch_cmpd_21",
+      "nounId": "noun_0066",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De kaas + Het mes = Het kaasmes. [modifier] kaasmes is erg handig.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Mes' is het, dus 'kaasmes' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The cheese + The knife = The cheese knife. This cheese knife is very handy."
+    },
+    {
+      "challengeId": "ch_cmpd_22",
+      "nounId": "noun_0068",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De zon + De bril = De zonnebril. [modifier] zonnebril is heel stijlvol.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Bril' is de, dus 'zonnebril' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The sun + The glasses = The sunglasses. These sunglasses are very stylish."
+    },
+    {
+      "challengeId": "ch_cmpd_23",
+      "nounId": "noun_0070",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De regen + De jas = De regenjas. [modifier] regenjas is waterdicht.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Jas' is de, dus 'regenjas' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The rain + The coat = The raincoat. This raincoat is waterproof."
+    },
+    {
+      "challengeId": "ch_cmpd_24",
+      "nounId": "noun_0076",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De bus + De halte = De bushalte. [modifier] bushalte is om de hoek.",
+      "options": {
+        "correct": "Deze",
+        "distractor": "Dit"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Halte' is de, dus 'bushalte' is de — gebruik 'Deze'.",
+      "sentenceTranslation": "The bus + The stop = The bus stop. This bus stop is around the corner."
+    },
+    {
+      "challengeId": "ch_cmpd_25",
+      "nounId": "noun_0080",
+      "levelType": "compound_clash",
+      "levelNumber": 6,
+      "sentenceTemplate": "De les + Het lokaal = Het leslokaal. [modifier] leslokaal is erg ruim.",
+      "options": {
+        "correct": "Dit",
+        "distractor": "Deze"
+      },
+      "explanation": "Bij samenstellingen bepaalt het laatste woord het geslacht. 'Lokaal' is het, dus 'leslokaal' is het — gebruik 'Dit'.",
+      "sentenceTranslation": "The lesson + The room = The classroom. This classroom is very spacious."
     }
   ]
 }
