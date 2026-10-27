@@ -457,6 +457,337 @@
       "sentenceTranslation": "The gift is nicely wrapped."
     },
     {
+      "challengeId": "ch_art_36",
+      "nounId": "noun_0036",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] boom groeit snel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Boom' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The tree grows quickly."
+    },
+    {
+      "challengeId": "ch_art_37",
+      "nounId": "noun_0037",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] bos is rustgevend.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Bos' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The forest is soothing."
+    },
+    {
+      "challengeId": "ch_art_38",
+      "nounId": "noun_0038",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] zee is vandaag heel wild.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Zee' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The sea is very wild today."
+    },
+    {
+      "challengeId": "ch_art_39",
+      "nounId": "noun_0039",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] eiland ligt midden in het meer.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Eiland' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The island lies in the middle of the lake."
+    },
+    {
+      "challengeId": "ch_art_40",
+      "nounId": "noun_0040",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] zon schijnt fel.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Zon' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The sun shines brightly."
+    },
+    {
+      "challengeId": "ch_art_41",
+      "nounId": "noun_0041",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] weer is prachtig vandaag.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Weer' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The weather is wonderful today."
+    },
+    {
+      "challengeId": "ch_art_42",
+      "nounId": "noun_0042",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] melk staat in de koelkast.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Melk' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The milk is in the fridge."
+    },
+    {
+      "challengeId": "ch_art_43",
+      "nounId": "noun_0043",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] sap is vers geperst.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Sap' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The juice is freshly squeezed."
+    },
+    {
+      "challengeId": "ch_art_44",
+      "nounId": "noun_0044",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] kaas is erg lekker.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Kaas' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The cheese is very tasty."
+    },
+    {
+      "challengeId": "ch_art_45",
+      "nounId": "noun_0045",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] ei is zachtgekookt.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Ei' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The egg is soft-boiled."
+    },
+    {
+      "challengeId": "ch_art_46",
+      "nounId": "noun_0046",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] soep is heel heet.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Soep' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The soup is very hot."
+    },
+    {
+      "challengeId": "ch_art_47",
+      "nounId": "noun_0047",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] bier is koud geserveerd.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Bier' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The beer is served cold."
+    },
+    {
+      "challengeId": "ch_art_48",
+      "nounId": "noun_0048",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] schoen is te klein.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Schoen' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The shoe is too small."
+    },
+    {
+      "challengeId": "ch_art_49",
+      "nounId": "noun_0049",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] vest is gemaakt van wol.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Vest' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The vest is made of wool."
+    },
+    {
+      "challengeId": "ch_art_50",
+      "nounId": "noun_0050",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] broek is te lang.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Broek' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The pants are too long."
+    },
+    {
+      "challengeId": "ch_art_51",
+      "nounId": "noun_0051",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] jurk is blauw.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Jurk' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The dress is blue."
+    },
+    {
+      "challengeId": "ch_art_52",
+      "nounId": "noun_0052",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] hoed beschermt tegen de zon.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Hoed' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The hat protects against the sun."
+    },
+    {
+      "challengeId": "ch_art_53",
+      "nounId": "noun_0053",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] sjaal is heerlijk warm.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Sjaal' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The scarf is wonderfully warm."
+    },
+    {
+      "challengeId": "ch_art_54",
+      "nounId": "noun_0054",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] oog is blauw.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Oog' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The eye is blue."
+    },
+    {
+      "challengeId": "ch_art_55",
+      "nounId": "noun_0055",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] oor doet een beetje pijn.",
+      "options": {
+        "correct": "Het",
+        "distractor": "De"
+      },
+      "explanation": "'Oor' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.",
+      "sentenceTranslation": "The ear hurts a bit."
+    },
+    {
+      "challengeId": "ch_art_56",
+      "nounId": "noun_0056",
+      "levelType": "article_basic",
+      "levelNumber": 1,
+      "sentenceTemplate": "[modifier] neus is koud.",
+      "options": {
+        "correct": "De",
+        "distractor": "Het"
+      },
+      "explanation": "'Neus' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.",
+      "sentenceTranslation": "The nose is cold."
+    },
+    {
+      "challengeId": "ch_art_57", "nounId": "noun_0057", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] mond is dicht.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Mond' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The mouth is closed." },
+    {
+      "challengeId": "ch_art_58", "nounId": "noun_0058", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] hart slaat snel.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Hart' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The heart beats fast." },
+    {
+      "challengeId": "ch_art_59", "nounId": "noun_0059", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] hoofd doet pijn.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Hoofd' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The head hurts." },
+    {
+      "challengeId": "ch_art_60", "nounId": "noun_0060", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] hand is warm.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Hand' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The hand is warm." },
+    {
+      "challengeId": "ch_art_61", "nounId": "noun_0061", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] been is lang.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Been' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The leg is long." },
+    {
+      "challengeId": "ch_art_62", "nounId": "noun_0062", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] voet staat op de grond.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Voet' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The foot is on the ground." },
+    {
+      "challengeId": "ch_art_63", "nounId": "noun_0063", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] haar is gewassen.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Haar' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The hair is washed." },
+    {
+      "challengeId": "ch_art_64", "nounId": "noun_0064", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] computer staat aan.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Computer' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The computer is turned on." },
+    {
+      "challengeId": "ch_art_65", "nounId": "noun_0065", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] internet is erg snel.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Internet' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The internet is very fast." },
+    {
+      "challengeId": "ch_art_66", "nounId": "noun_0066", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] radio speelt muziek.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Radio' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The radio plays music." },
+    {
+      "challengeId": "ch_art_67", "nounId": "noun_0067", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] televisie staat in de woonkamer.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Televisie' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The television is in the living room." },
+    {
+      "challengeId": "ch_art_68", "nounId": "noun_0068", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] bord is schoon.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Bord' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The plate is clean." },
+    {
+      "challengeId": "ch_art_69", "nounId": "noun_0069", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] glas is leeg.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Glas' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The glass is empty." },
+    {
+      "challengeId": "ch_art_70", "nounId": "noun_0070", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] kop staat op de schotel.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Kop' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The cup is on the saucer." },
+    {
+      "challengeId": "ch_art_71", "nounId": "noun_0071", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] mes is scherp.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Mes' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The knife is sharp." },
+    {
+      "challengeId": "ch_art_72", "nounId": "noun_0072", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] vork ligt naast het bord.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Vork' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The fork lies next to the plate." },
+    {
+      "challengeId": "ch_art_73", "nounId": "noun_0073", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] lepel is van zilver.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Lepel' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The spoon is made of silver." },
+    {
+      "challengeId": "ch_art_74", "nounId": "noun_0074", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] spiegel hangt in de gang.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Spiegel' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The mirror hangs in the hallway." },
+    {
+      "challengeId": "ch_art_75", "nounId": "noun_0075", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] schip vaart de haven in.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Schip' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The ship sails into the harbor." },
+    {
+      "challengeId": "ch_art_76", "nounId": "noun_0076", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] bus komt zo aan.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Bus' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The bus arrives shortly." },
+    {
+      "challengeId": "ch_art_77", "nounId": "noun_0077", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] station is heel groot.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Station' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The station is very large." },
+    {
+      "challengeId": "ch_art_78", "nounId": "noun_0078", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] museum is gratis voor kinderen.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Museum' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The museum is free for children." },
+    {
+      "challengeId": "ch_art_79", "nounId": "noun_0079", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] ziekenhuis staat nabij het centrum.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Ziekenhuis' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The hospital is located near the center." },
+    {
+      "challengeId": "ch_art_80", "nounId": "noun_0080", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] restaurant is erg gezellig.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Restaurant' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The restaurant is very cozy." },
+    {
+      "challengeId": "ch_art_81", "nounId": "noun_0081", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] winkel is geopend.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Winkel' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The shop is open." },
+    {
+      "challengeId": "ch_art_82", "nounId": "noun_0082", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] strand is erg druk vandaag.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Strand' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The beach is very busy today." },
+    {
+      "challengeId": "ch_art_83", "nounId": "noun_0083", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] plein is mooi verlicht.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Plein' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The square is beautifully lit." },
+    {
+      "challengeId": "ch_art_84", "nounId": "noun_0084", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] vogel zingt in de boom.", "options": { "correct": "De", "distractor": "Het" }, "explanation": "'Vogel' is een de-woord, dus gebruiken we 'De' in plaats van 'Het'.", "sentenceTranslation": "The bird sings in the tree." },
+    {
+      "challengeId": "ch_art_85", "nounId": "noun_0085", "levelType": "article_basic", "levelNumber": 1, "sentenceTemplate": "[modifier] konijn hopt vrolijk rond.", "options": { "correct": "Het", "distractor": "De" }, "explanation": "'Konijn' is een het-woord, dus gebruiken we 'Het' in plaats van 'De'.", "sentenceTranslation": "The rabbit hops around happily." },
+    {
       "challengeId": "ch_poss_01",
       "nounId": "noun_0001",
       "levelType": "possessive_pivot",
