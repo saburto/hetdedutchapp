@@ -35,18 +35,14 @@ type RecognitionCtor = new () => SpeechRecognitionLike;
 /** Whether the browser exposes speech recognition (Chrome/Edge). */
 export function isSpeechRecognitionSupported(): boolean {
   if (typeof window === 'undefined') return false;
-  const w = window as unknown as Record<string, unknown>;
-  return typeof w.SpeechRecognition === 'function' ||
-    typeof w.webkitSpeechRecognition === 'function';
+  return 'SpeechRecognition' in window || 'webkitSpeechRecognition' in window;
 }
 
 /** Create a Dutch speech-recognition instance, or null when unsupported. */
 export function createSpeechRecognition(): SpeechRecognitionLike | null {
   if (typeof window === 'undefined') return null;
-  const w = window as unknown as Record<string, unknown>;
-  const Ctor = (w.SpeechRecognition ?? w.webkitSpeechRecognition) as
-    | RecognitionCtor
-    | undefined;
+  const w = window as any;
+  const Ctor = w.SpeechRecognition || w.webkitSpeechRecognition;
   if (!Ctor) return null;
 
   const rec = new Ctor();

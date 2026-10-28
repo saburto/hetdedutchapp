@@ -133,6 +133,8 @@ test.describe('Absurd phrase trainer (Level 7)', () => {
       });
     }, fullText);
 
+    await page.locator('.phrase-btn').filter({ hasText: 'Stop' }).click();
+
     await expect(page.locator('.phrase-result-score')).toContainText('Perfect', { timeout: 3000 });
     await expect(page.locator('.phrase-word.target.correct').first()).toBeVisible();
   });
@@ -165,6 +167,8 @@ test.describe('Absurd phrase trainer (Level 7)', () => {
         results: [{ isFinal: true, 0: { transcript: text } }],
       });
     }, wrongText);
+
+    await page.locator('.phrase-btn').filter({ hasText: 'Stop' }).click();
 
     await expect(page.locator('.phrase-result-score')).toContainText('van de', { timeout: 3000 });
     await expect(page.locator('.phrase-word.target.wrong').first()).toBeVisible();

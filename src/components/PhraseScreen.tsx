@@ -95,20 +95,13 @@ export function PhraseScreen() {
 
     rec.onstart = () => {};
     rec.onresult = (event) => {
-      let finalText = '';
-      let interimText = '';
-      for (let i = event.resultIndex; i < event.results.length; i++) {
+      let fullText = '';
+      for (let i = 0; i < event.results.length; i++) {
         const r = event.results[i];
         const text = r[0]?.transcript ?? '';
-        if (r.isFinal) finalText += `${text} `;
-        else interimText += text;
+        fullText += `${text} `;
       }
-      setInterim((finalText + interimText).trim());
-
-      if (finalText.trim()) {
-        gotFinalRef.current = true;
-        finishWithTranscript(finalText);
-      }
+      setInterim(fullText.trim());
     };
     rec.onerror = (event) => {
       setError(
