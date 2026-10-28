@@ -3,26 +3,61 @@ import type { ProgressStore } from '../../data/schema.ts';
 const STORAGE_KEY = 'nl-context-v1';
 
 const DEFAULT_PROGRESS: ProgressStore = {
-  version: 1,
+  version: 2,
   nouns: {},
   sessionQueue: [],
   currentLevel: 1,
   theme: 'light',
   audioEnabled: true,
   showTranslation: true,
+  totalCorrect: 0,
+  totalWrong: 0,
 };
+
+/**
+ * Migrate older progress payloads to the current schema.
+ * v1 → v2: derive lifetime totals from per-noun correct/wrong counters.
+ */
+function migrate(raw: Record<string, unknown>): ProgressStore | null {
+  const version = raw?.version;
+  if (version === 2) return raw as ProgressStore;
+
+  if (version === 1) {
+    const nouns = (raw.nouns ?? {}) as Record<
+      string,
+      { correct?: number; wrong?: number }
+    >;
+    let totalCorrect = 0;
+    let totalWrong = 0;
+    for (const n of Object.values(nouns)) {
+      totalCorrect += n?.correct ?? 0;
+      totalWrong += n?.wrong ?? 0;
+    }
+    return {
+      ...(raw as unknown as Omit<ProgressStore, 'version' | 'totalCorrect' | 'totalWrong'>),
+      version: 2,
+      totalCorrect,
+      totalWrong,
+    };
+  }
+
+  return null;
+}
 
 export function loadProgress(): ProgressStore {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return structuredClone(DEFAULT_PROGRESS);
     const parsed = JSON.parse(raw);
-    // Light validation: check version
-    if (parsed?.version !== 1) {
+    const migrated = migrate(parsed);
+    if (!migrated) {
       localStorage.removeItem(STORAGE_KEY);
       return structuredClone(DEFAULT_PROGRESS);
     }
-    return parsed as ProgressStore;
+    if (migrated !== parsed) {
+      saveProgress(migrated); // persist the migration immediately
+    }
+    return migrated;
   } catch {
     localStorage.removeItem(STORAGE_KEY);
     return structuredClone(DEFAULT_PROGRESS);
@@ -50,8 +85,9 @@ export function exportProgress(): string {
 export function importProgress(json: string): boolean {
   try {
     const parsed = JSON.parse(json);
-    if (parsed?.version !== 1) return false;
-    saveProgress(parsed as ProgressStore);
+    const migrated = migrate(parsed);
+    if (!migrated) return false;
+    saveProgress(migrated);
     return true;
   } catch {
     return false;
@@ -73,6 +109,14 @@ export function updateAudioEnabled(enabled: boolean): void {
 export function updateShowTranslation(show: boolean): void {
   const progress = loadProgress();
   progress.showTranslation = show;
+  saveProgress(progress);
+}
+
+/** Record a lifetime answer (used by normal answers and repair attempts). */
+export function recordAnswer(correct: boolean): void {
+  const progress = loadProgress();
+  if (correct) progress.totalCorrect++;
+  else progress.totalWrong++;
   saveProgress(progress);
 }
 

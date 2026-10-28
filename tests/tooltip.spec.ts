@@ -1,64 +1,47 @@
 import { test, expect } from '@playwright/test';
 
-test('EN translation badge toggles popover on click', async ({ page }) => {
+test('EN badge toggles inline translation on click', async ({ page }) => {
   await page.goto('/');
   await page.waitForSelector('.translation-badge');
 
   const badge = page.locator('.translation-badge').first();
-  const popover = page.locator('.translation-popover').first();
 
-  // Badge and popover should exist in the DOM
+  // Badge should exist and be visible
   await expect(badge).toBeVisible();
-  await expect(popover).toBeAttached();
 
-  // Popover should have non-empty text
-  const text = await popover.textContent();
+  // Translation line should not be in the DOM initially
+  await expect(page.locator('.translation-inline')).toHaveCount(0);
+
+  // Click the EN badge to show the translation
+  await badge.click();
+  await page.waitForTimeout(300);
+
+  // Inline translation should now be visible
+  const translation = page.locator('.translation-inline');
+  await expect(translation).toBeVisible();
+  const text = await translation.textContent();
   expect(text?.trim().length).toBeGreaterThan(0);
 
-  // Initially hidden (opacity 0)
-  const initialOpacity = await popover.evaluate(el =>
-    window.getComputedStyle(el).opacity
-  );
-  expect(Number(initialOpacity)).toBe(0);
-
-  // Click the EN badge to show the popover
-  await badge.click();
-  await page.waitForTimeout(300); // wait for CSS transition
-
-
-  // Now it should be visible (opacity 1)
-  const clickOpacity = await popover.evaluate(el =>
-    window.getComputedStyle(el).opacity
-  );
-  expect(Number(clickOpacity)).toBe(1);
+  // Badge gets the "on" state
+  await expect(badge).toHaveClass(/on/);
 
   // Click again to hide
   await badge.click();
   await page.waitForTimeout(300);
-  const hiddenOpacity = await popover.evaluate(el =>
-    window.getComputedStyle(el).opacity
-  );
-  expect(Number(hiddenOpacity)).toBe(0);
-
-  // Verify popover appears above the badge
-  const popoverBox = await popover.boundingBox();
-  const badgeBox = await badge.boundingBox();
-  expect(popoverBox).not.toBeNull();
-  expect(badgeBox).not.toBeNull();
-  if (popoverBox && badgeBox) {
-    expect(popoverBox.y + popoverBox.height).toBeLessThanOrEqual(badgeBox.y + 2);
-  }
+  await expect(page.locator('.translation-inline')).toHaveCount(0);
 });
 
-test('translation popover has correct English text', async ({ page }) => {
+test('translation has correct English text', async ({ page }) => {
   await page.goto('/');
   await page.waitForSelector('.translation-badge');
 
-  const popover = page.locator('.translation-popover').first();
-  const text = await popover.textContent();
+  await page.locator('.translation-badge').first().click();
+  const translation = page.locator('.translation-inline');
+  await expect(translation).toBeVisible();
+  const text = (await translation.textContent()) ?? '';
 
   // All translations should be in English (Latin-only, no Dutch accented chars)
-  expect(text).toMatch(/^[A-Za-z0-9\s.,!?'"+=()]+$/);
+  expect(text).toMatch(/^[\u2014\sA-Za-z0-9.,!?'"+=()]+$/);
 
   // Should not contain Dutch modifiers like "Onze", "Ons", "Deze", "Dit"
   expect(text).not.toMatch(/\b(Onze|Ons|Deze|Dit|Die|Dat)\b/);

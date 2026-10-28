@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import type { Challenge } from '../../data/schema.ts';
 import { ALL_NOUNS } from '../engine/session.ts';
-import { loadProgress } from '../engine/progress.ts';
+import { loadProgress, recordAnswer } from '../engine/progress.ts';
 import {
   playCorrectChime,
   playIncorrectThud,
@@ -59,6 +59,7 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
 
     if (isCorrect) {
       setTypedStatus('correct');
+      recordAnswer(true);
       if (prog.audioEnabled) {
         playCorrectChime();
         speakChallengeSentence(
@@ -69,6 +70,7 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
       setTimeout(() => onComplete(true), 800);
     } else {
       setTypedStatus('incorrect');
+      recordAnswer(false);
       if (prog.audioEnabled) playIncorrectThud();
       setTimeout(() => setTypedStatus('idle'), 600);
     }
@@ -81,6 +83,7 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
     setChoiceState(isCorrect ? 'correct' : 'incorrect');
 
     if (isCorrect) {
+      recordAnswer(true);
       if (prog.audioEnabled) {
         playCorrectChime();
         speakChallengeSentence(
@@ -90,6 +93,7 @@ export function RepairShop({ challenge, repairStage, onComplete }: Props) {
       }
       setTimeout(() => onComplete(true), 800);
     } else {
+      recordAnswer(false);
       if (prog.audioEnabled) playIncorrectThud();
       setTimeout(() => {
         setChoiceState('idle');

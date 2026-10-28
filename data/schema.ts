@@ -59,7 +59,7 @@ export const ChallengesFileSchema = z.object({
 
 /** Progress store (localStorage) */
 export const ProgressStoreSchema = z.object({
-  version: z.literal(1),
+  version: z.literal(2),
   nouns: z.record(z.string(), z.object({
     mastery: z.number().min(0).max(1),
     correct: z.number().int().min(0),
@@ -73,5 +73,8 @@ export const ProgressStoreSchema = z.object({
   theme: z.enum(['light', 'dark', 'system']),
   audioEnabled: z.boolean(),
   showTranslation: z.boolean(),
+  // Lifetime totals (v2)
+  totalCorrect: z.number().int().min(0),
+  totalWrong: z.number().int().min(0),
 });
 export type ProgressStore = z.infer<typeof ProgressStoreSchema>;

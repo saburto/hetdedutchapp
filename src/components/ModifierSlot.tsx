@@ -35,14 +35,16 @@ export function ModifierSlot({ challenge, disabled, chosenAnswer, onSelect }: Pr
         disabled={disabled}
         onClick={() => onSelect(left)}
       >
-        {left}
+        <span className="keycap" aria-hidden="true">1</span>
+        <span className="opt-label">{left}</span>
       </button>
       <button
         className={getClassName(right)}
         disabled={disabled}
         onClick={() => onSelect(right)}
       >
-        {right}
+        <span className="keycap" aria-hidden="true">2</span>
+        <span className="opt-label">{right}</span>
       </button>
     </div>
   );

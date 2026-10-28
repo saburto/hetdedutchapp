@@ -287,6 +287,10 @@ export function submitAnswer(
 
   progress.nouns[nounId] = newNounData;
 
+  // Lifetime totals
+  if (correct) progress.totalCorrect++;
+  else progress.totalWrong++;
+
   // Save queue state
   progress.sessionQueue = state.queue;
   progress.currentLevel = state.level;

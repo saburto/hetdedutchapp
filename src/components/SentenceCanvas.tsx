@@ -15,6 +15,7 @@ interface Props {
  * Renders a challenge sentence with the modifier highlighted.
  * On wrong answers, the noun gets a large animated article badge
  * and a colored background glow to burn in the correct gender.
+ * The EN badge toggles an inline English translation line.
  */
 export function SentenceCanvas({ challenge, selectedAnswer, phase, sentenceTranslation }: Props) {
   const nodes: ReactNode[] = useMemo(() => {
@@ -48,7 +49,7 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase, sentenceTrans
     // Before modifier
     if (parts[0]) {
       result.push(
-        <span key="before" className="sentence-word static pending">
+        <span key="before" className="sentence-word static pending enter">
           {parts[0]}
         </span>,
       );
@@ -58,7 +59,7 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase, sentenceTrans
     result.push(
       <span
         key="modifier"
-        className={`sentence-word modifier ${modStatus}${isWrong ? ' strikethrough' : ''}`}
+        className={`sentence-word modifier enter ${modStatus}${isWrong ? ' strikethrough' : ''}`}
       >
         {modifierText}
       </span>,
@@ -93,7 +94,7 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase, sentenceTrans
 
         if (rest) {
           result.push(
-            <span key="after" className="sentence-word static pending">
+            <span key="after" className="sentence-word static pending enter">
               {rest}
             </span>,
           );
@@ -103,7 +104,7 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase, sentenceTrans
       // Normal rendering
       if (parts[1]) {
         result.push(
-          <span key="after" className="sentence-word static pending">
+          <span key="after" className="sentence-word static pending enter">
             {parts[1]}
           </span>,
         );
@@ -113,30 +114,35 @@ export function SentenceCanvas({ challenge, selectedAnswer, phase, sentenceTrans
     return result;
   }, [challenge, selectedAnswer, phase]);
 
-  const [popoverOpen, setPopoverOpen] = useState(false);
+  const [translationOpen, setTranslationOpen] = useState(false);
 
-  const togglePopover = useCallback(() => {
-    setPopoverOpen((prev) => !prev);
+  const toggleTranslation = useCallback(() => {
+    setTranslationOpen((prev) => !prev);
   }, []);
 
   return (
-    <div className="sentence-canvas-wrapper">
-      <div className="sentence-canvas">{nodes}</div>
-      {sentenceTranslation && (
-        <div className="translation-trigger">
-          <button
-            className="translation-badge"
-            onClick={togglePopover}
-            aria-label="Toon Engelse vertaling"
-            aria-expanded={popoverOpen}
-          >
-            EN
-          </button>
-          <span className={`translation-popover${popoverOpen ? ' visible' : ''}`}>
-            {sentenceTranslation}
-          </span>
-        </div>
-      )}
-    </div>
+    <>
+      <div className="card-head">
+        <span className="card-title">Oefening</span>
+        {sentenceTranslation && (
+          <div className="translation-trigger">
+            <button
+              className={`translation-badge${translationOpen ? ' on' : ''}`}
+              onClick={toggleTranslation}
+              aria-label="Toon Engelse vertaling"
+              aria-expanded={translationOpen}
+            >
+              EN
+            </button>
+          </div>
+        )}
+      </div>
+      <div className="sentence-canvas-wrapper">
+        <div className="sentence-canvas">{nodes}</div>
+        {sentenceTranslation && translationOpen && (
+          <div className="translation-inline">— {sentenceTranslation} —</div>
+        )}
+      </div>
+    </>
   );
 }

@@ -183,8 +183,8 @@ test.describe('Dutch Context Builder', () => {
     const options = page.locator('.option-btn');
     await expect(options).toHaveCount(2);
 
-    const text0 = (await options.nth(0).textContent())?.trim();
-    const text1 = (await options.nth(1).textContent())?.trim();
+    const text0 = (await options.nth(0).locator('.opt-label').textContent())?.trim();
+    const text1 = (await options.nth(1).locator('.opt-label').textContent())?.trim();
     const optionsSet = new Set([text0, text1]);
 
     expect(optionsSet.has('De')).toBe(true);
@@ -192,6 +192,7 @@ test.describe('Dutch Context Builder', () => {
   });
 
   test('repair stages 2 and 3 use interactive binary-choice (not passive button)', async ({ page }) => {
+    test.setTimeout(45000);
     // Verify the RepairShop renders correctly:
     // Stage 1: typing input + "Kijk na" button
     // Stage 2/3: two binary-choice buttons (no passive "Ik snap het")
@@ -206,13 +207,13 @@ test.describe('Dutch Context Builder', () => {
     for (let i = 0; i < 8 && !(stage1Seen && stageInteractiveSeen); i++) {
       await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 3000 });
       await page.locator('.option-btn').first().click();
-      await page.waitForTimeout(200);
+      await page.waitForTimeout(400);
 
       const isIncorrect = await page.locator('.challenge-card.incorrect').isVisible().catch(() => false);
 
       if (isIncorrect) {
         await page.locator('.next-btn').click();
-        await page.waitForTimeout(300);
+        await page.waitForTimeout(800);
 
         const repairShop = page.locator('.repair-shop');
         if (await repairShop.isVisible().catch(() => false)) {
@@ -225,7 +226,7 @@ test.describe('Dutch Context Builder', () => {
             if (ph) {
               await input.fill(ph);
               await repairShop.locator('button.next-btn').first().click();
-              await page.waitForTimeout(600);
+              await page.waitForTimeout(1300);
             }
           } else {
             const binaryBtns = repairShop.locator('.modifier-options .option-btn');
@@ -233,7 +234,7 @@ test.describe('Dutch Context Builder', () => {
               stageInteractiveSeen = true;
               expect(await binaryBtns.count()).toBe(2);
               await binaryBtns.first().click();
-              await page.waitForTimeout(600);
+              await page.waitForTimeout(1300);
             }
           }
         }
@@ -241,7 +242,7 @@ test.describe('Dutch Context Builder', () => {
         const nextBtn = page.locator('.next-btn');
         if (await nextBtn.isVisible().catch(() => false)) {
           await nextBtn.click();
-          await page.waitForTimeout(200);
+          await page.waitForTimeout(500);
         }
       }
     }
@@ -250,7 +251,7 @@ test.describe('Dutch Context Builder', () => {
     expect(stage1Seen).toBeTruthy();
     // stageInteractiveSeen is optional — it depends on whether we happened
     // to trigger stage 2/3 within 8 iterations
-  }, { timeout: 20000 });
+  });
 
   test('compound challenges show stem breakdown after answering', async ({ page }) => {
     await page.goto('/');
@@ -282,10 +283,10 @@ test.describe('Dutch Context Builder', () => {
     await page.waitForLoadState('networkidle');
 
     // Verify we are on level 6
-    const levelBadge = page.locator('.level-badge-btn');
-    await expect(levelBadge).toBeVisible({ timeout: 5000 });
-    const badgeText = await levelBadge.textContent();
-    expect(badgeText).toContain('6');
+    const levelChip = page.locator('.level-chip');
+    await expect(levelChip).toBeVisible({ timeout: 5000 });
+    const chipText = await levelChip.textContent();
+    expect(chipText).toContain('6');
 
     // Answer a challenge
     await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 5000 });
@@ -312,11 +313,11 @@ test.describe('Dutch Context Builder', () => {
 
     await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 5000 });
 
-    // Read initial button texts and positions
+    // Read initial button labels and positions
     const btn0 = page.locator('.option-btn').nth(0);
     const btn1 = page.locator('.option-btn').nth(1);
-    const text0Before = (await btn0.textContent())?.trim();
-    const text1Before = (await btn1.textContent())?.trim();
+    const text0Before = (await btn0.locator('.opt-label').textContent())?.trim();
+    const text1Before = (await btn1.locator('.opt-label').textContent())?.trim();
 
     // Click the first button
     await btn0.click();
@@ -325,89 +326,81 @@ test.describe('Dutch Context Builder', () => {
     // Now re-read the buttons — they should be in the same position
     const btn0After = page.locator('.option-btn').nth(0);
     const btn1After = page.locator('.option-btn').nth(1);
-    const text0After = (await btn0After.textContent())?.trim();
-    const text1After = (await btn1After.textContent())?.trim();
+    const text0After = (await btn0After.locator('.opt-label').textContent())?.trim();
+    const text1After = (await btn1After.locator('.opt-label').textContent())?.trim();
 
     // The button texts at each position must not have swapped
     expect(text0After).toBe(text0Before);
     expect(text1After).toBe(text1Before);
   });
 
-  test('level selector: badge opens dropdown and switching levels works', async ({ page }) => {
+  test('level chip opens leerpad view and switching levels works', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
 
-    // Click the level badge to open the picker
-    const badge = page.locator('.level-badge-btn');
-    await expect(badge).toBeVisible({ timeout: 5000 });
+    // Click the level chip to open the Leerpad tab
+    const chip = page.locator('.level-chip');
+    await expect(chip).toBeVisible({ timeout: 5000 });
 
     // Verify we start at level 1
-    const initialText = await badge.textContent();
+    const initialText = await chip.textContent();
     expect(initialText).toContain('1');
 
-    // Open the level dropdown
-    await badge.click();
-    const dropdown = page.locator('.level-dropdown');
-    await expect(dropdown).toBeVisible({ timeout: 2000 });
+    await chip.click();
 
-    // All 6 levels should be listed
-    const options = dropdown.locator('.level-option');
-    await expect(options).toHaveCount(6);
+    // Leerpad view should be active with 6 level rows
+    const rows = page.locator('.level-row');
+    await expect(rows).toHaveCount(6);
+    await expect(rows.first()).toBeVisible({ timeout: 2000 });
 
-    // Level 1 should be marked active
-    const activeOption = dropdown.locator('.level-option.active');
-    await expect(activeOption).toHaveCount(1);
-    expect(await activeOption.textContent()).toContain('1');
+    // Level 1 row should be marked current
+    await expect(page.locator('.level-row.current')).toHaveCount(1);
+    expect(await page.locator('.level-row.current').textContent()).toContain('1');
 
     // Select level 3
-    await options.nth(2).click();
+    await rows.nth(2).click();
 
-    // Dropdown should close
-    await expect(dropdown).not.toBeVisible({ timeout: 2000 });
+    // Should switch back to Oefenen view
+    await expect(page.locator('.view.active .gauge-row')).toBeVisible({ timeout: 3000 });
 
-    // Badge should now show level 3
-    await expect(badge).toContainText('3');
+    // Chip should now show level 3
+    await expect(chip).toContainText('3');
 
     // A challenge should load for level 3
     await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 5000 });
   });
 
-  test('level selector: clicking outside closes dropdown', async ({ page }) => {
+  test('leerpad: selecting current level returns to practice', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
 
-    const badge = page.locator('.level-badge-btn');
-    await expect(badge).toBeVisible({ timeout: 5000 });
+    // Open Leerpad tab directly via tab bar
+    await page.locator('.tab[data-tab="leerpad"]').click();
+    await expect(page.locator('.level-row').first()).toBeVisible({ timeout: 2000 });
 
-    // Open dropdown
-    await badge.click();
-    await expect(page.locator('.level-dropdown')).toBeVisible({ timeout: 2000 });
+    // Click the already-active level 1 row
+    await page.locator('.level-row.current').click();
 
-    // Click outside (on the heading)
-    await page.locator('h1').click();
-    await expect(page.locator('.level-dropdown')).not.toBeVisible({ timeout: 2000 });
+    // Back on Oefenen, chip still shows level 1
+    await expect(page.locator('.view.active .gauge-row')).toBeVisible({ timeout: 3000 });
+    await expect(page.locator('.level-chip')).toContainText('1');
   });
 
-  test('level selector: selecting current level closes dropdown without reload', async ({ page }) => {
+  test('leerpad: all six levels are listed and selectable', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
 
-    const badge = page.locator('.level-badge-btn');
-    await expect(badge).toBeVisible({ timeout: 5000 });
+    await page.locator('.tab[data-tab="leerpad"]').click();
+    await expect(page.locator('.level-row').first()).toBeVisible({ timeout: 2000 });
 
-    // Open dropdown
-    await badge.click();
-    const dropdown = page.locator('.level-dropdown');
-    await expect(dropdown).toBeVisible({ timeout: 2000 });
+    const rows = page.locator('.level-row');
+    await expect(rows).toHaveCount(6);
 
-    // Click the already-active level 1 option
-    await dropdown.locator('.level-option.active').click();
-
-    // Dropdown should close
-    await expect(dropdown).not.toBeVisible({ timeout: 2000 });
-
-    // Badge should still show level 1
-    await expect(badge).toContainText('1');
+    // No locked states — every row is clickable
+    for (let i = 0; i < 6; i++) {
+      const cursor = await rows.nth(i).evaluate((el) => getComputedStyle(el).cursor);
+      expect(cursor).toBe('pointer');
+    }
   });
 
   test.skip('perfect run: completes all 6 levels without mistakes', async ({ page }) => {
@@ -473,10 +466,10 @@ test.describe('Dutch Context Builder', () => {
       );
 
       if (correct) {
-        // Click the button whose text equals correct answer
+        // Click the button whose label equals correct answer
         const count = await btns.count();
         for (let j = 0; j < count; j++) {
-          const t = (await btns.nth(j).textContent())?.trim();
+          const t = (await btns.nth(j).locator('.opt-label').textContent())?.trim();
           if (t === correct) {
             await btns.nth(j).click();
             break;

@@ -1,11 +1,16 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import type { Challenge } from '../../data/schema.ts';
+import type { Challenge, ProgressStore } from '../../data/schema.ts';
 import { SentenceCanvas } from './SentenceCanvas.tsx';
 import { ModifierSlot } from './ModifierSlot.tsx';
 import { RepairShop } from './RepairShop.tsx';
-import { LevelProgress } from './LevelProgress.tsx';
+import { GaugeRow } from './GaugeRow.tsx';
+import { LevelShimmerBar } from './LevelShimmerBar.tsx';
+import { TabBar, type ActiveTab } from './TabBar.tsx';
+import { LevelPathView } from './LevelPathView.tsx';
+import { StatsView } from './StatsView.tsx';
 import { SettingsPanel } from './SettingsPanel.tsx';
 import { Tour } from './Tour.tsx';
+import { getLevelName } from '../engine/levelMastery.ts';
 import {
   createSession,
   nextChallenge,
@@ -14,23 +19,12 @@ import {
   type SessionState,
 } from '../engine/session.ts';
 import { getRepairChallenge } from '../engine/mistakes.ts';
-import { loadProgress, saveProgress } from '../engine/progress.ts';
+import { loadProgress, saveProgress, updateTheme } from '../engine/progress.ts';
 import {
   playCorrectChime,
   playIncorrectThud,
   speakChallengeSentence,
 } from '../audio/audio.ts';
-
-const TOTAL_LEVELS = 6;
-
-const LEVEL_LABELS: Record<number, string> = {
-  1: 'De / Het',
-  2: 'Ons / Onze',
-  3: 'Bijvoeglijk',
-  4: 'Dit / Dat',
-  5: 'Verkleinwoord',
-  6: 'Samenstelling',
-};
 
 type Phase =
   | 'selecting'
@@ -44,6 +38,8 @@ interface Answer {
   correct: boolean;
 }
 
+const CARD_LEAVE_MS = 300;
+
 export function ChallengeScreen() {
   const [phase, setPhase] = useState<Phase>('selecting');
   const [session, setSession] = useState<SessionState>(() => {
@@ -55,19 +51,22 @@ export function ChallengeScreen() {
   const [repairChallenge, setRepairChallenge] = useState<Challenge | null>(null);
   const [showSettings, setShowSettings] = useState(false);
   const [showTour, setShowTour] = useState(false);
-  const [showLevelPicker, setShowLevelPicker] = useState(false);
-  const levelPickerRef = useRef<HTMLDivElement>(null);
-  // Close level picker on outside click
+  const [activeTab, setActiveTab] = useState<ActiveTab>('oefenen');
+  const [cardAnim, setCardAnim] = useState<'entering' | 'leaving' | ''>('entering');
+  const [theme, setThemeState] = useState<ProgressStore['theme']>(
+    () => loadProgress().theme,
+  );
+  const advanceTimer = useRef<number | null>(null);
+  const advancing = useRef(false);
+
+  // Clear pending advance timer on unmount
   useEffect(() => {
-    if (!showLevelPicker) return;
-    function onClick(e: MouseEvent) {
-      if (levelPickerRef.current && !levelPickerRef.current.contains(e.target as Node)) {
-        setShowLevelPicker(false);
+    return () => {
+      if (advanceTimer.current !== null) {
+        window.clearTimeout(advanceTimer.current);
       }
-    }
-    document.addEventListener('mousedown', onClick);
-    return () => document.removeEventListener('mousedown', onClick);
-  }, [showLevelPicker]);
+    };
+  }, []);
 
   // Auto-load first challenge on boot and after queue refills.
   // Only when we don't have a challenge AND the user is selecting (not reviewing an answer).
@@ -76,17 +75,6 @@ export function ChallengeScreen() {
       setSession((s) => nextChallenge(s));
     }
   }, [session.currentChallenge, session.queue.length, phase]);
-
-  // Handle the edge case where onNextLevel creates a session with a queue but
-  // we need to trigger the first load. The effect above will catch it, but only
-  // if currentChallenge is null. Since onNextLevel calls nextChallenge inline,
-  // this is handled.
-  //
-  // For the "Start Over" button from the 'done' state, we set session without
-  // loading first challenge. The effect catches it.
-  //
-  // For onRepairComplete when queue is empty, we rebuild the session but don't
-  // load first challenge. The effect catches it.
 
   const onSelect = useCallback(
     (chosen: string) => {
@@ -141,6 +129,25 @@ export function ChallengeScreen() {
     [],
   );
 
+  /**
+   * Animate the card out, then run the session transition.
+   * Used for normal advances; repair completion advances instantly.
+   */
+  const animateAdvance = useCallback(
+    (advance: () => void) => {
+      if (advancing.current) return;
+      advancing.current = true;
+      setCardAnim('leaving');
+      advanceTimer.current = window.setTimeout(() => {
+        advance();
+        setCardAnim('entering');
+        advancing.current = false;
+        advanceTimer.current = null;
+      }, CARD_LEAVE_MS);
+    },
+    [],
+  );
+
   const onNext = useCallback(() => {
     setAnswer(null);
 
@@ -160,16 +167,18 @@ export function ChallengeScreen() {
         if (repair) {
           setRepairChallenge(repair);
           setRepairStage(stage);
-          setPhase('repairing');
+          animateAdvance(() => setPhase('repairing'));
           return;
         }
       }
     }
 
-    const { session: newSess, newPhase } = advanceOrRefill(session);
-    setSession(newSess);
-    setPhase(newPhase ?? 'selecting');
-  }, [answer, session, advanceOrRefill]);
+    animateAdvance(() => {
+      const { session: newSess, newPhase } = advanceOrRefill(session);
+      setSession(newSess);
+      setPhase(newPhase ?? 'selecting');
+    });
+  }, [answer, session, advanceOrRefill, animateAdvance]);
 
   const onRepairComplete = useCallback(
     (stageCorrect: boolean) => {
@@ -194,10 +203,12 @@ export function ChallengeScreen() {
         saveProgress(prog);
       }
       setRepairChallenge(null);
+      // Instant advance (RepairShop already has its own completion delay)
       const { session: newSess, newPhase } = advanceOrRefill(session);
       setSession(newSess);
       setPhase(newPhase ?? 'selecting');
       setAnswer(null);
+      setCardAnim('entering');
     },
     [session, advanceOrRefill],
   );
@@ -209,24 +220,87 @@ export function ChallengeScreen() {
     setSession(withFirst);
     setPhase('selecting');
     setAnswer(null);
+    setCardAnim('entering');
   }, [session.level]);
 
-  const onSelectLevel = useCallback((level: number) => {
-    if (level === session.level) {
-      setShowLevelPicker(false);
-      return;
+  const onSelectLevel = useCallback(
+    (level: number) => {
+      if (level === session.level) {
+        setActiveTab('oefenen');
+        return;
+      }
+      const prog = loadProgress();
+      prog.currentLevel = level;
+      prog.sessionQueue = [];
+      saveProgress(prog);
+      const ns = createSession(level);
+      const withFirst = ns.queue.length > 0 ? nextChallenge(ns) : ns;
+      setSession(withFirst);
+      setPhase('selecting');
+      setAnswer(null);
+      setRepairChallenge(null);
+      setCardAnim('entering');
+      setActiveTab('oefenen');
+    },
+    [session.level],
+  );
+
+  // Theme quick-toggle cycle: light → dark → system → light
+  const cycleTheme = useCallback(() => {
+    setThemeState((cur) => {
+      const next: ProgressStore['theme'] =
+        cur === 'light' ? 'dark' : cur === 'dark' ? 'system' : 'light';
+      updateTheme(next);
+      document.documentElement.setAttribute('data-theme', next);
+      return next;
+    });
+  }, []);
+
+  // Keyboard shortcuts: 1/2 answer, Enter/Space advance.
+  // Match on e.code (layout-independent) so non-US keyboards work too.
+  useEffect(() => {
+    const DIGITS: Record<string, number> = {
+      Digit1: 1,
+      Digit2: 2,
+      Numpad1: 1,
+      Numpad2: 2,
+    };
+
+    function onKey(e: KeyboardEvent) {
+      if (showTour || showSettings || activeTab !== 'oefenen') return;
+      const target = e.target as HTMLElement | null;
+      const typing =
+        target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.tagName === 'SELECT' ||
+          target.isContentEditable);
+      if (typing) return;
+
+      if (phase === 'selecting') {
+        const n = DIGITS[e.code] ?? parseInt(e.key, 10);
+        if (n >= 1 && n <= 2) {
+          const btns = document.querySelectorAll<HTMLButtonElement>('.option-btn');
+          const btn = btns[n - 1];
+          if (btn && !btn.disabled) {
+            e.preventDefault();
+            btn.click();
+          }
+        }
+      } else if (phase === 'answered') {
+        if (e.key === 'Enter' || e.code === 'Enter' || e.key === ' ' || e.code === 'Space' || e.code === 'NumpadEnter') {
+          e.preventDefault();
+          onNext();
+        }
+      }
     }
-    const prog = loadProgress();
-    prog.currentLevel = level;
-    prog.sessionQueue = [];
-    saveProgress(prog);
-    const ns = createSession(level);
-    const withFirst = ns.queue.length > 0 ? nextChallenge(ns) : ns;
-    setSession(withFirst);
-    setPhase('selecting');
-    setAnswer(null);
-    setShowLevelPicker(false);
-  }, [session.level]);
+    window.addEventListener('keydown', onKey);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [showTour, showSettings, activeTab, phase, onNext]);
 
   const ch =
     phase === 'repairing' && repairChallenge
@@ -236,47 +310,44 @@ export function ChallengeScreen() {
   // Expose current challenge for E2E tests
   (window as unknown as Record<string, unknown>).__currentChallenge = ch;
 
+  const attempts = session.score.correct + session.score.wrong;
+  const distinctNouns = new Set(session.correctNouns).size;
+
+  const themeIcon = theme === 'light' ? '☀️' : theme === 'dark' ? '🌙' : '💻';
+  const themeLabel =
+    theme === 'light' ? 'Licht' : theme === 'dark' ? 'Donker' : 'Systeem';
+
   return (
     <div className="app-shell">
       {/* Header */}
       <header className="app-header">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '.75rem' }}>
-          <h1>De/Het Trainer</h1>
-          <div className="level-picker-wrapper" ref={levelPickerRef}>
-            <button
-              className="level-badge level-badge-btn"
-              onClick={() => setShowLevelPicker((s) => !s)}
-              aria-label="Select level"
-              aria-haspopup="listbox"
-              aria-expanded={showLevelPicker}
-            >
-              Niveau {session.level}
-              <span className="level-chevron">{showLevelPicker ? '▲' : '▼'}</span>
-            </button>
-            {showLevelPicker && (
-              <div className="level-dropdown" role="listbox">
-                {Array.from({ length: TOTAL_LEVELS }, (_, i) => i + 1).map((lvl) => (
-                  <button
-                    key={lvl}
-                    className={`level-option${lvl === session.level ? ' active' : ''}`}
-                    role="option"
-                    aria-selected={lvl === session.level}
-                    onClick={() => onSelectLevel(lvl)}
-                  >
-                    <span className="level-option-num">{lvl}</span>
-                    <span className="level-option-label">{LEVEL_LABELS[lvl]}</span>
-                    {lvl === session.level && (
-                      <span className="level-option-check">✓</span>
-                    )}
-                  </button>
-                ))}
-              </div>
-            )}
+        <div className="brand">
+          <div className="brand-mark">DH</div>
+          <div className="brand-copy">
+            <h1>De/Het Trainer</h1>
+            <p>Nederlandse geslachtsregels</p>
           </div>
         </div>
-        <div style={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}>
+        <div className="header-actions">
           <button
-            className="tour-btn"
+            className="level-chip"
+            onClick={() => setActiveTab('leerpad')}
+            aria-label="Open leerpad"
+            title={`Niveau ${session.level} · ${getLevelName(session.level)}`}
+          >
+            <span className="dot" aria-hidden="true" />
+            <span>Niveau {session.level}</span>
+          </button>
+          <button
+            className="icon-btn"
+            onClick={cycleTheme}
+            title={`Thema: ${themeLabel}`}
+            aria-label={`Thema: ${themeLabel}`}
+          >
+            {themeIcon}
+          </button>
+          <button
+            className="icon-btn tour-btn"
             onClick={() => setShowTour(true)}
             title="Tour"
             aria-label="Open tour"
@@ -284,9 +355,10 @@ export function ChallengeScreen() {
             ?
           </button>
           <button
-            className="settings-btn"
+            className="icon-btn settings-btn"
             onClick={() => setShowSettings((s) => !s)}
             title="Settings"
+            aria-label="Instellingen"
           >
             ⚙️
           </button>
@@ -295,123 +367,146 @@ export function ChallengeScreen() {
 
       {showSettings && <SettingsPanel onClose={() => setShowSettings(false)} />}
 
-      {/* Score bar */}
-      <div className="score-bar">
-        <span className="correct">✓ {session.score.correct}</span>
-        <span className="wrong">✗ {session.score.wrong}</span>
-        <span>
-          Reeks: <span className="streak">{session.streak}</span>
-        </span>
-        <span style={{ marginLeft: 'auto' }}>Nog: {session.queue.length}</span>
+      {/* Views */}
+      <div className="views">
+        {/* ===== Oefenen ===== */}
+        <div className={`view${activeTab === 'oefenen' ? ' active' : ''}`}>
+          <GaugeRow
+            attempts={attempts}
+            distinctNouns={distinctNouns}
+            recentResults={session.recentResults}
+          />
+
+          <LevelShimmerBar
+            level={session.level}
+            attempts={attempts}
+            distinctNouns={distinctNouns}
+            recentResults={session.recentResults}
+          />
+
+          <div className="card-stage">
+            {phase === 'levelup' ? (
+              <div className="level-complete">
+                <h2>🎉 Niveau {session.level - 1} voltooid!</h2>
+                <p>Je kent de regels van dit niveau.</p>
+                <div className="stats">
+                  <span style={{ color: 'var(--correct)' }}>
+                    ✓ {session.score.correct}
+                  </span>
+                  <span style={{ color: 'var(--incorrect)' }}>
+                    ✗ {session.score.wrong}
+                  </span>
+                </div>
+                <button className="next-btn" onClick={onNextLevel}>
+                  Begin niveau {session.level} →
+                </button>
+              </div>
+            ) : phase === 'done' ? (
+              <div className="level-complete">
+                <h2>🏆 Alle niveaus voltooid!</h2>
+                <p>
+                  Je beheerst alle zes geslachtsregels. Begin opnieuw of
+                  exporteer je voortgang.
+                </p>
+                <button
+                  className="next-btn"
+                  onClick={() => {
+                    const prog = loadProgress();
+                    prog.currentLevel = 1;
+                    prog.sessionQueue = [];
+                    saveProgress(prog);
+                    setSession(createSession(1));
+                    setPhase('selecting');
+                    setCardAnim('entering');
+                  }}
+                >
+                  Opnieuw beginnen
+                </button>
+              </div>
+            ) : !ch ? (
+              <div className="empty-state">
+                <h2>Oefeningen laden...</h2>
+                <p>Je oefensessie wordt klaargezet.</p>
+              </div>
+            ) : phase === 'repairing' ? (
+              <RepairShop
+                challenge={ch}
+                repairStage={repairStage}
+                onComplete={onRepairComplete}
+              />
+            ) : (
+              <div
+                key={ch.challengeId}
+                className={`challenge-card ${cardAnim} ${
+                  answer ? (answer.correct ? 'correct' : 'incorrect') : ''
+                }`}
+              >
+                {/* Sentence display */}
+                <SentenceCanvas
+                  challenge={ch}
+                  selectedAnswer={answer?.chosen ?? null}
+                  phase={phase}
+                  sentenceTranslation={
+                    loadProgress().showTranslation
+                      ? ch.sentenceTranslation
+                      : undefined
+                  }
+                />
+
+                {/* Options */}
+                <ModifierSlot
+                  challenge={ch}
+                  disabled={phase !== 'selecting'}
+                  chosenAnswer={answer?.chosen ?? null}
+                  onSelect={onSelect}
+                />
+
+                {/* Explanation */}
+                {phase === 'answered' && answer && (
+                  <div className="explanation">
+                    {answer.correct ? (
+                      <>
+                        ✅ <strong>{ch.options.correct}</strong> is juist!{' '}
+                        {ch.explanation}
+                      </>
+                    ) : (
+                      <>
+                        ❌ Je koos <strong>{answer.chosen}</strong>.{' '}
+                        {ch.explanation}
+                      </>
+                    )}
+                    {/* Compound stem breakdown for Level 6 */}
+                    {ch.levelType === 'compound_clash' && (
+                      <CompoundStems explanation={ch.explanation} />
+                    )}
+                  </div>
+                )}
+
+                {/* Next / Continue button */}
+                {phase === 'answered' && (
+                  <button className="next-btn" onClick={onNext}>
+                    {answer?.correct ? 'Volgende →' : 'Herstel →'}
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ===== Leerpad ===== */}
+        {activeTab === 'leerpad' && (
+          <LevelPathView
+            currentLevel={session.level}
+            onSelectLevel={onSelectLevel}
+          />
+        )}
+
+        {/* ===== Voortgang ===== */}
+        {activeTab === 'voortgang' && <StatsView streak={session.streak} />}
       </div>
 
-      {/* Level progress */}
-      <LevelProgress
-        attempts={session.score.correct + session.score.wrong}
-        distinctNouns={new Set(session.correctNouns).size}
-        recentResults={session.recentResults}
-      />
-
-      {/* Main content */}
-      {phase === 'levelup' ? (
-        <div className="level-complete">
-          <h2>🎉 Niveau {session.level - 1} voltooid!</h2>
-          <p>Je kent de regels van dit niveau.</p>
-          <div className="stats">
-            <span style={{ color: 'var(--correct)' }}>
-              ✓ {session.score.correct}
-            </span>
-            <span style={{ color: 'var(--incorrect)' }}>
-              ✗ {session.score.wrong}
-            </span>
-          </div>
-          <button className="next-btn" onClick={onNextLevel}>
-            Begin niveau {session.level} →
-          </button>
-        </div>
-      ) : phase === 'done' ? (
-        <div className="level-complete">
-          <h2>🏆 Alle niveaus voltooid!</h2>
-          <p>
-            Je beheerst alle zes geslachtsregels. Begin opnieuw of exporteer
-            je voortgang.
-          </p>
-          <button
-            className="next-btn"
-            onClick={() => {
-              const prog = loadProgress();
-              prog.currentLevel = 1;
-              prog.sessionQueue = [];
-              saveProgress(prog);
-              setSession(createSession(1));
-              setPhase('selecting');
-            }}
-          >
-            Opnieuw beginnen
-          </button>
-        </div>
-      ) : !ch ? (
-        <div className="empty-state">
-          <h2>Oefeningen laden...</h2>
-          <p>Je oefensessie wordt klaargezet.</p>
-        </div>
-      ) : phase === 'repairing' ? (
-        <RepairShop
-          challenge={ch}
-          repairStage={repairStage}
-          onComplete={onRepairComplete}
-        />
-      ) : (
-        <div
-          className={`challenge-card ${answer ? (answer.correct ? 'correct' : 'incorrect') : ''}`}
-        >
-          {/* Sentence display */}
-          <SentenceCanvas
-            challenge={ch}
-            selectedAnswer={answer?.chosen ?? null}
-            phase={phase}
-            sentenceTranslation={
-              loadProgress().showTranslation ? ch.sentenceTranslation : undefined
-            }
-          />
-
-          {/* Options */}
-          <ModifierSlot
-            challenge={ch}
-            disabled={phase !== 'selecting'}
-            chosenAnswer={answer?.chosen ?? null}
-            onSelect={onSelect}
-          />
-
-          {/* Explanation */}
-          {phase === 'answered' && answer && (
-            <div className="explanation">
-              {answer.correct ? (
-                <>
-                  ✅ <strong>{ch.options.correct}</strong> is juist!{' '}
-                  {ch.explanation}
-                </>
-              ) : (
-                <>
-                  ❌ Je koos <strong>{answer.chosen}</strong>.{' '}
-                  {ch.explanation}
-                </>
-              )}
-              {/* Compound stem breakdown for Level 6 */}
-              {ch.levelType === 'compound_clash' && (
-                <CompoundStems explanation={ch.explanation} />
-              )}
-            </div>
-          )}
-
-          {/* Next / Continue button */}
-          {phase === 'answered' && (
-            <button className="next-btn" onClick={onNext}>
-              {answer?.correct ? 'Volgende →' : 'Herstel →'}
-            </button>
-          )}
-        </div>
-      )}
+      {/* Bottom tab bar */}
+      <TabBar active={activeTab} onChange={setActiveTab} />
 
       {showTour && <Tour onDone={() => setShowTour(false)} />}
     </div>

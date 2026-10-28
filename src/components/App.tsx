@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { ChallengeScreen } from './ChallengeScreen.tsx';
+import { BackgroundFX } from './BackgroundFX.tsx';
 import Footer from './Footer.tsx';
 import { loadProgress } from '../engine/progress.ts';
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <BackgroundFX />
       <ChallengeScreen />
       <Footer />
     </>
