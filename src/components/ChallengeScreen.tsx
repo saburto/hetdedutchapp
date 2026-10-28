@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import type { Challenge, ProgressStore } from '../../data/schema.ts';
+import { MAX_LEVEL } from '../../data/schema.ts';
 import { SentenceCanvas } from './SentenceCanvas.tsx';
 import { ModifierSlot } from './ModifierSlot.tsx';
 import { RepairShop } from './RepairShop.tsx';
@@ -10,6 +11,7 @@ import { LevelPathView } from './LevelPathView.tsx';
 import { StatsView } from './StatsView.tsx';
 import { SettingsPanel } from './SettingsPanel.tsx';
 import { Tour } from './Tour.tsx';
+import { PhraseScreen } from './PhraseScreen.tsx';
 import { getLevelName } from '../engine/levelMastery.ts';
 import {
   createSession,
@@ -107,11 +109,11 @@ export function ChallengeScreen() {
       // Once all three criteria are met, there's no need to finish the queue.
       if (shouldLevelUp(s.score, s.correctNouns, s.recentResults)) {
         const prog = loadProgress();
-        const nextLvl = Math.min(6, s.level + 1);
+        const nextLvl = Math.min(MAX_LEVEL, s.level + 1);
         prog.currentLevel = nextLvl;
         prog.sessionQueue = [];
         saveProgress(prog);
-        if (nextLvl > 6) {
+        if (nextLvl > MAX_LEVEL) {
           return { session: { ...s, level: nextLvl }, newPhase: 'done' };
         }
         return { session: { ...s, level: nextLvl }, newPhase: 'levelup' };
@@ -371,6 +373,10 @@ export function ChallengeScreen() {
       <div className="views">
         {/* ===== Oefenen ===== */}
         <div className={`view${activeTab === 'oefenen' ? ' active' : ''}`}>
+          {session.level === MAX_LEVEL ? (
+            <PhraseScreen />
+          ) : (
+            <>
           <GaugeRow
             attempts={attempts}
             distinctNouns={distinctNouns}
@@ -405,7 +411,7 @@ export function ChallengeScreen() {
               <div className="level-complete">
                 <h2>🏆 Alle niveaus voltooid!</h2>
                 <p>
-                  Je beheerst alle zes geslachtsregels. Begin opnieuw of
+                  Je beheerst alle zeven niveaus. Begin opnieuw of
                   exporteer je voortgang.
                 </p>
                 <button
@@ -491,6 +497,8 @@ export function ChallengeScreen() {
               </div>
             )}
           </div>
+            </>
+          )}
         </div>
 
         {/* ===== Leerpad ===== */}

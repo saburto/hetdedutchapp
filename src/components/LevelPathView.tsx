@@ -8,7 +8,7 @@ interface Props {
 const RING_R = 18;
 const RING_C = 2 * Math.PI * RING_R; // ~113.1
 
-/** Leerpad view: all six levels with progress rings. Every level is selectable. */
+/** Leerpad view: all seven levels with progress rings. Every level is selectable. */
 export function LevelPathView({ currentLevel, onSelectLevel }: Props) {
   const levels = getLevelMasteries();
 

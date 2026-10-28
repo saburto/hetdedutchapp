@@ -172,12 +172,12 @@ test.describe('Flow Tabs layout', () => {
 
     const isCorrect = await page.locator('.challenge-card.correct').isVisible().catch(() => false);
 
-    // Storage now written in v2 format
+    // Storage now written in v3 format
     const stored = await page.evaluate(() => {
       const raw = localStorage.getItem('nl-context-v1');
       return raw ? JSON.parse(raw) : null;
     });
-    expect(stored?.version).toBe(2);
+    expect(stored?.version).toBe(3);
     expect(stored.totalCorrect).toBe(beforeGood + (isCorrect ? 1 : 0));
     expect(stored.totalWrong).toBe(beforeBad + (isCorrect ? 0 : 1));
 
@@ -190,7 +190,7 @@ test.describe('Flow Tabs layout', () => {
     expect(goodAfter).toBe(stored.totalCorrect);
   });
 
-  test('v1 progress store migrates to v2 with lifetime totals', async ({ page }) => {
+  test('v1 progress store migrates to v3 with lifetime totals', async ({ page }) => {
     await page.goto('/');
     await page.evaluate(() => {
       localStorage.setItem('nl-context-v1', JSON.stringify({
@@ -219,9 +219,10 @@ test.describe('Flow Tabs layout', () => {
       const raw = localStorage.getItem('nl-context-v1');
       return raw ? JSON.parse(raw) : null;
     });
-    expect(data.version).toBe(2);
+    expect(data.version).toBe(3);
     expect(data.totalCorrect).toBe(10);
     expect(data.totalWrong).toBe(3);
+    expect(data.phrases).toEqual({});
 
     // Voortgang shows migrated totals
     await page.locator('.tab[data-tab="voortgang"]').click();

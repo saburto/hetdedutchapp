@@ -1,6 +1,7 @@
 import type { Challenge } from '../../data/schema.ts';
 import challengesRaw from '../../data/challenges.json' with { type: 'json' };
 import { loadProgress } from './progress.ts';
+import { getPhraseMasteryPct } from './phrases.ts';
 
 const ALL_CHALLENGES = (challengesRaw as { version: number; challenges: Challenge[] }).challenges;
 
@@ -23,6 +24,7 @@ const LEVEL_NAMES: Record<number, string> = {
   4: 'Dit / Dat',
   5: 'Verkleinwoord',
   6: 'Samenstelling',
+  7: 'Absurde zinnen',
 };
 
 export function getLevelName(level: number): string {
@@ -35,7 +37,19 @@ export function getLevelMasteries(): LevelMastery[] {
   const currentLevel = progress.currentLevel;
 
   const result: LevelMastery[] = [];
-  for (let level = 1; level <= 6; level++) {
+  for (let level = 1; level <= 7; level++) {
+    if (level === 7) {
+      const pct = getPhraseMasteryPct(progress);
+      result.push({
+        level,
+        mastery: pct / 100,
+        pct,
+        completed: level < currentLevel,
+        current: level === currentLevel,
+      });
+      continue;
+    }
+
     const nounIds = new Set(
       ALL_CHALLENGES
         .filter((c) => c.levelNumber === level)

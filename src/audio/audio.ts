@@ -74,6 +74,13 @@ export function speakDutch(text: string): void {
   synth.speak(utterance);
 }
 
+/** Stop any in-progress Dutch speech. */
+export function cancelSpeech(): void {
+  const synth = getSpeech();
+  if (!synth) return;
+  synth.cancel();
+}
+
 /** Check if nl-NL voice is available. */
 export function hasDutchVoice(): boolean {
   const synth = getSpeech();

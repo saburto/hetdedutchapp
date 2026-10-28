@@ -3,7 +3,7 @@ import type { ProgressStore } from '../../data/schema.ts';
 const STORAGE_KEY = 'nl-context-v1';
 
 const DEFAULT_PROGRESS: ProgressStore = {
-  version: 2,
+  version: 3,
   nouns: {},
   sessionQueue: [],
   currentLevel: 1,
@@ -12,15 +12,25 @@ const DEFAULT_PROGRESS: ProgressStore = {
   showTranslation: true,
   totalCorrect: 0,
   totalWrong: 0,
+  phrases: {},
 };
 
 /**
  * Migrate older progress payloads to the current schema.
  * v1 → v2: derive lifetime totals from per-noun correct/wrong counters.
+ * v2 → v3: add the empty phrase-progress map.
  */
 function migrate(raw: Record<string, unknown>): ProgressStore | null {
   const version = raw?.version;
-  if (version === 2) return raw as ProgressStore;
+  if (version === 3) return raw as ProgressStore;
+
+  if (version === 2) {
+    return {
+      ...(raw as unknown as Omit<ProgressStore, 'version' | 'phrases'>),
+      version: 3,
+      phrases: {},
+    };
+  }
 
   if (version === 1) {
     const nouns = (raw.nouns ?? {}) as Record<
@@ -34,10 +44,11 @@ function migrate(raw: Record<string, unknown>): ProgressStore | null {
       totalWrong += n?.wrong ?? 0;
     }
     return {
-      ...(raw as unknown as Omit<ProgressStore, 'version' | 'totalCorrect' | 'totalWrong'>),
-      version: 2,
+      ...(raw as unknown as Omit<ProgressStore, 'version' | 'totalCorrect' | 'totalWrong' | 'phrases'>),
+      version: 3,
       totalCorrect,
       totalWrong,
+      phrases: {},
     };
   }
 

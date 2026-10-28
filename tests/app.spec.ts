@@ -348,17 +348,17 @@ test.describe('Dutch Context Builder', () => {
 
     await chip.click();
 
-    // Leerpad view should be active with 6 level rows
+    // Leerpad view should be active with 7 level rows
     const rows = page.locator('.level-row');
-    await expect(rows).toHaveCount(6);
+    await expect(rows).toHaveCount(7);
     await expect(rows.first()).toBeVisible({ timeout: 2000 });
 
     // Level 1 row should be marked current
     await expect(page.locator('.level-row.current')).toHaveCount(1);
     expect(await page.locator('.level-row.current').textContent()).toContain('1');
 
-    // Select level 3
-    await rows.nth(2).click();
+    // Select level 3 (force: the row unmounts as the view switches)
+    await rows.nth(2).click({ force: true });
 
     // Should switch back to Oefenen view
     await expect(page.locator('.view.active .gauge-row')).toBeVisible({ timeout: 3000 });
@@ -386,7 +386,7 @@ test.describe('Dutch Context Builder', () => {
     await expect(page.locator('.level-chip')).toContainText('1');
   });
 
-  test('leerpad: all six levels are listed and selectable', async ({ page }) => {
+  test('leerpad: all seven levels are listed and selectable', async ({ page }) => {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
 
@@ -394,10 +394,10 @@ test.describe('Dutch Context Builder', () => {
     await expect(page.locator('.level-row').first()).toBeVisible({ timeout: 2000 });
 
     const rows = page.locator('.level-row');
-    await expect(rows).toHaveCount(6);
+    await expect(rows).toHaveCount(7);
 
     // No locked states — every row is clickable
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 7; i++) {
       const cursor = await rows.nth(i).evaluate((el) => getComputedStyle(el).cursor);
       expect(cursor).toBe('pointer');
     }

@@ -3,13 +3,15 @@
  * Run with: bun run validate
  */
 
-import { NounsFileSchema, ChallengesFileSchema } from '../data/schema.ts';
-import type { Noun, Challenge } from '../data/schema.ts';
+import { NounsFileSchema, ChallengesFileSchema, PhrasesFileSchema } from '../data/schema.ts';
+import type { Noun, Challenge, Phrase } from '../data/schema.ts';
 import nounsRaw from '../data/nouns.json' with { type: 'json' };
 import challengesRaw from '../data/challenges.json' with { type: 'json' };
+import phrasesRaw from '../data/phrases.json' with { type: 'json' };
 
 const typedNouns = nounsRaw as { version: number; nouns: Noun[] };
 const typedChallenges = challengesRaw as { version: number; challenges: Challenge[] };
+const typedPhrases = phrasesRaw as { version: number; phrases: Phrase[] };
 
 function main() {
   let errors = 0;
@@ -85,6 +87,23 @@ function main() {
           );
           errors++;
         }
+      }
+    }
+
+    // Validate phrases
+    const phrasesResult = PhrasesFileSchema.safeParse(typedPhrases);
+    if (!phrasesResult.success) {
+      console.error('❌ phrases.json validation failed:');
+      for (const issue of phrasesResult.error.issues) {
+        console.error(`  - ${issue.path.join('.')}: ${issue.message}`);
+        errors++;
+      }
+    } else {
+      console.log(`✅ phrases.json valid — ${phrasesResult.data.phrases.length} phrases`);
+      const phraseIds = new Set(phrasesResult.data.phrases.map(p => p.id));
+      if (phraseIds.size !== phrasesResult.data.phrases.length) {
+        console.warn('⚠ duplicate phrase IDs');
+        errors++;
       }
     }
   }

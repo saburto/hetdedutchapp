@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "phrases": [
+    {
+      "id": "phr_001",
+      "words": ["Het", "schaap", "en", "het", "varken", "vlogen", "over", "het", "dak", "in", "het", "vliegtuig."],
+      "targets": [0, 3, 7, 10],
+      "translation": "The sheep and the pig flew over the roof in the airplane."
+    },
+    {
+      "id": "phr_002",
+      "words": ["Het", "meisje", "at", "het", "kasteel", "op", "terwijl", "ze", "met", "het", "paard", "op", "het", "strand", "danste."],
+      "targets": [0, 3, 9, 12],
+      "translation": "The girl ate the castle while dancing with the horse on the beach."
+    },
+    {
+      "id": "phr_003",
+      "words": ["Het", "spook", "verstopte", "het", "probleem", "onder", "het", "feest", "in", "het", "bos."],
+      "targets": [0, 3, 6, 9],
+      "translation": "The ghost hid the problem under the party in the forest."
+    },
+    {
+      "id": "phr_004",
+      "words": ["Het", "konijn", "stal", "het", "schilderij", "vol", "met", "het", "goud", "uit", "het", "museum."],
+      "targets": [0, 3, 7, 10],
+      "translation": "The rabbit stole the painting full of gold from the museum."
+    },
+    {
+      "id": "phr_005",
+      "words": ["Het", "boek", "sliep", "in", "het", "bed", "en", "gooide", "het", "geheim", "uit", "het", "raam."],
+      "targets": [0, 4, 8, 11],
+      "translation": "The book slept in the bed and threw the secret out the window."
+    },
+    {
+      "id": "phr_006",
+      "words": ["Het", "potlood", "schreef", "het", "contract", "op", "het", "bureau", "van", "het", "kantoor", "terwijl", "het", "zweefde."],
+      "targets": [0, 3, 6, 9, 12],
+      "translation": "The floating pencil wrote the contract on the desk of the office."
+    },
+    {
+      "id": "phr_007",
+      "words": ["Het", "been", "wandelde", "alleen", "uit", "het", "ziekenhuis", "om", "het", "medicijn", "te", "zoeken,", "wat", "echt", "het", "wonder", "was."],
+      "targets": [0, 5, 8, 14],
+      "translation": "The leg walked out of the hospital alone to find the medicine, which was truly the miracle."
+    },
+    {
+      "id": "phr_008",
+      "words": ["Het", "standbeeld", "in", "het", "dorp", "sprong", "op", "het", "plein", "en", "veranderde", "het", "weer."],
+      "targets": [0, 3, 7, 11],
+      "translation": "The statue in the village jumped onto the square and changed the weather."
+    },
+    {
+      "id": "phr_009",
+      "words": ["Het", "brood", "dronk", "het", "sap", "en", "strooide", "het", "zout", "over", "het", "diner."],
+      "targets": [0, 3, 7, 10],
+      "translation": "The bread drank the juice and sprinkled the salt over the dinner."
+    },
+    {
+      "id": "phr_010",
+      "words": ["Het", "dier", "voer", "het", "schip", "naar", "het", "eiland", "met", "behulp", "van", "alleen", "het", "anker."],
+      "targets": [0, 3, 6, 12],
+      "translation": "The animal sailed the ship to the island using only the anchor."
+    },
+    {
+      "id": "phr_011",
+      "words": ["De", "auto", "en", "het", "paard", "dansten", "op", "het", "dak", "van", "de", "school", "in", "de", "regen."],
+      "targets": [0, 3, 7, 10, 13],
+      "translation": "The car and the horse danced on the roof of the school in the rain."
+    },
+    {
+      "id": "phr_012",
+      "words": ["Het", "glas", "zong", "het", "lied", "voor", "de", "tafel", "en", "het", "bed", "in", "het", "huis."],
+      "targets": [0, 3, 6, 9, 12],
+      "translation": "The glass sang the song for the table and the bed in the house."
+    },
+    {
+      "id": "phr_013",
+      "words": ["De", "hond", "en", "het", "konijn", "bakten", "het", "brood", "in", "de", "keuken", "van", "het", "station."],
+      "targets": [0, 3, 6, 9, 12],
+      "translation": "The dog and the rabbit baked the bread in the kitchen of the station."
+    },
+    {
+      "id": "phr_014",
+      "words": ["Het", "kind", "verfde", "de", "muur", "met", "het", "ijs", "en", "het", "zout", "van", "het", "feest."],
+      "targets": [0, 3, 6, 9, 12],
+      "translation": "The child painted the wall with the ice cream and the salt of the party."
+    },
+    {
+      "id": "phr_015",
+      "words": ["De", "stoel", "vloog", "met", "het", "vliegtuig", "naar", "het", "eiland", "om", "het", "geheim", "te", "zoeken."],
+      "targets": [0, 4, 7, 10],
+      "translation": "The chair flew with the airplane to the island to find the secret."
+    }
+  ]
+}

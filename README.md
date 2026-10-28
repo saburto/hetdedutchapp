@@ -18,15 +18,17 @@ Je ziet een Nederlandse zin met een gat waar een bijvoeglijk naamwoord, bezittel
 └──────┘    └──────┘
 ```
 
-## Vijf niveaus
+## Zeven niveaus
 
 | Niveau | Mechaniek | Voorbeeld |
 |--------|-----------|-----------|
-| 1 | Bezittelijk (ons/onze) | [Ons / Onze] kind speelt buiten. |
-| 2 | Bijvoeglijk naamwoord (wel/geen -e) | een [groot / grote] huis |
-| 3 | Aanwijzend (dit/deze, dat/die) | Is [dit / deze] stoel bezet? |
-| 4 | Verkleinval (de→het) | De auto → **het** autootje → [Dit / Deze] autootje |
-| 5 | Samenstellingen (laatste woord bepaalt) | De tafel + Het laken = Het tafellaken |
+| 1 | Lidwoord (de/het) | [De / Het] auto is rood. |
+| 2 | Bezittelijk (ons/onze) | [Ons / Onze] kind speelt buiten. |
+| 3 | Bijvoeglijk naamwoord (wel/geen -e) | een [groot / grote] huis |
+| 4 | Aanwijzend (dit/deze, dat/die) | Is [dit / deze] stoel bezet? |
+| 5 | Verkleinwoord (de→het) | De auto → **het** autootje |
+| 6 | Samenstelling (laatste woord bepaalt) | De tafel + Het laken = Het tafellaken |
+| 7 | Absurde zinnen (spreek & luister) | Het schaap vloog over het dak. |
 
 ## Wat het anders maakt
 
@@ -34,6 +36,7 @@ Je ziet een Nederlandse zin met een gat waar een bijvoeglijk naamwoord, bezittel
 - **Adaptieve wachtrij** — woorden die je lastig vindt komen vaker terug, woorden die je kent verschijnen minder
 - **Zinsherstel** — na een fout typ je de juiste zin na, dan krijg je hetzelfde woord in een andere structuur, daarna een contrastduel
 - **Nederlandse spraak** — de app leest elke zin hardop voor (Web Speech API, nl-NL)
+- **Absurde zinnen** — niveau 7 toont een gekke zin woord voor woord, leest hem voor en laat je hem hardop naspreken via Chrome-spraakherkenning, met directe feedback op de/het
 - **Donker thema** — licht/donker/systeem, geen gedoe
 - **Rondleiding** — klik op de `?` knop rechtsboven voor een interactieve tour door de app
 
@@ -49,14 +52,14 @@ bun run dev        # opent http://localhost:5173
 ```bash
 bun run dev         # ontwikkelserver
 bun run build       # productiebuild → dist/
-bun run validate    # controleert alle 72 oefeningen op fouten
-bunx playwright test # 6 E2E tests
+bun run validate    # controleert alle datasets op fouten
+bunx playwright test # E2E tests
 ```
 
 ## Structuur
 
 ```
-data/               # 15 zelfstandige naamwoorden + 72 oefeningen + Zod-schema's
+data/               # 100 zelfstandige naamwoorden + 346 oefeningen + 15 zinnen + Zod-schema's
 src/engine/         # pure logica: wachtrij, voortgang, zinsherstel
 src/components/     # React-componenten
 src/audio/          # spraak en geluidjes

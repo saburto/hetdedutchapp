@@ -23,7 +23,7 @@ const DEFAULT_STEPS: TourStep[] = [
   {
     target: '.level-chip',
     title: 'Your Level',
-    body: 'There are 6 levels, each focusing on a different Dutch grammatical rule. This chip shows the level you are practising right now.',
+    body: 'There are 7 levels: 6 grammar levels plus a final absurd-phrase speaking trainer. This chip shows the level you are practising right now.',
     placement: 'bottom',
   },
   {
@@ -65,7 +65,7 @@ const DEFAULT_STEPS: TourStep[] = [
   {
     target: '.tabbar',
     title: 'Three Views',
-    body: 'Switch between Oefenen (practice), Leerpad (the six levels — click any level to jump straight to it), and Voortgang (your lifetime stats and per-level mastery).',
+    body: 'Switch between Oefenen (practice), Leerpad (the seven levels — click any level to jump straight to it), and Voortgang (your lifetime stats and per-level mastery).',
     placement: 'top',
   },
   {
