@@ -30,22 +30,22 @@ test.describe('Tour', () => {
     await page.locator('.tour-btn').click();
     await expect(page.locator('.tour-tooltip')).toBeVisible({ timeout: 3000 });
 
-    // Check step counter shows "1 / 9"
+    // Check step counter shows "1 / 10"
     const counter = page.locator('.tour-step-counter');
-    await expect(counter).toContainText('1 / 9');
+    await expect(counter).toContainText('1 / 10');
 
     // First step should have "Welcome" title
     const title = page.locator('.tour-tooltip-title');
     await expect(title).toContainText('Welcome');
 
     // Click "Next" several times
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 9; i++) {
       await page.locator('.tour-nav-btn.tour-next').click();
       await page.waitForTimeout(400);
     }
 
-    // Last step counter should be "9 / 9"
-    await expect(counter).toContainText('9 / 9');
+    // Last step counter should be "10 / 10"
+    await expect(counter).toContainText('10 / 10');
 
     // "Done" button should close the tour
     await page.locator('.tour-nav-btn.tour-next').click();

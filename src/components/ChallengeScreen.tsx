@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import type { Challenge } from '../../data/schema.ts';
 import { SentenceCanvas } from './SentenceCanvas.tsx';
 import { ModifierSlot } from './ModifierSlot.tsx';
@@ -20,6 +20,17 @@ import {
   playIncorrectThud,
   speakChallengeSentence,
 } from '../audio/audio.ts';
+
+const TOTAL_LEVELS = 6;
+
+const LEVEL_LABELS: Record<number, string> = {
+  1: 'De / Het',
+  2: 'Ons / Onze',
+  3: 'Bijvoeglijk',
+  4: 'Dit / Dat',
+  5: 'Verkleinwoord',
+  6: 'Samenstelling',
+};
 
 type Phase =
   | 'selecting'
@@ -44,6 +55,20 @@ export function ChallengeScreen() {
   const [repairChallenge, setRepairChallenge] = useState<Challenge | null>(null);
   const [showSettings, setShowSettings] = useState(false);
   const [showTour, setShowTour] = useState(false);
+  const [showLevelPicker, setShowLevelPicker] = useState(false);
+  const levelPickerRef = useRef<HTMLDivElement>(null);
+  // Close level picker on outside click
+  useEffect(() => {
+    if (!showLevelPicker) return;
+    function onClick(e: MouseEvent) {
+      if (levelPickerRef.current && !levelPickerRef.current.contains(e.target as Node)) {
+        setShowLevelPicker(false);
+      }
+    }
+    document.addEventListener('mousedown', onClick);
+    return () => document.removeEventListener('mousedown', onClick);
+  }, [showLevelPicker]);
+
   // Auto-load first challenge on boot and after queue refills.
   // Only when we don't have a challenge AND the user is selecting (not reviewing an answer).
   useEffect(() => {
@@ -186,6 +211,23 @@ export function ChallengeScreen() {
     setAnswer(null);
   }, [session.level]);
 
+  const onSelectLevel = useCallback((level: number) => {
+    if (level === session.level) {
+      setShowLevelPicker(false);
+      return;
+    }
+    const prog = loadProgress();
+    prog.currentLevel = level;
+    prog.sessionQueue = [];
+    saveProgress(prog);
+    const ns = createSession(level);
+    const withFirst = ns.queue.length > 0 ? nextChallenge(ns) : ns;
+    setSession(withFirst);
+    setPhase('selecting');
+    setAnswer(null);
+    setShowLevelPicker(false);
+  }, [session.level]);
+
   const ch =
     phase === 'repairing' && repairChallenge
       ? repairChallenge
@@ -200,7 +242,37 @@ export function ChallengeScreen() {
       <header className="app-header">
         <div style={{ display: 'flex', alignItems: 'center', gap: '.75rem' }}>
           <h1>De/Het Trainer</h1>
-          <span className="level-badge">Niveau {session.level}</span>
+          <div className="level-picker-wrapper" ref={levelPickerRef}>
+            <button
+              className="level-badge level-badge-btn"
+              onClick={() => setShowLevelPicker((s) => !s)}
+              aria-label="Select level"
+              aria-haspopup="listbox"
+              aria-expanded={showLevelPicker}
+            >
+              Niveau {session.level}
+              <span className="level-chevron">{showLevelPicker ? '▲' : '▼'}</span>
+            </button>
+            {showLevelPicker && (
+              <div className="level-dropdown" role="listbox">
+                {Array.from({ length: TOTAL_LEVELS }, (_, i) => i + 1).map((lvl) => (
+                  <button
+                    key={lvl}
+                    className={`level-option${lvl === session.level ? ' active' : ''}`}
+                    role="option"
+                    aria-selected={lvl === session.level}
+                    onClick={() => onSelectLevel(lvl)}
+                  >
+                    <span className="level-option-num">{lvl}</span>
+                    <span className="level-option-label">{LEVEL_LABELS[lvl]}</span>
+                    {lvl === session.level && (
+                      <span className="level-option-check">✓</span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div style={{ display: 'flex', gap: '.5rem', alignItems: 'center' }}>
           <button

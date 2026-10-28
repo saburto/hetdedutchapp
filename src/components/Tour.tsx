@@ -21,9 +21,15 @@ const DEFAULT_STEPS: TourStep[] = [
     placement: 'bottom',
   },
   {
-    target: '.level-badge',
+    target: '.level-badge-btn',
     title: 'Your Level',
     body: 'There are 6 levels, each focusing on a different Dutch grammatical rule. Start at level 1 and work your way up.',
+    placement: 'bottom',
+  },
+  {
+    target: '.level-badge-btn',
+    title: 'Jump to Any Level',
+    body: 'Click the level badge to open a menu and switch levels anytime. No need to unlock them first — jump straight to the rule you want to practice!',
     placement: 'bottom',
   },
   {

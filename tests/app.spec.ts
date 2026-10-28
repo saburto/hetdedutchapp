@@ -282,7 +282,7 @@ test.describe('Dutch Context Builder', () => {
     await page.waitForLoadState('networkidle');
 
     // Verify we are on level 6
-    const levelBadge = page.locator('.level-badge');
+    const levelBadge = page.locator('.level-badge-btn');
     await expect(levelBadge).toBeVisible({ timeout: 5000 });
     const badgeText = await levelBadge.textContent();
     expect(badgeText).toContain('6');
@@ -331,6 +331,83 @@ test.describe('Dutch Context Builder', () => {
     // The button texts at each position must not have swapped
     expect(text0After).toBe(text0Before);
     expect(text1After).toBe(text1Before);
+  });
+
+  test('level selector: badge opens dropdown and switching levels works', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+
+    // Click the level badge to open the picker
+    const badge = page.locator('.level-badge-btn');
+    await expect(badge).toBeVisible({ timeout: 5000 });
+
+    // Verify we start at level 1
+    const initialText = await badge.textContent();
+    expect(initialText).toContain('1');
+
+    // Open the level dropdown
+    await badge.click();
+    const dropdown = page.locator('.level-dropdown');
+    await expect(dropdown).toBeVisible({ timeout: 2000 });
+
+    // All 6 levels should be listed
+    const options = dropdown.locator('.level-option');
+    await expect(options).toHaveCount(6);
+
+    // Level 1 should be marked active
+    const activeOption = dropdown.locator('.level-option.active');
+    await expect(activeOption).toHaveCount(1);
+    expect(await activeOption.textContent()).toContain('1');
+
+    // Select level 3
+    await options.nth(2).click();
+
+    // Dropdown should close
+    await expect(dropdown).not.toBeVisible({ timeout: 2000 });
+
+    // Badge should now show level 3
+    await expect(badge).toContainText('3');
+
+    // A challenge should load for level 3
+    await expect(page.locator('.option-btn').first()).toBeVisible({ timeout: 5000 });
+  });
+
+  test('level selector: clicking outside closes dropdown', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+
+    const badge = page.locator('.level-badge-btn');
+    await expect(badge).toBeVisible({ timeout: 5000 });
+
+    // Open dropdown
+    await badge.click();
+    await expect(page.locator('.level-dropdown')).toBeVisible({ timeout: 2000 });
+
+    // Click outside (on the heading)
+    await page.locator('h1').click();
+    await expect(page.locator('.level-dropdown')).not.toBeVisible({ timeout: 2000 });
+  });
+
+  test('level selector: selecting current level closes dropdown without reload', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+
+    const badge = page.locator('.level-badge-btn');
+    await expect(badge).toBeVisible({ timeout: 5000 });
+
+    // Open dropdown
+    await badge.click();
+    const dropdown = page.locator('.level-dropdown');
+    await expect(dropdown).toBeVisible({ timeout: 2000 });
+
+    // Click the already-active level 1 option
+    await dropdown.locator('.level-option.active').click();
+
+    // Dropdown should close
+    await expect(dropdown).not.toBeVisible({ timeout: 2000 });
+
+    // Badge should still show level 1
+    await expect(badge).toContainText('1');
   });
 
   test.skip('perfect run: completes all 6 levels without mistakes', async ({ page }) => {
