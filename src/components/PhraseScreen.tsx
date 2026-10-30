@@ -7,7 +7,7 @@ import {
   scoreTranscript,
   type PhraseResult,
 } from '../engine/phrases.ts';
-import { speakDutch, cancelSpeech } from '../audio/audio.ts';
+import { speakDutch, speakDutchWord, cancelSpeech } from '../audio/audio.ts';
 import {
   createSpeechRecognition,
   isSpeechRecognitionSupported,
@@ -35,6 +35,8 @@ export function PhraseScreen() {
   const finalTranscriptRef = useRef('');
   const interimTranscriptRef = useRef('');
   const ignoreOnendRef = useRef(false);
+  // How many words of the current phrase have already been read aloud.
+  const spokenRef = useRef<{ phraseId: string; count: number }>({ phraseId: '', count: 0 });
 
   const phrase = queue[idx];
   const fullText = phrase ? phrase.words.join(' ') : '';
@@ -44,15 +46,27 @@ export function PhraseScreen() {
     [phrase],
   );
 
-  // Word-by-word reveal → read the full phrase aloud at the end.
+  // Word-by-word reveal: every shown word is read aloud, then the full
+  // phrase is spoken once the sentence is complete.
   useEffect(() => {
     if (phase !== 'revealing' || !phrase) return;
+    if (spokenRef.current.phraseId !== phrase.id) {
+      spokenRef.current = { phraseId: phrase.id, count: 0 };
+    }
     if (revealed < phrase.words.length) {
+      if (progress.audioEnabled && revealed > spokenRef.current.count) {
+        // Queue (not interrupt) so a word is never cut off mid-pronunciation.
+        for (let i = spokenRef.current.count; i < revealed; i++) {
+          speakDutchWord(phrase.words[i]);
+        }
+        spokenRef.current.count = revealed;
+      }
       const t = window.setTimeout(() => {
         setRevealed((r) => Math.min(r + 1, phrase.words.length));
       }, WORD_INTERVAL_MS);
       return () => window.clearTimeout(t);
     }
+    // Reveal-all skips the per-word reads; cancel them and speak the sentence.
     if (progress.audioEnabled) speakDutch(fullText);
     setPhase('ready');
   }, [phase, revealed, phrase, fullText, progress.audioEnabled]);

@@ -1,8 +1,12 @@
 import { test, expect } from '@playwright/test';
 
 /** Seed localStorage before the app boots. */
-function seedProgress(page: import('@playwright/test').Page, currentLevel: number) {
-  return page.addInitScript((level) => {
+function seedProgress(
+  page: import('@playwright/test').Page,
+  currentLevel: number,
+  audioEnabled = false,
+) {
+  return page.addInitScript(({ level, audio }) => {
     localStorage.setItem(
       'nl-context-v1',
       JSON.stringify({
@@ -11,14 +15,45 @@ function seedProgress(page: import('@playwright/test').Page, currentLevel: numbe
         sessionQueue: [],
         currentLevel: level,
         theme: 'light',
-        audioEnabled: false,
+        audioEnabled: audio,
         showTranslation: true,
         totalCorrect: 0,
         totalWrong: 0,
         phrases: {},
       }),
     );
-  }, currentLevel);
+  }, { level: currentLevel, audio: audioEnabled });
+}
+
+/** Install a fake speech synthesiser that records every utterance. */
+function stubSpeechSynthesis(page: import('@playwright/test').Page) {
+  return page.addInitScript(() => {
+    const spoken: string[] = [];
+    (window as unknown as Record<string, unknown>).__spoken = spoken;
+
+    class FakeUtterance {
+      text: string;
+      lang = '';
+      rate = 1;
+      pitch = 1;
+      constructor(text: string) {
+        this.text = text;
+      }
+    }
+
+    Object.defineProperty(window, 'SpeechSynthesisUtterance', {
+      value: FakeUtterance,
+      configurable: true,
+    });
+    Object.defineProperty(window, 'speechSynthesis', {
+      value: {
+        speak: (u: { text: string }) => { spoken.push(u.text); },
+        cancel: () => {},
+        getVoices: () => [],
+      },
+      configurable: true,
+    });
+  });
 }
 
 /** Install a fake SpeechRecognition that we can drive from the test. */
@@ -103,6 +138,36 @@ test.describe('Absurd phrase trainer (Level 7)', () => {
 
     // English translation shows once the phrase is revealed
     await expect(page.locator('.translation-inline')).toBeVisible();
+  });
+
+  test('every revealed word is read aloud, then the full phrase', async ({ page }) => {
+    test.slow();
+    await seedProgress(page, 7, true);
+    await stubSpeechSynthesis(page);
+    await page.goto('/');
+    await page.waitForLoadState('networkidle');
+
+    const screen = page.locator('.phrase-screen');
+    await expect(screen).toBeVisible({ timeout: 3000 });
+
+    const fullText = (await page.locator('.phrase-canvas').getAttribute('aria-label')) ?? '';
+    const words = fullText.split(' ');
+    expect(words.length).toBeGreaterThan(3);
+
+    // While the reveal is running, the words are spoken one by one in order.
+    const spoken = () =>
+      page.evaluate(() =>
+        (window as unknown as { __spoken?: string[] }).__spoken ?? [],
+      );
+    await expect.poll(async () => {
+      const list = await spoken();
+      return list.length >= 2 && list.every((w, i) => w === words[i]);
+    }, { timeout: 5000 }).toBe(true);
+
+    // When the phrase completes, the whole sentence is read after the words.
+    await expect(page.locator('.phrase-btn').filter({ hasText: 'Opnemen' }))
+      .toBeVisible({ timeout: 12_000 });
+    expect(await spoken()).toEqual([...words.slice(0, -1), fullText]);
   });
 
   test('recording a perfect phrase shows a perfect score', async ({ page }) => {

@@ -61,16 +61,39 @@ export function playIncorrectThud(): void {
   osc.stop(now + 0.25);
 }
 
-/** Speak a Dutch sentence using the Web Speech API. */
+/** Build a Dutch utterance, or null when the API is unavailable. */
+function dutchUtterance(text: string, rate = 0.9): SpeechSynthesisUtterance | null {
+  try {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'nl-NL';
+    utterance.rate = rate;
+    utterance.pitch = 1.0;
+    return utterance;
+  } catch {
+    return null;
+  }
+}
+
+/** Speak a Dutch sentence using the Web Speech API. Cancels in-progress speech. */
 export function speakDutch(text: string): void {
   const synth = getSpeech();
   if (!synth) return;
+  const utterance = dutchUtterance(text);
+  if (!utterance) return;
   // Cancel any in-progress speech
   synth.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'nl-NL';
-  utterance.rate = 0.9;
-  utterance.pitch = 1.0;
+  synth.speak(utterance);
+}
+
+/**
+ * Queue a Dutch word without cancelling speech that is already playing.
+ * Used by the word-by-word reveal so every new word is pronounced in full.
+ */
+export function speakDutchWord(text: string): void {
+  const synth = getSpeech();
+  if (!synth) return;
+  const utterance = dutchUtterance(text);
+  if (!utterance) return;
   synth.speak(utterance);
 }
 
