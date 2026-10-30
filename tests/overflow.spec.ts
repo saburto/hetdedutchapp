@@ -40,9 +40,12 @@ test('footer is visible in the viewport', async ({ page }) => {
 test('footer links have correct hrefs', async ({ page }) => {
   await page.goto('/');
 
-  const links = page.locator('.app-footer a');
-  await expect(links).toHaveCount(2);
-
-  await expect(links.nth(0)).toHaveAttribute('href', 'https://saburto.com');
-  await expect(links.nth(1)).toHaveAttribute('href', 'https://github.com/saburto/hetdedutchapp');
+  await expect(page.locator('.app-footer a', { hasText: 'saburto.com' })).toHaveAttribute(
+    'href',
+    'https://saburto.com',
+  );
+  await expect(page.locator('.app-footer a', { hasText: 'GitHub' })).toHaveAttribute(
+    'href',
+    'https://github.com/saburto/hetdedutchapp',
+  );
 });

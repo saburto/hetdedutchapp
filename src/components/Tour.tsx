@@ -71,7 +71,7 @@ const DEFAULT_STEPS: TourStep[] = [
   {
     target: '.app-footer',
     title: 'Ready to Go! 🎉',
-    body: 'That\'s it! Click the "?" button anytime to replay this tour. Veel success — good luck mastering de and het!',
+    body: 'That\'s it! The footer shows the git version and build date of the app you are running, plus a note that it was built with AI. Click the "?" button anytime to replay this tour. Veel succes — good luck mastering de and het!',
     placement: 'top',
   },
 ];

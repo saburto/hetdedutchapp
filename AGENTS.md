@@ -37,6 +37,7 @@ tests/          Playwright E2E specs
 - `RepairShop` — 3-stage repair: type-correct → structural-shift → contrast-duel
 - `SettingsPanel` — theme, audio toggle, export/import progress JSON
 - `Tour` — interactive product tour (8 steps), triggered by `?` button in header. Tour steps are defined as an array of `TourStep` objects (target selector, title, body, placement). The tour highlights elements and shows tooltips. Steps are in English (unlike the rest of the UI which is in Dutch).
+- `Footer` — links (saburto.com, GitHub), git version (`versie <sha>`, linked to the commit), build date (`dd-mm-yyyy`) and a small "Deze app is met behulp van AI gemaakt" note. The values come from compile-time constants injected by `define` in `vite.config.ts` (`__GIT_SHA__`, `__BUILD_DATE__`, `__APP_VERSION__`), declared in `src/build-info.d.ts`. No git repo → version falls back to `dev` and is rendered as plain text.
 
 ### Engine
 - `session.ts` — `createSession` uses `buildAdaptiveQueue` (mastery-weighted, see below)

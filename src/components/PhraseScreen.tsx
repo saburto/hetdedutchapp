@@ -32,7 +32,9 @@ export function PhraseScreen() {
   const [result, setResult] = useState<PhraseResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const recRef = useRef<SpeechRecognitionLike | null>(null);
-  const gotFinalRef = useRef(false);
+  const finalTranscriptRef = useRef('');
+  const interimTranscriptRef = useRef('');
+  const ignoreOnendRef = useRef(false);
 
   const phrase = queue[idx];
   const fullText = phrase ? phrase.words.join(' ') : '';
@@ -62,12 +64,10 @@ export function PhraseScreen() {
 
   const finishWithTranscript = useCallback(
     (transcript: string) => {
-      const rec = recRef.current;
-      if (rec) rec.stop();
       const trimmed = transcript.trim();
       if (!trimmed) {
         setError('Ik heb je niet gehoord. Probeer het opnieuw.');
-        setPhase('ready');
+        setPhase((p) => (p === 'listening' ? 'ready' : p));
         return;
       }
       const scored = scoreTranscript(phrase, trimmed);
@@ -90,41 +90,64 @@ export function PhraseScreen() {
     setError(null);
     setResult(null);
     setInterim('');
-    gotFinalRef.current = false;
+    finalTranscriptRef.current = '';
+    interimTranscriptRef.current = '';
+    ignoreOnendRef.current = false;
     setPhase('listening');
 
     rec.onstart = () => {};
     rec.onresult = (event) => {
-      let finalText = '';
       let interimText = '';
       for (let i = event.resultIndex; i < event.results.length; i++) {
         const r = event.results[i];
         const text = r[0]?.transcript ?? '';
-        if (r.isFinal) finalText += `${text} `;
+        if (r.isFinal) finalTranscriptRef.current += `${text} `;
         else interimText += text;
       }
-      setInterim((finalText + interimText).trim());
+      interimTranscriptRef.current = interimText;
+      setInterim((finalTranscriptRef.current + interimText).trim());
 
-      if (finalText.trim()) {
-        gotFinalRef.current = true;
-        finishWithTranscript(finalText);
+      // For a single-sentence exercise, stop as soon as a final result is
+      // captured. On desktop this gives instant scoring; on Android the
+      // onend handler still finalizes if only interim results were delivered.
+      if (finalTranscriptRef.current.trim()) {
+        rec.stop();
       }
     };
     rec.onerror = (event) => {
+      // Mirror the Google Chrome demo: ignore the onend that follows these
+      // errors so the UI can settle back into the ready state.
+      if (event.error === 'no-speech' || event.error === 'audio-capture' || event.error === 'not-allowed') {
+        ignoreOnendRef.current = true;
+      }
       setError(
         event.error === 'not-allowed'
           ? 'Geen toegang tot de microfoon. Sta de microfoon toe en probeer opnieuw.'
-          : 'Spraakherkenning lukte niet. Probeer het opnieuw.',
+          : event.error === 'no-speech'
+            ? 'Ik hoorde niets. Probeer het opnieuw.'
+            : event.error === 'audio-capture'
+              ? 'Geen microfoon gevonden. Controleer je microfoon.'
+              : 'Spraakherkenning lukte niet. Probeer het opnieuw.',
       );
       setPhase((p) => (p === 'listening' ? 'ready' : p));
     };
     rec.onend = () => {
-      if (!gotFinalRef.current) {
+      if (ignoreOnendRef.current) {
+        ignoreOnendRef.current = false;
         setPhase((p) => (p === 'listening' ? 'ready' : p));
+        return;
       }
+      // Android Chrome often ends the session with only interim results —
+      // finalize on end so the spoken phrase is never thrown away.
+      const transcript = `${finalTranscriptRef.current} ${interimTranscriptRef.current}`.trim();
+      finishWithTranscript(transcript);
     };
 
     try {
+      rec.lang = 'nl-NL';
+      rec.continuous = true;
+      rec.interimResults = true;
+      rec.maxAlternatives = 1;
       rec.start();
     } catch {
       setError('Spraakherkenning kon niet starten.');
@@ -135,12 +158,8 @@ export function PhraseScreen() {
   function stopRecording() {
     const rec = recRef.current;
     if (!rec) return;
-    if (interim.trim()) {
-      gotFinalRef.current = true;
-      finishWithTranscript(interim);
-    } else {
-      rec.stop();
-    }
+    // onend handles scoring with whatever was captured (final or interim).
+    rec.stop();
   }
 
   function replay() {
