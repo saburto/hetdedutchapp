@@ -17,6 +17,8 @@ import {
 type PhrasePhase = 'revealing' | 'ready' | 'listening' | 'result' | 'done';
 
 const WORD_INTERVAL_MS = 420;
+/** Reveal the next word if speech `onend` never fires (background tab, bug). */
+const WORD_SAFETY_TIMEOUT_MS = 3000;
 
 function articleOf(word: string): 'de' | 'het' {
   return word.replace(/[.,!?;:]$/, '').toLowerCase() === 'de' ? 'de' : 'het';
@@ -46,29 +48,53 @@ export function PhraseScreen() {
     [phrase],
   );
 
-  // Word-by-word reveal: every shown word is read aloud, then the full
-  // phrase is spoken once the sentence is complete.
+  // Word-by-word reveal, synced to the audio: the next word appears only
+  // after the current word has finished playing. Without audio (or when
+  // speech synthesis is unavailable) a fixed interval is used instead.
   useEffect(() => {
     if (phase !== 'revealing' || !phrase) return;
     if (spokenRef.current.phraseId !== phrase.id) {
       spokenRef.current = { phraseId: phrase.id, count: 0 };
     }
-    if (revealed < phrase.words.length) {
-      if (progress.audioEnabled && revealed > spokenRef.current.count) {
-        // Queue (not interrupt) so a word is never cut off mid-pronunciation.
-        for (let i = spokenRef.current.count; i < revealed; i++) {
-          speakDutchWord(phrase.words[i]);
-        }
-        spokenRef.current.count = revealed;
-      }
-      const t = window.setTimeout(() => {
-        setRevealed((r) => Math.min(r + 1, phrase.words.length));
-      }, WORD_INTERVAL_MS);
-      return () => window.clearTimeout(t);
+
+    const total = phrase.words.length;
+    if (revealed >= total) {
+      // Sentence complete: read the whole phrase, then allow recording.
+      if (progress.audioEnabled) speakDutch(fullText);
+      setPhase('ready');
+      return;
     }
-    // Reveal-all skips the per-word reads; cancel them and speak the sentence.
-    if (progress.audioEnabled) speakDutch(fullText);
-    setPhase('ready');
+
+    let cancelled = false;
+    let advanced = false;
+    let timer: number | null = null;
+    let spokeWord = false;
+
+    const advance = () => {
+      if (cancelled || advanced) return;
+      advanced = true;
+      setRevealed((r) => Math.min(r + 1, total));
+    };
+
+    if (progress.audioEnabled && revealed > spokenRef.current.count) {
+      // Read the word that just appeared and reveal the next one when it ends.
+      spokeWord = speakDutchWord(phrase.words[revealed - 1], advance);
+      if (spokeWord) {
+        spokenRef.current.count = revealed;
+        timer = window.setTimeout(advance, WORD_SAFETY_TIMEOUT_MS);
+      }
+    }
+    if (!spokeWord) {
+      timer = window.setTimeout(advance, WORD_INTERVAL_MS);
+    }
+
+    return () => {
+      cancelled = true;
+      if (timer !== null) window.clearTimeout(timer);
+      // Stop the word that is still playing when the phrase is skipped or
+      // the screen is left.
+      if (spokeWord) cancelSpeech();
+    };
   }, [phase, revealed, phrase, fullText, progress.audioEnabled]);
 
   function ensureRecognition(): SpeechRecognitionLike | null {

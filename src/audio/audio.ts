@@ -86,15 +86,30 @@ export function speakDutch(text: string): void {
 }
 
 /**
- * Queue a Dutch word without cancelling speech that is already playing.
- * Used by the word-by-word reveal so every new word is pronounced in full.
+ * Speak a single Dutch word and call `onEnd` when playback finishes.
+ * Returns false when speech synthesis is unavailable, so callers can fall
+ * back to a timer. Used by the word-by-word reveal in the phrase trainer to
+ * keep the reveal in sync with the audio.
  */
-export function speakDutchWord(text: string): void {
+export function speakDutchWord(text: string, onEnd: () => void): boolean {
   const synth = getSpeech();
-  if (!synth) return;
+  if (!synth) return false;
   const utterance = dutchUtterance(text);
-  if (!utterance) return;
+  if (!utterance) return false;
+
+  let finished = false;
+  const finish = () => {
+    if (finished) return;
+    finished = true;
+    onEnd();
+  };
+  utterance.onend = finish;
+  utterance.onerror = finish;
+
+  // Drop any leftovers so the word is not queued behind stale speech.
+  if (synth.speaking || synth.pending) synth.cancel();
   synth.speak(utterance);
+  return true;
 }
 
 /** Stop any in-progress Dutch speech. */

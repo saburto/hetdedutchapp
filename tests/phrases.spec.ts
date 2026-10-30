@@ -25,17 +25,28 @@ function seedProgress(
   }, { level: currentLevel, audio: audioEnabled });
 }
 
-/** Install a fake speech synthesiser that records every utterance. */
+/**
+ * Install a fake speech synthesiser that records every utterance and only
+ * fires `onend` when the test calls `__finishSpeech()`.
+ */
 function stubSpeechSynthesis(page: import('@playwright/test').Page) {
   return page.addInitScript(() => {
     const spoken: string[] = [];
-    (window as unknown as Record<string, unknown>).__spoken = spoken;
+    const pending: Array<() => void> = [];
+    const w = window as unknown as Record<string, unknown>;
+    w.__spoken = spoken;
+    w.__finishSpeech = () => {
+      const end = pending.shift();
+      if (end) end();
+    };
 
     class FakeUtterance {
       text: string;
       lang = '';
       rate = 1;
       pitch = 1;
+      onend: (() => void) | null = null;
+      onerror: (() => void) | null = null;
       constructor(text: string) {
         this.text = text;
       }
@@ -47,8 +58,13 @@ function stubSpeechSynthesis(page: import('@playwright/test').Page) {
     });
     Object.defineProperty(window, 'speechSynthesis', {
       value: {
-        speak: (u: { text: string }) => { spoken.push(u.text); },
-        cancel: () => {},
+        speaking: false,
+        pending: false,
+        speak: (u: FakeUtterance) => {
+          spoken.push(u.text);
+          pending.push(() => u.onend?.());
+        },
+        cancel: () => { pending.length = 0; },
         getVoices: () => [],
       },
       configurable: true,
@@ -140,8 +156,7 @@ test.describe('Absurd phrase trainer (Level 7)', () => {
     await expect(page.locator('.translation-inline')).toBeVisible();
   });
 
-  test('every revealed word is read aloud, then the full phrase', async ({ page }) => {
-    test.slow();
+  test('words are revealed in sync with the spoken audio', async ({ page }) => {
     await seedProgress(page, 7, true);
     await stubSpeechSynthesis(page);
     await page.goto('/');
@@ -153,21 +168,32 @@ test.describe('Absurd phrase trainer (Level 7)', () => {
     const fullText = (await page.locator('.phrase-canvas').getAttribute('aria-label')) ?? '';
     const words = fullText.split(' ');
     expect(words.length).toBeGreaterThan(3);
-
-    // While the reveal is running, the words are spoken one by one in order.
     const spoken = () =>
       page.evaluate(() =>
         (window as unknown as { __spoken?: string[] }).__spoken ?? [],
       );
-    await expect.poll(async () => {
-      const list = await spoken();
-      return list.length >= 2 && list.every((w, i) => w === words[i]);
-    }, { timeout: 5000 }).toBe(true);
 
-    // When the phrase completes, the whole sentence is read after the words.
-    await expect(page.locator('.phrase-btn').filter({ hasText: 'Opnemen' }))
-      .toBeVisible({ timeout: 12_000 });
+    // The first word appears and is read aloud.
+    await expect(page.locator('.phrase-word')).toHaveCount(1);
+    await expect.poll(spoken).toEqual([words[0]]);
+
+    // While the first word is still playing, no next word is shown.
+    await page.waitForTimeout(1000); // > reveal interval
+    await expect(page.locator('.phrase-word')).toHaveCount(1);
+    expect(await spoken()).toEqual([words[0]]);
+
+    // Finishing a word reveals (and speaks) exactly the next one.
+    for (let i = 1; i < words.length; i++) {
+      await page.evaluate(() =>
+        (window as unknown as { __finishSpeech: () => void }).__finishSpeech(),
+      );
+      await expect.poll(spoken).toHaveLength(i + 1);
+      await expect(page.locator('.phrase-word')).toHaveCount(i + 1);
+    }
+
+    // The last word completes the sentence, then the full phrase is read.
     expect(await spoken()).toEqual([...words.slice(0, -1), fullText]);
+    await expect(page.locator('.phrase-btn').filter({ hasText: 'Opnemen' })).toBeVisible();
   });
 
   test('recording a perfect phrase shows a perfect score', async ({ page }) => {
